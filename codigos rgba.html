@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mijael</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-1.6.3.min.js"></script>
+	
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+	}
+		body{
+			background: rgba(31,210,17,0.1);
+		}
+		#boton{
+		
+		background:gray;
+		width: 100px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+		color:white;
+		
+		}
+		#rojo{
+			background: red;
+			border-radius: 5px;
+			width: 60px;
+			height: 30px;
+
+		}
+		#verde{
+			background: green;
+			border-radius: 5px;
+			width: 60px;
+			height: 30px;
+		}
+		#azul{
+			background: blue;
+			border-radius: 5px;
+			width: 60px;
+			height: 30px;
+		}
+		button{
+			color: white;
+			border:none;
+		}
+		label{
+			height: 30px;
+			margin-left:5px;
+			color:white;
+		}
+		div{
+			margin: 10px;
+		}
+		/*cabecera*/
+		header{
+			width: 100%;
+			height: 60px;
+			background: rgba(16,197,166,1);
+			color:white;
+			font-size: 22px;
+			margin-bottom: 20px;
+			box-shadow: 0px 3px 10px #333;
+		}
+		
+		
+		
+
+		/*main*/
+
+		}main{
+			width: 70%;
+			float: right;
+			background: red;
+
+			margin: 500px 15% 10px 0%;
+		}
+		section{
+
+			width: 100%;
+			box-shadow: 0px 0px 7px black;
+			padding: 10px;
+			background: white;
+		}
+		p{
+			margin: 15px;
+		}
+
+		/*barra de navegacion vertical*/
+		nav{
+			position: absolute;
+			margin: -73px 0px 10px 0px;
+			width: 100%;
+			height: 100%;
+		}
+		nav label img{
+			
+			width: 50px;
+			height: 50px;
+			cursor: pointer;
+		}
+
+		nav input{
+			display: none;
+		}
+
+		ul{
+			
+			display: inline-block;
+			width: 100%;
+			height: 100vh;
+			background: rgba(51,51,51,0.8);
+			-webkit-transform: translateX(-100%);
+			margin: 0px 5% 0px 0%;
+			padding-top: 10px;
+			float: left;
+
+			transition-duration: 1s;
+		}
+
+		#check:checked ~ ul{
+			-webkit-transform: translateX(0px);
+		}
+		li{
+			height: 40PX;
+			background: rgba(36,185,200,1);
+			list-style: none;
+			padding-top: 10px;
+			padding-left: 10px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+			border-radius: 5px;
+			color:white;
+			box-shadow: 2px 2px 3px gray;
+		}
+		li:hover{
+			-webkit-transition-duration: 0.3s;
+			-webkit-transform: translateX(10px);
+		}
+
+		@media (min-width: 780px){
+			nav{
+				width: 25%;
+			}
+			main section{
+				width: 40%;
+			}
+		}
+		
+	</style>
+
+</head>
+	<body><center>
+		<header id="cabecera">
+		
+		<p>GENERADOR RGBA</p>
+		</header></center>
+		<!--<nav id="nav1">
+			<input id="check" type="checkbox" name="">
+			<label for="check"><img src="icon/IconoMenu.png"></label>
+			<ul id="ul1">
+				<li class="li1">OPCION1</li>
+				<li class="li1">OPCION2</li>
+				<li class="li1">OPCION3</li>
+				<li class="li1">OPCION4</li>
+				<li class="li1">OPCION5</li>
+				<li class="li1">OPCION6</li>
+			</ul>
+		</nav>-->
+		<center>
+		<main><section>
+		<button id="boton">BOTON</button>
+		<div>
+			<button id="rojo" onclick="pintar('red')">rojo</button>
+			<INPUT id="select_rojo" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+		</div>
+		<div>
+			<button id="verde" onclick="pintar('green')">verde</button>
+			<INPUT id="select_verde" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+		</div>
+		<div>
+			<button id="azul" onclick="pintar('blue')">azul</button>
+			<INPUT id="select_azul" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+		</div>
+		<div>
+			<p>opacidad</p>
+			<INPUT id="select_opacidad" TYPE="RANGE" MIN="0" MAX="10" STEP="1" value="10"  onmousemove ="pintar2('red')">
+		</div>
+
+
+	<script>
+		function pintar(color){
+			var boton = document.getElementById("boton");
+			boton.style.background = color;
+		}
+			
+			function pintar2(color){
+				document.getElementById("codigo2").value = document.getElementById("codigo").value;
+				var opacidad = document.getElementById("select_opacidad").value;
+				var cantidad_rojo = document.getElementById("select_rojo").value;
+				var cantidad_verde = document.getElementById("select_verde").value;
+				var cantidad_azul = document.getElementById("select_azul").value;
+
+				
+				var cabecera = document.getElementById("cabecera");
+				var boton = document.getElementById("boton");
+				if(opacidad==10){
+					boton.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
+					cabecera.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
+				
+					document.getElementById("codigo").value="rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",1)";
+				}else{
+					boton.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0."+opacidad+")";
+					document.getElementById("codigo").value="rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0."+opacidad+")";
+					cabecera.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0."+opacidad+")";
+				}
+
+
+			}
+		
+	</script>
+	<div style="background: rgba(36,185,200,1); width: 200px;margin:0;border-radius:5px;padding:2px;">
+		<label>RGBA</label>
+		<input id="codigo" type="text" name="" style="width:142px;margin-right:0px;height:40px">
+		<input id="codigo2" type="text" name="" value="" hidden="" />
+	</div>
+	<div>
+		<button class="copy" id="copiar" style="background: rgba(43,130,242,1); box-shadow: 1px 1px 3px #333;color:white; width: 70px;height:30px;border-radius:5px;">
+        	COPIAR
+    	</button>
+	</div>
+	</section>
+	</main>
+	<script>
+		
+        //Inicio del boton de copia
+        var playButton = $('#copiar');  // Se obtiene el id del boton clicable
+        playButton.click(function(){    // Acá se pone a escucha el evento click para el boton antes definido
+
+            copyToClipboard();          // Esto llama a la funcion copyToClipboard() (Está mas abajo)
+        });
+        //fin del boton de copia
+        //Funcion copytoClipboard
+        function copyToClipboard() {
+        $("#codigo2").select(); // Acá se obtiene el id del boton que hemos creado antes y se le agrega un valor y luego se le sombrea con select(). Para agregar lo que se quiere copiar editas val("EDITAESTOAQUÍ")
+        document.execCommand("copy"); // document.execCommand("copy") manda a copiar el texto seleccionado en el documento
+        
+    }
+    </script>
+	</center>
+	</body>
+	
+	</html>
