@@ -1,0 +1,105 @@
+*{
+			margin: 0px;
+			padding: 0px;
+	}
+		body{
+			background: rgba(31,210,17,0.1);
+		}
+		#boton{
+		
+		background:gray;
+		width: 100px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+		color:white;
+		
+		}
+		#rojo{
+			background: red;
+			border-radius: 5px;
+			width: 60px;
+			height: 30px;
+
+		}
+		#verde{
+			background: green;
+			border-radius: 5px;
+			width: 60px;
+			height: 30px;
+		}
+		#azul{
+			background: blue;
+			border-radius: 5px;
+			width: 60px;
+			height: 30px;
+		}
+		#copiar{
+			height: 5px;padding: 0;
+			margin: 0; 
+			background: rgba(43,130,242,1); 
+			box-shadow: 1px 1px 3px #333;
+			color:white; 
+			width: 70px;
+			height:30px;
+			border-radius:5px;
+		}
+		button{
+			color: white;
+			border:none;
+		}
+		label{
+			height: 30px;
+			margin-left:5px;
+			color:white;
+		}
+		div{
+			margin: 10px;
+		}
+		/*cabecera*/
+		header{
+			width: 100%;
+			height: 60px;
+			background: rgba(16,197,166,1);
+			color:white;
+			font-size: 22px;
+			margin-bottom: 20px;
+			box-shadow: 0px 3px 10px #333;
+		}
+		
+		
+		
+
+		/*main*/
+
+		}main{
+			width: 70%;
+			float: right;
+			background: red;
+
+			margin: 500px 15% 10px 0%;
+		}
+		section{
+
+			width: 100%;
+			box-shadow: 0px 0px 7px black;
+			padding: 10px;
+			background: white;
+		}
+		p{
+			margin: 15px;
+		}
+		/*input*/
+		#codigo2{
+			-webkit-transform: translateY(-10000px);
+			transform: translateY(-10000px);
+			-moz-transform: translateY(-10000px);
+		}
+
+		
+
+		@media (min-width: 780px){
+			main section{
+				width: 50%;
+			}
+		}
