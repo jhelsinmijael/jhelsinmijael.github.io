@@ -156,24 +156,12 @@
 </head>
 	<body><center>
 		<header id="cabecera">
-		<audio autoplay="true" hidden="hidden">
+		<audio id="myAudio" autoplay="true" hidden="hidden">
             <source src="OOVEE   Lanikai.mp3" type="audio/mpeg">
             Your browser does not support the <code>audio</code> tag.
         </audio>
 		<p>GENERADOR RGBA</p>
 		</header></center>
-		<!--<nav id="nav1">
-			<input id="check" type="checkbox" name="">
-			<label for="check"><img src="icon/IconoMenu.png"></label>
-			<ul id="ul1">
-				<li class="li1">OPCION1</li>
-				<li class="li1">OPCION2</li>
-				<li class="li1">OPCION3</li>
-				<li class="li1">OPCION4</li>
-				<li class="li1">OPCION5</li>
-				<li class="li1">OPCION6</li>
-			</ul>
-		</nav>-->
 		<center>
 		<main><section>
 		<button id="boton">BOTON</button>
@@ -254,6 +242,10 @@
         
     }
     </script>
+	<script>
+            var vid = document.getElementById("myAudio");
+            vid.volume = 0.4;
+        </script>
 	</center>
 	</body>
 	
