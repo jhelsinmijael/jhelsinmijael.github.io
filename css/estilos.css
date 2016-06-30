@@ -20,6 +20,13 @@ header{
 
 }
 
+header img{
+			width: 60px;
+		}
+		header label{
+			float: left;
+		}
+
 
 /*MAIN*/
 
