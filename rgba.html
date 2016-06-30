@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RGBA</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="logic.js" type="text/javascript"></script>
+
+	<link href="general.css" rel="stylesheet" type="text/css"/>
+	
+</head>
+	<body><center>
+		<header id="cabecera">
+		<audio id="myAudio" autoplay="true" hidden="hidden"  loop="true">
+            <source src="OOVEE   Lanikai.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> tag.
+        </audio>
+		<p>GENERADOR RGBA</p>
+		</header></center>
+		<center>
+		<main><section>
+		<button id="boton">BOTON</button>
+		<div>
+			<button id="rojo" onclick="pintar('red')">rojo</button>
+			<INPUT id="select_rojo" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+		</div>
+		<div>
+			<button id="verde" onclick="pintar('green')">verde</button>
+			<INPUT id="select_verde" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+		</div>
+		<div>
+			<button id="azul" onclick="pintar('blue')">azul</button>
+			<INPUT id="select_azul" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+		</div>
+		<div>
+			<p>opacidad</p>
+			<INPUT id="select_opacidad" TYPE="RANGE" MIN="0" MAX="10" STEP="1" value="10"  onmousemove ="pintar2('red')">
+		</div>
+	<div style="background: rgba(36,185,200,1); width: 200px;margin:0;border-radius:5px;padding:2px;">
+		<label>RGBA</label>
+		<input id="codigo" type="text" name="" style="width:142px;margin-right:0px;height:40px">
+		
+	</div>
+	<div>
+		<button class="copy" id="copiar" onclick="copiar()">
+        	COPIAR
+    	</button>
+	</div>
+	</section>
+	</main>
+	<input id="codigo2" type="text" name="" value="" />
+	<!--<script>
+		
+        //Inicio del boton de copia
+        var playButton = $('#copiar');  // Se obtiene el id del boton clicable
+        playButton.click(function(){    // Acá se pone a escucha el evento click para el boton antes definido
+
+            copyToClipboard();          // Esto llama a la funcion copyToClipboard() (Está mas abajo)
+        });
+        //fin del boton de copia
+        //Funcion copytoClipboard
+        function copyToClipboard() {
+        $("#codigo2").select(); // Acá se obtiene el id del boton que hemos creado antes y se le agrega un valor y luego se le sombrea con select(). Para agregar lo que se quiere copiar editas val("EDITAESTOAQUÍ")
+        document.execCommand("copy"); // document.execCommand("copy") manda a copiar el texto seleccionado en el documento
+        
+    }
+    </script-->
+	<script>
+            var vid = document.getElementById("myAudio");
+            vid.volume = 0.4;
+    </script>
+	</center>
+	</body>
+	
+	</html>
