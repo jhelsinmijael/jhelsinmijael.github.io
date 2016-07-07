@@ -22,6 +22,11 @@ header{
 header label{
 	float: left;
 }
+header label img:hover{
+	width: 62px;
+}
+
+
 
 
 
@@ -54,6 +59,7 @@ header label{
 #section1 .up div{
 	border-radius: 5px;
 	border: 2px solid rgba(0,128,173,1);
+
 }
 #section1 .up div div{
 	border-radius: 0px;
@@ -61,6 +67,7 @@ header label{
 	background: rgba(0,128,173,0.3);
 	box-shadow: 0px 3px 5px gray;
 	transform: translateY(2px);
+	width: 200px;
 }
 
 
@@ -111,6 +118,7 @@ header label{
 	padding: 0pc 15px 15px 15px;
 	transform: translateX(-50%);
 	float: left;
+	height: 330px;
 }
 
 #section1 .contenedor2 input{
@@ -130,6 +138,28 @@ header label{
 	font-weight: bold;
 	border-radius: 5px;
 	margin-right: -10px;
+}
+#bit{
+	position: absolute;
+	opacity: 1;
+	transform: translateX(-100px);
+}
+#section1  #bit:hover {
+	transition-duration: 0.5s;
+	width: 230px;
+	color: white;
+	background: rgba(0,175,177,1);
+	box-shadow: 0px 2px 4px #333;
+}
+#caja_numero_subred{
+	width: 200px;
+	height: 33px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: solid 2px rgba(0,175,177,1);
+	background: rgba(0,175,177,0.1);
+	padding-left: 25px;
+	padding-right: 5px;
 }
 
 
@@ -165,7 +195,7 @@ tr{
 	#section1 .up{
 
 		margin: 10px 20px;
-		height: 350px;
+		height: 390px;
 	}
 
 	#section1 .up .contenedor{

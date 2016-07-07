@@ -1,3 +1,8 @@
+function desactivar(){
+	document.getElementById("caja_numero_subred").disabled = true;
+}
+
+
 function definirClase(){
 
 	var ip = document.getElementById("caja_ip").value;
@@ -29,15 +34,22 @@ function definirClase(){
 
 			}
 			definirMascara(mascara);
+			document.getElementById("caja_numero_subred").disabled = false;
 		}
 		else{
 			document.getElementById("caja_clase").value=null;
 			document.getElementById("caja_mascara").value=null;
+			document.getElementById("caja_numero_host").value=null;
+			document.getElementById("mask").value = null;
+			document.getElementById("bit").value = null;
 		}
 	}
 	else{
 		document.getElementById("caja_clase").value=null;
 		document.getElementById("caja_mascara").value=null;
+		document.getElementById("caja_numero_host").value=null;
+			document.getElementById("mask").value = null;
+			document.getElementById("bit").value = null;
 	}
 }
 function definirMascara(mascara){
@@ -50,6 +62,8 @@ function definirSubred(){
 	var clase = document.getElementById("caja_clase").value;
 
 	if(clase === "C"){
+
+		var octeto="";
 
 		var valor_octeto = [128,64,32,16,8,4,2,1];
 
@@ -72,14 +86,29 @@ function definirSubred(){
 		for (var i = 0; i < bits; i++) {
 			
 			mask=mask+valor_octeto[i];
+
+		}
+		for (var i = 0; i < 8; i++) {
+			if(i<bits){
+				octeto = octeto + "1";
+			}
+			else{
+				octeto = octeto + "0";
+			}
+			
 		}
 
-		document.getElementById("mask").value = "255.255.255."+mask;
+
 		document.getElementById("caja_numero_host").value=(256-mask);
+		document.getElementById("mask").value = "255.255.255."+mask+"  /"+(24+bits);
+		document.getElementById("bit").value = "11111111.11111111.11111111."+octeto;
 
 		llenarTablaC();
 	}
 	else if(clase === "B"){
+
+		var octeto="";
+
 		var valor_octeto = [128,64,32,16,8,4,2,1,128,64,32,16,8,4,2,1];
 
 		var n = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
@@ -111,16 +140,29 @@ function definirSubred(){
 				second_mask=second_mask+valor_octeto[i];
 			}
 		}
+		for (var i = 0; i < 8; i++) {
+			if(i<bits){
+				octeto = octeto + "1";
+			}
+			else{
+				octeto = octeto + "0";
+			}
+			
+		}
 
 		var saltos = 256-parseInt(mask);
 
 		document.getElementById("mask").value = "255.255."+mask+".0";
 		document.getElementById("caja_numero_host").value=(Math.pow(2,(16-bits)));
+		document.getElementById("bit").value = "11111111.11111111."+octeto+".00000000";
 
 		llenarTablaB(saltos);
 	}
 
 	else if(clase === "A"){
+
+		var octeto="";
+
 		var valor_octeto = [128,64,32,16,8,4,2,1];
 
 		var n = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
@@ -144,10 +186,21 @@ function definirSubred(){
 			mask=mask+valor_octeto[i];
 		}
 
+		for (var i = 0; i < 8; i++) {
+			if(i<bits){
+				octeto = octeto + "1";
+			}
+			else{
+				octeto = octeto + "0";
+			}
+			
+		}
+
 		var saltos = 256-parseInt(mask);
 
 		document.getElementById("mask").value = "255."+mask+".0.0";
 		document.getElementById("caja_numero_host").value=(Math.pow(2,(24-bits)));
+		document.getElementById("bit").value = "11111111."+octeto+".00000000.00000000";
 
 		llenarTablaA(saltos);
 	}

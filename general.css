@@ -3,7 +3,7 @@
 			padding: 0px;
 	}
 		body{
-			background: rgba(31,210,17,0.1);
+			background: white;
 		}
 		#boton{
 		
@@ -64,8 +64,7 @@
 			color:white;
 			font-size: 30px;
 			margin-bottom: 20px;
-			box-shadow: 0px 3px 10px #333;
-			padding-top: 3px;
+			box-shadow: 0px 3px 6px gray;
 
 		}
 		header img{

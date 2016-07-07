@@ -29,11 +29,23 @@
 				<div class="contenedor2">
 					<label class="lb_title">SUBNETEO</label><br><br><br>
 					<div>Numero de subred</div>
-					<input id="caja_numero_subred" type="text" name="" onkeyup="definirSubred()"><br><br>
+					<!--input id="caja_numero_subred" type="number" min="1" max="128" step="2" name="" onkeyup="definirSubred()" placeholder="1"-->
+					<select id="caja_numero_subred" onchange="definirSubred()">
+						<option>1</option>
+						<option>2</option>
+						<option>4</option>
+						<option>8</option>
+						<option>16</option>
+						<option>32</option>
+						<option>64</option>
+						<option>128</option>
+					<select><br><br>
 					<div>Numero de host </div>
 					<input id="caja_numero_host" type="text" name="" readonly=""><br><br>
 					<div>Mascara de subred</div>
-					<input id="mask" type="text" name="" readonly="">
+					<input id="mask" type="text" name="" readonly=""><br><br>
+					<div>bits</div>
+					<input id="bit" type="text" name="" readonly="">
 				</div>
 
 			</div>
@@ -55,6 +67,8 @@
 	</main>
 	<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.
 
-Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones</footer>
+Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+	</footer>
+	<script>desactivar()</script>
 </body>
 </html>
