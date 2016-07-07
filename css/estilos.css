@@ -162,6 +162,20 @@ header label img:hover{
 	padding-right: 5px;
 }
 
+#btn_limpiar{
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	background: rgba(0,175,177,1);
+	color: white;
+	box-shadow: 2px 2px 4px #333;
+}
+#btn_limpiar:hover{
+padding: 11px 16px;
+}
+#btn_limpiar:focus{
+	padding: 10px 15px;
+}
 
 
 

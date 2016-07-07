@@ -19,15 +19,15 @@ function definirClase(){
 			var tres = parseInt(ip.substring(0,3));
 
 			if(tres>=1 && tres<=127){
-				var mascara = "255.0.0.0";
+				var mascara = "255.0.0.0 /8";
 				document.getElementById("caja_clase").value="A";
 			}
 			else if(tres>=128 && tres<=191){
-				var mascara = "255.255.0.0";
+				var mascara = "255.255.0.0 /16";
 				document.getElementById("caja_clase").value = "B";
 			}
 			else if(tres>=192 && tres<=223){
-				var mascara = "255.255.255.0";
+				var mascara = "255.255.255.0 /24";
 				document.getElementById("caja_clase").value = "C";
 			}
 			else{
@@ -54,7 +54,7 @@ function definirClase(){
 }
 function definirMascara(mascara){
 	var caja_mascara = document.getElementById("caja_mascara");
-	caja_mascara.value = mascara;
+	caja_mascara.value = mascara ;
 }
 
 function definirSubred(){
@@ -152,7 +152,7 @@ function definirSubred(){
 
 		var saltos = 256-parseInt(mask);
 
-		document.getElementById("mask").value = "255.255."+mask+".0";
+		document.getElementById("mask").value = "255.255."+mask+".0"+"  /"+(16+bits);
 		document.getElementById("caja_numero_host").value=(Math.pow(2,(16-bits)));
 		document.getElementById("bit").value = "11111111.11111111."+octeto+".00000000";
 
@@ -198,7 +198,7 @@ function definirSubred(){
 
 		var saltos = 256-parseInt(mask);
 
-		document.getElementById("mask").value = "255."+mask+".0.0";
+		document.getElementById("mask").value = "255."+mask+".0.0"+"  /"+(8+bits);
 		document.getElementById("caja_numero_host").value=(Math.pow(2,(24-bits)));
 		document.getElementById("bit").value = "11111111."+octeto+".00000000.00000000";
 
