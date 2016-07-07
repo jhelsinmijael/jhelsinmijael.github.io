@@ -10,30 +10,30 @@
 <body>
 
 	<header>
-	<label><a href="index.html"><img src="img/cuadrado.jpg"></a></label>
+	<label><a href="index.html"><img src="img/cuadrado.jpg" width="60px"></a></label>
 		<h1>SUBNETEO</h1>
 	</header>
-<center>
+
 	<main>
 		<section id="section1">
 			<div class="up">
 				<div class="contenedor">
-				<label>CLASES DE IP</label><br><br>
-					<label>IP</label><input id="caja_ip" type="text" name="caja_ip" value="192.168.10.1" onkeyup= "definirClase()"><br><br>
-					<label>clase</label><input id="caja_clase" type="text" name="caja_clase"><br><br>
-					<label>Mascara</label><input id="caja_mascara" type="text" name="caja_mascara"><br><br>
+					<label class="lb_title">CLASES DE IP</label><br><br><br>
+					<div>IP</div><input id="caja_ip" type="text" name="caja_ip" value="192.168.10.1" onkeyup= "definirClase()" placeholder="192.168.10.1"><br><br>
+					<div>clase</div><input id="caja_clase" type="text" name="caja_clase" readonly="" ><br><br>
+					<div>Mascara</div><input id="caja_mascara" type="text" name="caja_mascara" readonly=""><br><br>
 				</div>
-			</div>
+
 
 				
 				<div class="contenedor2">
-					<label>SUBNETEO</label><br><br>
-					<label>Numero de subred</label>
+					<label class="lb_title">SUBNETEO</label><br><br><br>
+					<div>Numero de subred</div>
 					<input id="caja_numero_subred" type="text" name="" onkeyup="definirSubred()"><br><br>
-					<label>Numero de host</label>
-					<input id="caja_numero_host" type="text" name="" ><br><br>
-					<label>Mascara de subred</label>
-					<input id="mask" type="text" name="">
+					<div>Numero de host </div>
+					<input id="caja_numero_host" type="text" name="" readonly=""><br><br>
+					<div>Mascara de subred</div>
+					<input id="mask" type="text" name="" readonly="">
 				</div>
 
 			</div>
@@ -53,6 +53,8 @@
 			</div>
 		</section>
 	</main>
-</center>
+	<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.
+
+Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones</footer>
 </body>
 </html>
