@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subneteo</title>
+	
+	<script type="text/javascript" src="js1/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js1/logica.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">	
+</head>
+<body>
+
+	<header>
+	<label><a href="index.html"><img src="img/cuadrado.jpg" width="40px"></a></label>
+		<h1>SUBNETEO</h1>
+	</header>
+<center>
+	<main>
+		<section id="section1">
+			<div class="up">
+				<div class="contenedor">
+				<label>CLASES DE IP</label><br><br>
+					<label>IP</label><input id="caja_ip" type="text" name="caja_ip" value="192.168.10.1" onkeyup= "definirClase()"><br><br>
+					<label>clase</label><input id="caja_clase" type="text" name="caja_clase"><br><br>
+					<label>Mascara</label><input id="caja_mascara" type="text" name="caja_mascara"><br><br>
+				</div>
+			</div>
+
+				
+				<div class="contenedor2">
+					<label>SUBNETEO</label><br><br>
+					<label>Numero de subred</label>
+					<input id="caja_numero_subred" type="text" name="" onkeyup="definirSubred()"><br><br>
+					<label>Numero de host</label>
+					<input id="caja_numero_host" type="text" name="" ><br><br>
+					<label>Mascara de subred</label>
+					<input id="mask" type="text" name="">
+				</div>
+
+			</div>
+
+			<div class="down">
+			<center>
+				<table id="tabla1">
+					<thead>
+						<td>numero</td>
+						<td>direccion</td>
+						<td>1ra ip</td>
+						<td>ultima ip</td>
+						<td>broadcast</td>
+					</thead>
+				</table>
+				</center>
+			</div>
+		</section>
+	</main>
+</center>
+</body>
+</html>

@@ -57,7 +57,46 @@ function definirMascara(mascara){
 	caja_mascara.value = mascara ;
 }
 
+//PROCESO DE SUBNETEADO CON UN NUMERO DE IP SOLICITADOS
+
+function definirSubredes_host(){
+
+	var subredes = [128,64,32,16,8,4,2];
+
+	var ip = [2,4,8,16,32,64,128];
+
+	var  bit = [1,2,3,4,5,6,7,8];
+
+	var numero_host = document.getElementById("caja_numero_host").value;
+
+	var host_encontrados = 0;
+
+	var num_subred;
+
+	for (var i = 0; i < 8; i++) {
+		if((Math.pow(2,bit[i])-2)>= numero_host ){
+				host_encontrados = Math.pow(2,bit[i]);
+				num_subred = subredes[i];
+				break;
+		}
+	}
+
+	document.getElementById("caja_numero_host").value = host_encontrados;
+	document.getElementById("caja_numero_subred").value = num_subred;
+	document.getElementById("frm").value ="2**n -2 = host "+ 2+"**"+bit[2]+" - 2 = "+host_encontrados;
+
+
+}
+
+//PROCESO DE SUBNETEADO CON UN NUMERO DE SUBREDES SOLICITADOS
+
 function definirSubred(){
+
+	var subredes = [128,64,32,16,8,4,2];
+
+	var ip = [2,4,8,16,32,64,128];
+
+	var  bit = [1,2,3,4,5,6,7,8];
 
 	var clase = document.getElementById("caja_clase").value;
 

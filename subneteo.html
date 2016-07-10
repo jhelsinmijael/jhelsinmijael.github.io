@@ -10,24 +10,42 @@
 <body>
 
 	<header>
-	<label><a href="index.html"><img src="img/cuadrado.jpg" width="60px"></a></label>
+		<label>
+			<a href="index.html"><img src="img/cuadrado.jpg" width="60px"></a>
+		</label>
 		<h1>SUBNETEO</h1>
 	</header>
 
 	<main>
+		<!--<section id="section2">
+			<div id="formula">
+				<input id="frm" type="text" />
+				<label id="ln1">object
+				</label><hr>
+				<label id="ln2">object<hr>
+				</label>
+				<label id="ln3"><hr>
+				</label>
+				<label id="ln4"><hr>
+				</label>
+				<label></label>
+				<label></label>
+			</div>
+		</section-->
+		
 		<section id="section1">
 			<div class="up">
 				<div class="contenedor">
 				<form>
 					<label class="lb_title">CLASES DE IP</label><br><br><br>
-					<div>IP</div><input id="caja_ip" type="text" name="caja_ip" onkeyup= "definirClase()" placeholder="192.168.10.1"><br><br>
+					<div>IP</div><input id="caja_ip" type="text" name="caja_ip"  onkeyup= "definirClase()" placeholder="192.168.10.1"><br><br>
 					<div>clase</div><input id="caja_clase" type="text" name="caja_clase" readonly="" ><br><br>
 					<div>Mascara</div><input id="caja_mascara" type="text" name="caja_mascara" readonly=""><br><br>
 					<button id="btn_limpiar" type="reset" value="limpiar">Limpiar</button><br><br>
 				</form>
 				</div>
 
-
+				
 				
 				<div class="contenedor2">
 					<label class="lb_title">SUBNETEO</label><br><br><br>
@@ -43,7 +61,7 @@
 						<option>128</option>
 					<select><br><br>
 					<div>Numero de host </div>
-					<input id="caja_numero_host" type="text" name="" readonly=""><br><br>
+					<input id="caja_numero_host" type="text" name="" onkeyup= "definirSubredes_host() " readonly=""><br><br>
 					<div>Mascara de subred</div>
 					<input id="mask" type="text" name="" readonly=""><br><br>
 					<div>Octetos</div>
@@ -66,6 +84,9 @@
 				</center>
 			</div>
 		</section>
+		<div id="caja">
+		<div id="social1"><a href="https://www.facebook.com/EducationalApplications456/"><img src="img/like1.png" alt=""/></a></div>
+		</div>
 	</main>
 	<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.
 
