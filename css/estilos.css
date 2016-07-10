@@ -9,6 +9,7 @@ body{
 /*SOCIALES*/
 
 #caja{
+	transition-duration: 0.5s;
 	position: fixed;
 	width: 50px;
 	height: auto;
