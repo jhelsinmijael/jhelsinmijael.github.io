@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/calculadora.css">
+	<script type="text/javascript" src="js/logica.js"></script>
+</head>
+<body>
+
+<main id="main1">
+	<section id="section1">
+		<div id="div1">
+			<div class="ln" id="linea1">
+				<input id="lcd" type="text" readonly="" />
+				<input id="mini-lcd" type="text" name="">
+			</div>
+			<div class="ln" id="linea2">
+				<button class="btn" value="7" onclick="teclear(7)">7</button>
+				<button class="btn" value="8" onclick="teclear(8)">8</button>
+				<button class="btn" value="9" onclick="teclear(9)">9</button>
+				<button class="btn2" value="/" onclick="dividir()">/</button>
+				<button class="btn2" value="&#8592" onclick="borrar()">&#8592</button>
+			</div>
+			<div class="ln" id="linea3">
+				<button class="btn" value="4" onclick="teclear(4)">4</button>
+				<button class="btn" value="5" onclick="teclear(5)">5</button>
+				<button class="btn" value="6" onclick="teclear(6)">6</button>
+				<button class="btn2" value="x" onclick="multiplicar()">x</button>
+				<button class="btn2" value="C" onclick="clearLCD()">C</button>
+			</div>
+			<div class="ln" id="linea4">
+				<button class="btn" value="1" onclick="teclear(1)">1</button>
+				<button class="btn" value="2" onclick="teclear(2)">2</button>
+				<button class="btn" value="3" onclick="teclear(3)">3</button>
+				<button class="btn2" value="-" onclick="restar()">-</button>
+				<button class="btn2" value="pot" onclick="potencia()">x<sup>2</sup></button>
+			</div>
+			<div class="ln" id="linea5">
+				<button class="btn" value="." onclick="teclear('.')">.</button>
+				<button class="btn" value="0" onclick="teclear(0)">0</button>
+				<button class="btn2" value="=" onclick="igual()">=</button>
+				<button class="btn2" value="+" onclick="sumar()">+</button>
+				<button class="btn2" value="" onclick="raizCuadrada()">&#8730</button>
+			</div>
+			<script type="text/javascript">
+				document.getElementById("lcd").value = 0;
+			</script>
+		</div>
+	</section>
+	<div id="caja">
+		<div id="social1"><a href="https://www.facebook.com/EducationalApplications456/" target="_blank"><img src="img/like1.png" alt=""/></a></div>
+	</div>
+</main>
+<header id="header1"><h1>CALCULADORA</h1></header>
+<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+</footer>
+</body>
+</html>
