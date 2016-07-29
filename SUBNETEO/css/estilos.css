@@ -89,12 +89,13 @@ header label img:hover{
 
 
 #section1 .up{
-	height: 890px;
+	height: 900px;
 	margin: 5px;
 	float: top;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	border: solid 2px orange;
 	border-radius: 5px;
+	padding-bottom: 20px;
 }
 
 #section1 .up div{
