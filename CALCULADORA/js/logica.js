@@ -1,5 +1,7 @@
 var cifra = "";
 
+var operacion = "";
+
 var total = 0.0;
 
 var first = true;
@@ -20,8 +22,9 @@ var boolean_potencia = false;
 
 var decimal = false;
 
-function teclear(num){
+var darSigno = false;
 
+function teclear(num){
 
 	document.getElementById("lcd").value=cifra+""+num;
 
@@ -29,12 +32,21 @@ function teclear(num){
 
 		document.getElementById("lcd").value = "0."+num;
 		decimal = false;
-		
+
 	}
+
 
 	cifra = document.getElementById("lcd").value;
 
-	document.getElementById("mini-lcd").value = total;
+	if(darSigno){
+
+		document.getElementById("lcd").value = "-"+num;
+
+		darSigno = false;
+
+	}
+
+	/*document.getElementById("mini-lcd").value = total*/;
 
 	borrar_total = false;
 
@@ -51,9 +63,13 @@ function sumar(){
 
 	if(resta){
 
-		total = total - parseFloat(cifra);
+		if(cifra !== ""){
 
-		document.getElementById("lcd").value = total;
+			total = total - parseFloat(cifra);
+
+			document.getElementById("lcd").value = total;
+
+		}
 
 	}else if(multiplica){
 
@@ -72,6 +88,14 @@ function sumar(){
 			total = total / parseFloat(cifra);
 
 			document.getElementById("lcd").value = total;
+
+		}
+
+	}else if(boolean_potencia){
+
+		if(cifra !== ""){
+
+
 
 		}
 
@@ -101,40 +125,66 @@ function sumar(){
 
 	first = false;
 
-	document.getElementById("mini-lcd").value = total;
+	document.getElementById("mini-lcd").value = total + "  +";
+	operacion = document.getElementById("mini-lcd").value = total + "  +";
 
 }
 function restar(){
 
-	if(first == false){
+	if(total==0 && cifra === ""){
 
-		if (suma) {
+		darSigno = true;
 
-			if(cifra !== ""){
+	}else{
 
-				total = total + parseFloat(cifra);
+		if(first == false){
 
-				document.getElementById("lcd").value = total;
+			if (suma) {
 
-			}
+				if(cifra !== ""){
 
-		}else if(multiplica){
+					total = total + parseFloat(cifra);
 
-			if(cifra !== ""){
+					document.getElementById("lcd").value = total;
 
-				total = total * parseFloat(cifra);
+				}
 
-				document.getElementById("lcd").value = total;
+			}else if(multiplica){
 
-			}
+				if(cifra !== ""){
 
-		}else if(divide){
+					total = total * parseFloat(cifra);
 
-			if(cifra !== ""){
+					document.getElementById("lcd").value = total;
 
-				total = total / parseFloat(cifra);
+				}
 
-				document.getElementById("lcd").value = total;
+			}else if(divide){
+
+				if(cifra !== ""){
+
+					total = total / parseFloat(cifra);
+
+					document.getElementById("lcd").value = total;
+
+				}
+
+			}else{
+
+				if(cifra !== ""){
+
+					total = total - parseFloat(cifra);
+
+
+
+					document.getElementById("lcd").value = total;
+
+					document.getElementById("mini-lcd").value = total;
+
+				}
+				else{
+
+				}
 
 			}
 
@@ -142,31 +192,20 @@ function restar(){
 
 			if(cifra !== ""){
 
-				total = total - parseFloat(cifra);
+				total = parseFloat(cifra);
 
-				document.getElementById("lcd").value = total;
+			}
+			else{
+
+				//corregir
+
+				//total = 0;
 
 			}
 
-		}
-
-	}else{
-
-		if(cifra !== ""){
-
-			total = parseFloat(cifra);
+			first = false;
 
 		}
-		else{
-
-			//corregir
-
-			total = 0;
-
-		}
-
-		first = false;
-
 	}
 
 	cifra = "";
@@ -179,7 +218,8 @@ function restar(){
 
 	divide = false;
 
-	document.getElementById("mini-lcd").value = total;
+	document.getElementById("mini-lcd").value = total + "  -";
+	operacion = document.getElementById("mini-lcd").value = total + "  -";
 
 }
 function multiplicar(){
@@ -188,9 +228,12 @@ function multiplicar(){
 
 		if(resta){
 
-			total = total - parseFloat(cifra);
+			if(cifra !== ""){
 
-			document.getElementById("lcd").value = total;
+				total = total - parseFloat(cifra);
+
+				document.getElementById("lcd").value = total;
+			}
 
 		}
 
@@ -237,7 +280,7 @@ function multiplicar(){
 
 			//corregir
 
-			total = 0;
+			//total = 0;
 
 		}
 
@@ -250,6 +293,8 @@ function multiplicar(){
 	resta = false;
 	suma = false;
 	divide = false;
+	document.getElementById("mini-lcd").value = total + "  *";
+	operacion = document.getElementById("mini-lcd").value = total + "  *";
 
 }
 function dividir(){
@@ -258,9 +303,13 @@ function dividir(){
 
 		if(resta){
 
-			total = total - parseFloat(cifra);
+			if(cifra !== ""){
 
-			document.getElementById("lcd").value = total;
+				total = total - parseFloat(cifra);
+
+				document.getElementById("lcd").value = total;
+
+			}
 
 		}
 
@@ -308,7 +357,7 @@ function dividir(){
 
 			//corregir
 
-			total = 0;
+			//total = 0;
 
 		}
 
@@ -321,6 +370,8 @@ function dividir(){
 	resta = false;
 	suma = false;
 	divide = true;
+	document.getElementById("mini-lcd").value = total + "  /";
+	operacion = document.getElementById("mini-lcd").value = total + "  /";
 }
 
 function raizCuadrada(){
@@ -359,11 +410,11 @@ function raizCuadrada(){
 
 	document.getElementById("lcd").value = Math.sqrt (num);
 
-	cifra = "";
-
-	document.getElementById("mini-lcd").value = total;
+	document.getElementById("mini-lcd").value = '√'+" "+num ;
 
 	boolean_raiz = true;
+
+	//1 de 2 cifra = "";
 
 }
 
@@ -403,58 +454,15 @@ function potencia(){
 
 	document.getElementById("lcd").value = Math.pow (num,2);
 
-	cifra = "";
-
-	document.getElementById("mini-lcd").value = total;
+	document.getElementById("mini-lcd").value = num+"^2";
 
 	boolean_potencia = true;
+
+	//1 de 2 cifra = "";
 
 }
 
 function igual(){
-
-	if(suma){
-
-		if(cifra !== "")
-		
-			document.getElementById("lcd").value = total + parseFloat(cifra);
-		
-		else
-
-			document.getElementById("lcd").value = 0;	
-	}
-	if(resta){
-
-		if(cifra !== "")
-
-			document.getElementById("lcd").value = total - parseFloat(cifra);
-	
-		else
-
-			document.getElementById("lcd").value = 0;	
-
-	}
-	if(multiplica){
-
-		if(cifra !== "")
-		
-			document.getElementById("lcd").value = total * parseFloat(cifra);
-		
-		else
-
-			document.getElementById("lcd").value = 0;	
-	}
-
-	if(divide){
-
-		if(cifra !== "")
-		
-			document.getElementById("lcd").value = total / parseFloat(cifra);
-		
-		else
-
-			document.getElementById("lcd").value = 0;	
-	}
 
 	if(boolean_raiz){
 
@@ -462,18 +470,67 @@ function igual(){
 
 		boolean_raiz = false;
 
+		operacion = operacion + "  √";
+
 	}else if(boolean_potencia){
 
 		document.getElementById("lcd").value = total;
 
 		boolean_potencia = false;
 
-	}else{
+		operacion = operacion + "  pow2 ";
+
+	}/*else{
 
 		total = parseFloat(document.getElementById("lcd").value);
 
 		document.getElementById("mini-lcd").value = total;
+	}*/
+
+	if(suma){
+
+		if(cifra !== ""){
+
+			document.getElementById("lcd").value = total + parseFloat(cifra);
+			}
+
+		else
+
+			document.getElementById("lcd").value = 0;
+	}else if(resta){
+
+		if(cifra !== "")
+
+			document.getElementById("lcd").value = total - parseFloat(cifra);
+
+		else
+
+			document.getElementById("lcd").value = 0;
+
+	}else if(multiplica){
+
+		if(cifra !== "")
+
+			document.getElementById("lcd").value = total * parseFloat(cifra);
+
+		else
+
+			document.getElementById("lcd").value = 0;
+	}else if(divide){
+
+		if(cifra !== "")
+
+			document.getElementById("lcd").value = total / parseFloat(cifra);
+
+		else
+
+			document.getElementById("lcd").value = 0;
 	}
+
+
+	operacion +=" "+ cifra;
+
+	document.getElementById("mini-lcd").value = operacion;
 
 	cifra = "";
 
@@ -487,16 +544,20 @@ function igual(){
 
 	divide = false;
 
-	
+
 
 }
 
 function clearLCD(){
 
-	cifra = "";
-	total = 0;
 	document.getElementById("lcd").value="0";
 	document.getElementById("mini-lcd").value = total;
+
+	cifra = "";
+
+	operacion = "";
+
+	total = 0.0;
 
 	first = true;
 
@@ -511,6 +572,12 @@ function clearLCD(){
 	divide = false;
 
 	boolean_raiz = false;
+
+	boolean_potencia = false;
+
+	decimal = false;
+
+	darSigno = false;
 }
 
 function borrar(){
@@ -532,6 +599,7 @@ function borrar(){
 		if((string_total.length-1)==0){
 
 			total = 0.0;
+			first = true;
 
 		}else{
 			total = parseInt(string_total.substring(0,(string_total.length-1)));
@@ -550,6 +618,8 @@ function borrar(){
 		cifra = "";
 	}
 	else{
+
+
 
 	}
 

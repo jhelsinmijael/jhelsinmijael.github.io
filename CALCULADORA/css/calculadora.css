@@ -28,6 +28,19 @@ body{
 
 }
 
+/*::::::link index.html::::::*/
+#header1 label{
+	position: absolute;
+	left: 0px;
+	float: left;
+}
+#header1 label img{
+	width: 80px;
+}
+#header1 label img:hover{
+	width: 84px;
+}
+
 /*SOCIALES*/
 
 #caja{
@@ -53,7 +66,7 @@ body{
 	transform: translateX(0px);
 	-webkit-transform: translateX(-2px);
 	-moz-transform: translateX(0px);
-}	
+}
 #caja div:hover{
 	transition-duration: 0.5s;
 	width: 60px;
@@ -128,23 +141,35 @@ body{
 	-moz-transform: translateX(-50%);
 	font-weight: bold;
 	font-size: 35px;
+	text-align: right;
 }
-
+/*:::::::::mini-lcd::::::::::*/
 #div1 .ln #mini-lcd{
 	border: none;
-	width: 90%;
+	width: 20%;
 	background: rgba(24,143,122,1);
 	position: absolute;
-	transform: translateY(-80px);
+	margin-bottom: auto;
+	margin: auto;
+	padding: inherit;
+	margin-left: 66%;
+	margin-bottom: 60%;
+	transform: translateY(-82px);
+	font-weight: bold;
+	color: white;
+	padding: 3px;
+	border-bottom: solid #333 1px;
+	border-left: solid #333 1px;
+	/*transform: translateY(-80px);
 	-webkit-transform: translateY(-80%);
-	-moz-transform: translateY(-80%);
+	-moz-transform: translateY(-80%);*/
 }
 
 /*:::::::BOTONES::::::*/
 
 #div1 .ln .btn{
 	width: 80px;
-	height: 80%;	
+	height: 80%;
 	background: rgba(249,174,60,1);
 	float: left;
 	margin-right: 10px;
