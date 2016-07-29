@@ -480,7 +480,7 @@ function igual(){
 
 		operacion = operacion + "  pow2 ";
 
-	}/*else{
+	}else{}/*else{
 
 		total = parseFloat(document.getElementById("lcd").value);
 
@@ -492,36 +492,46 @@ function igual(){
 		if(cifra !== ""){
 
 			document.getElementById("lcd").value = total + parseFloat(cifra);
-			}
+			total = total + parseFloat(cifra);
+		}
 
 		else
 
 			document.getElementById("lcd").value = 0;
 	}else if(resta){
 
-		if(cifra !== "")
+		if(cifra !== ""){
 
 			document.getElementById("lcd").value = total - parseFloat(cifra);
 
+			total = total - parseFloat(cifra);
+
+		}
 		else
 
 			document.getElementById("lcd").value = 0;
 
 	}else if(multiplica){
 
-		if(cifra !== "")
+		if(cifra !== ""){
 
 			document.getElementById("lcd").value = total * parseFloat(cifra);
 
+			total = total * parseFloat(cifra);
+
+		}
 		else
 
 			document.getElementById("lcd").value = 0;
 	}else if(divide){
 
-		if(cifra !== "")
+		if(cifra !== ""){
 
 			document.getElementById("lcd").value = total / parseFloat(cifra);
 
+			total = total / parseFloat(cifra);
+
+		}
 		else
 
 			document.getElementById("lcd").value = 0;
