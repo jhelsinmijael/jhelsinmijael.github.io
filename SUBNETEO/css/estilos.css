@@ -95,7 +95,7 @@ header label img:hover{
 	margin-bottom: 10px;
 	border: solid 2px orange;
 	border-radius: 5px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 #section1 .up div{
@@ -126,8 +126,7 @@ header label img:hover{
 #section1 .up .contenedor{
 	margin: 50px 50%;
 	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
+	/*-webkit-transform: translateX(-50%);*/
 	color:white;
 	float: left;
 
@@ -166,7 +165,7 @@ header label img:hover{
 	-moz-transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	float: left;
-	height: 330px;
+	height: 350px;
 }
 
 #section1 .contenedor2 input{
