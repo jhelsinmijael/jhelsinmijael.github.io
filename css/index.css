@@ -1,0 +1,344 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url("img/textura1.jpg");
+  height: 100%;
+  width: 100%;
+}
+/*::::::SOCIALES:::::*/
+
+#caja{
+transition-duration: 0.5s;
+position: fixed;
+width: 50px;
+height: auto;
+transform: translateX(-40px);
+-webkit-transform: translateX(-40px);
+-moz-transform: translateX(-40px);
+top: 100px;
+}
+#caja div{
+transition-duration: 0.5s;
+width: 100%;
+height: 50px;
+border: 2px solid blue;
+background: white;
+
+}
+#caja:hover{
+transition-duration: 0.5s;
+transform: translateX(0px);
+-webkit-transform: translateX(-2px);
+-moz-transform: translateX(0px);
+}
+#caja div:hover{
+transition-duration: 0.5s;
+width: 60px;
+box-shadow: 2px 2px 4px #333;
+border-radius: 3px;
+}
+#caja div img{
+margin: 5px 0px 0px 12%;
+width: 30px;
+height: 30px;
+}
+#caja div a{
+width: 100%;
+height: 100%;
+padding: 17px 10px 10px 5px;
+}
+
+/**:::::::::::::::::::*/
+
+#all{
+  width: 440px;
+  background: red;
+  height: 100%;
+  margin: 2%;
+  width: 660px;
+  box-shadow: 0px 0px 10px #333;
+  height: 600px;
+}
+#all div{
+  float: top;
+  background: skyblue;
+  width: 100%;
+  height: 200px;
+}
+#f1{
+  height: 30%;
+}
+
+#all div div:hover{
+  background: rgba(255,171,110,0.5);
+}
+
+#f1 div{
+  background: rgba(37,171,184,1)
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+
+#f1 #f1_1 div{
+  background: black;
+  width: 0px;
+  height: 0px;
+  float: left;
+  top: 97px;
+  left: 107px;
+}
+#f1 #f1_1:hover div{
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  position: absolute;
+  width: 214px;
+  height: 194px;
+  float: left;
+  top: 0px;
+  left: 0px;
+}
+#f1 #f1_2 div{
+  background: none;
+  width: 0px;
+  height: 0px;
+  float: left;
+  top: 97px;
+  left: 307px;
+}
+#f1 #f1_2:hover div{
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  position: absolute;
+  width: 214px;
+  height: 194px;
+  float: left;
+  top: 0px;
+  left: 220px;
+}
+#f1 #f1_3 div{
+  width: 0px;
+  height: 0px;
+  float: left;
+  top: 97px;
+  left: 550px;
+}
+#f1 #f1_3:hover div{
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  position: absolute;
+  width: 214px;
+  height: 194px;
+  float: left;
+  top: 0px;
+  left: 440px;
+}
+
+
+
+
+#f2 div{
+  background: rgba(56,192,37,0.8);
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+
+#f2 div div{
+  width: 0px;
+  height: 0px;
+
+  top: 297px;
+
+}
+
+#f2 #f2_1 div{
+  width: 0px;
+  height: 0px;
+  left: 107px;
+}
+
+#f2 #f2_1:hover div{
+  position: absolute;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  width: 214px;
+  height: 194px;
+  top: 200px;
+  left: 0px;
+}
+#f2 #f2_2 div{
+  width: 0px;
+  height: 0px;
+  left: 307px;
+}
+
+#f2 #f2_2:hover div{
+  position: absolute;
+  transition-duration: 0.5s;
+  width: 214px;
+  height: 194px;
+  top: 200px;
+  left: 220px;
+}
+#f2 #f2_3 div{
+  width: 0px;
+  height: 0px;
+  left: 550px;
+}
+
+#f2 #f2_3:hover div{
+  position: absolute;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  width: 214px;
+  height: 194px;
+  top: 200px;
+  left: 440px;
+}
+
+#f3 div{
+  background: ;
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+#f3 div div{
+  height: 0px;
+  width: 0px;
+}
+#f3 #f3_1 div{
+
+  width: 0px;
+  height: 0px;
+  top: 497px;
+  left: 107px;
+}
+#f3 #f3_1:hover div{
+  position: absolute;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  width: 214px;
+  height: 194px;
+  top: 400px;
+  left: 0px;
+
+}
+
+#f3 #f3_2 div{
+
+  width: 0px;
+  height: 0px;
+  top: 497px;
+  left: 307px;
+}
+#f3 #f3_2:hover div{
+  position: absolute;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  width: 214px;
+  height: 194px;
+  top: 400px;
+  left: 220px;
+}
+
+#f3 #f3_3 div{
+
+  width: 0px;
+  height: 0px;
+  top: 497px;
+  left: 550px;
+}
+#f3 #f3_3:hover div{
+  position: absolute;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  width: 214px;
+  height: 194px;
+  top: 400px;
+  left: 440px;
+}
+
+#all div div {
+  width: 214px;
+  height: 194px;
+  border: 3px solid #333;
+
+
+}
+
+img{
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 800px){
+  #all{
+    width: 660px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  }
+  #all div{
+  float: top;
+  background: skyblue;
+  width: 100%;
+  height: 200px;
+}
+#f1{
+  height: 30%;
+}
+
+#all div div:hover{
+  background: rgba(255,171,110,0.5);
+}
+
+#f1 div{
+  background: rgba(37,171,184,1)
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+#f2 div{
+  background: rgba(56,192,37,0.8);
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+#f3 div{
+  background: ;
+  height: 100%;
+  width: 33%;
+  float: left;
+}
+#all div div {
+  width: 214px;
+  height: 194px;
+  border: 3px solid #333;
+
+}
+
+}
+@media (min-width: 1100px){
+  #all{
+    width: 660px;
+    margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+    box-shadow: 0px 0px 10px #333;
+    height: 600px;
+  }
+}
