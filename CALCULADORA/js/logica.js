@@ -551,7 +551,7 @@ function igual(){
 function clearLCD(){
 
 	document.getElementById("lcd").value="0";
-	document.getElementById("mini-lcd").value = total;
+	document.getElementById("mini-lcd").value = "";
 
 	cifra = "";
 
