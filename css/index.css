@@ -4,7 +4,7 @@
 }
 
 body{
-  background-image: url("../img/textura1.jpg");
+  background-image: url(".../img/textura1.jpg");
   height: 100%;
   width: 100%;
 }
