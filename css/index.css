@@ -4,7 +4,11 @@
 }
 
 body{
+<<<<<<< HEAD
   background-image: url("../img/textura1.jpg");
+=======
+  background-image: url(".../img/textura1.jpg");
+>>>>>>> cd7e50beb0fd1344b6790c42cce1e3df7bf668d7
   height: 100%;
   width: 100%;
 }
