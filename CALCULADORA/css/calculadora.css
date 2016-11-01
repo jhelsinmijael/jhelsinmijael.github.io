@@ -1,4 +1,4 @@
-
+@import "../../menu_cuadrados/menu_cuadrados.css";
 *{
 	margin: 0px;
 	padding: 0px;
@@ -91,6 +91,7 @@ body{
 	width: 100%;
 }
 #section1{
+	margin-top: 100px;
 	width: 650px;
 	height: 650px;
 	background: rgba(0,152,144,1);
