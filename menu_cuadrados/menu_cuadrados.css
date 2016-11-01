@@ -6,7 +6,7 @@
 #div_all{
   position: absolute;
   height: 100px;
-  width: 1300px;
+  width: 1000px;
   margin-left: 50%;
   /*chrome*/
   -webkit-transform:translateX(-50%);
