@@ -9,7 +9,7 @@ body{
 }
 /*cabecera*/
 header{
-	width: 100%;
+	width: 100vw;
 	height: 60px;
 	background: rgba(17,134,177,1);
 	color: white;
