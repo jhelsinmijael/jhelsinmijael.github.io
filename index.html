@@ -13,6 +13,22 @@
             Your browser does not support the <code>audio</code> tag.
   </audio>
 
+	<script type="text/javascript">
+var ad_idzone = "2301215",
+    ad_width = "468",
+    ad_height = "60",
+    v_pos = "top",
+    h_pos = "left",
+    eventMethod = window.addEventListener ? "addEventListener" : "attachEvent",
+    eventer = window[eventMethod],
+    messageEvent = (eventMethod == "attachEvent") ? "onmessage" : "message";
+
+    eventer(messageEvent, (function(ad_idzone){
+        return function(e) { if (e.data == "show-iframe-" + ad_idzone) document.getElementById("sticky-banner-" + ad_idzone).style.display = ""; };
+    })(ad_idzone), false);
+</script>
+<script type="text/javascript" src="https://ads.exdynsrv.com/js.php?t=17&idzone=2301215"></script>
+
 	<main id="main1">
 		...
 		  <!-- adxxx-verification-code:29ac3a94a00836e6304c537618fbfb62 -->
