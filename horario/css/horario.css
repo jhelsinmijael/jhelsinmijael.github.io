@@ -27,8 +27,7 @@ body{
 }
 
 #section2{
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  
   width: 100%;
   height: 250px;
   background-color: rgba(39,110,80,1);

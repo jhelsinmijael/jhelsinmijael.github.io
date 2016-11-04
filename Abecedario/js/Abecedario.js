@@ -1,0 +1,3 @@
+function decirVocal(var vocal){
+	
+}
