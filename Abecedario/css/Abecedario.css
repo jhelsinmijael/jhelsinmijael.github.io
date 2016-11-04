@@ -93,6 +93,8 @@ br{
   font-size: 25px;
   transform: rotate(360deg);
   color:rgba(0,128,131,1);
+  background-color: rgba(46,193,159,0.8);
+  color: white;
 }
 
 .letra .div_mitad{
