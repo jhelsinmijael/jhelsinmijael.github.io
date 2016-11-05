@@ -114,6 +114,18 @@
 			-moz-transform: translateY(-10000px);
 		}
 
+		.ad{
+		  width: auto;
+		  height: auto;
+		  position: fixed;
+		}
+		#adbyexoclick{
+		  
+		  
+		  top: 200px;
+		  left: 10px;
+		}
+
 
 
 		@media (min-width: 780px){
