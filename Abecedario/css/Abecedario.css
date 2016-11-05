@@ -64,18 +64,32 @@ br{
   background-color: white;
 }
 
+.letra:before{
+  content: '';
+  position: absolute;
+  width: 170px;
+  height: 220px;
+  border:solid 2px #333;
+  -webkit-transform:translate(-50%,-11px);
+  border-radius: 3px;
+  opacity: 0;
+}
+
 .letra:hover:before{
+  transition-duration: 0.3s;
+  opacity: 1;
   content: '';
   position: absolute;
   width: 150px;
   height: 196px;
-  border:solid 2px #333;
+  border:solid 3px #333;
   -webkit-transform:translateX(-50%);
   border-radius: 3px;
+  box-shadow: 0px 0px 4px #333 ;
 }
 
 .letra:hover .div_circle{
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   width: 40px;
   height: 40px;
   border-radius: 20px;
