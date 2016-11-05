@@ -334,12 +334,20 @@ padding: 17px 10px 10px 5px;
 
 /*::::::::::::::::::::ADS::::::::::::::::*/
 
-#adbyadxxx{
+.adxxx{
   width: auto;
   height: auto;
-  position: fixed; 
+  position: fixed;
+}
+#adbyadxxx{
+  
+  
   top: 350px;
   right: 10px;
+}
+#adbyadxxx2{ 
+  top: 350px;
+  left: 10px;
 }
 
 }
