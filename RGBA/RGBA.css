@@ -14,6 +14,7 @@
 		border: none;
 		border-radius: 5px;
 		color:white;
+		margin: 10px;
 
 		}
 		#rojo{
@@ -21,6 +22,8 @@
 			border-radius: 5px;
 			width: 60px;
 			height: 30px;
+			margin: 10px;
+
 
 		}
 		#verde{
@@ -28,12 +31,16 @@
 			border-radius: 5px;
 			width: 60px;
 			height: 30px;
+			margin: 10px;
+
 		}
 		#azul{
 			background: blue;
 			border-radius: 5px;
 			width: 60px;
 			height: 30px;
+			margin: 10px;
+
 		}
 		#copiar{
 			height: 5px;padding: 0;
@@ -44,6 +51,8 @@
 			width: 70px;
 			height:30px;
 			border-radius:5px;
+			margin: 10px;
+
 		}
 		button{
 			color: white;
