@@ -4,19 +4,39 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/Abecedario.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/Abecedario.js" type="text/javascript"></script>
   </head>
   <body>
     <header id="header1">
     <br>
       Abecedario
     </header>
-    <main id="main1">
+
+    <a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
+
+    <main id="main1">  
+
+      <div id="Abecedario">
+          <div id="div_letra1" class="div_mitad div_mitad1"><img src="music/parlante.jpg"></div>
+          <div id="div_letra2" class="div_circle">
+          </div>
+          <div id="div_letra3" class="div_mitad div_mitad2">
+            <audio id="myAudio" controls="volume">
+            <source src="music/Abecedario.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> tag.
+          </div>
+        </div>
 
       <section id="section1" class="m_section">
 
+        <audio id="myAudio"  hidden="hidden"  loop="true">
+            <source src="music/Different Heaven & EH!DE - My Heart.mp3" type="audio/mpeg">
+            Your browser does not support the <code>audio</code> tag.
+
+  </audio>
         <div id="letra_a" class="letra">
           <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/avion.png"></div>
-          <div id="div_letra2" class="div_circle"><input id="letra_a" type="submit" name="" value="a" onclick="decirVocal('a')"></div>
+          <div id="div_letra2" class="div_circle"><input id="letra_a" type="submit" name="" value="a" onclick="decirVocal()"></div>
           <div id="div_letra3" class="div_mitad div_mitad2">Avión</div>
         </div>
 
@@ -178,7 +198,7 @@
 
         
       </section>
-      
+
 
     </main>
     <footer id="footer1">
