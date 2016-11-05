@@ -337,7 +337,7 @@ padding: 17px 10px 10px 5px;
 #adbyadxxx{
   width: auto;
   height: auto;
-  position: fixed;
+  position: fixed; 
   top: 300px;
   right: 10px;
 }
