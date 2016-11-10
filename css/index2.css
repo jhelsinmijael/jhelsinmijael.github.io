@@ -174,11 +174,14 @@ padding: 17px 10px 10px 5px;
 	    position: fixed;
 	}
 	#adbyadxxx{
+
 	    top: 130px;
 	    right: 10px;
+	    left: initial;
 	}
 	#adbyadxxx2{ 
 	    top: 400px;
 	    right: 10px;
+	    left: initial;
 	}
 }
