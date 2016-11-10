@@ -152,12 +152,12 @@ padding: 17px 10px 10px 5px;
 /*::::::::::::::::::::ADS::::::::::::::::*/
 
 .adxxx{
-  width: auto;
-  height: auto;
-  position: fixed;
+  	width: auto;
+  	height: auto;
+  	position: fixed;
 }
 #adbyadxxx{ 
-  left: 610px;
+  	left: 610px;
 }
 #adbyadxxx2{ 
 	left: 50px;
