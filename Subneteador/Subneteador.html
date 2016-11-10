@@ -11,37 +11,11 @@
 </head>
 <body>
 
-	<a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
-		<style type="text/css">
-			#index input{
-			  position: fixed;
-			  border: none;
-			  height: 50px;
-			  width: 50px;
-			  right: 30px;
-			  bottom: 30px;
-			  border-radius: 25px;
-			  box-shadow: 2px 2px 8px #333;
-			  background-color: rgba(255,53,0,1);
-			  color: white;
-			  margin-left: 500px;
-			  font-size: 25px;
-			}
-			#index input:hover{
-				width: 54px;
-				height: 54px;
-				right:28px;
-			  	bottom: 27px;
-			  	border-radius: 27px;
-			}
-		</style>
+	
 
-	<header>
-		<label>
-			<a href="../index.html"><img src="../img/inicio.png" width="60px"></a>
-		</label>
-		<h1>SUBNETEO ONLINE</h1>
-	</header>
+	
+
+
 	<!--::::::INCLUDE menu_cuadrados::::-->
 
 
@@ -126,15 +100,16 @@
 		</section-->
 
 		<section id="section1">
+		
 			<div class="up">
 				<div class="contenedor">
-				<form>
-					<label class="lb_title">CLASES DE IP</label><br><br><br>
-					<div>IP</div><input id="caja_ip" type="text" name="caja_ip"  onkeyup= "definirClase()" placeholder="192.168.10.1"><br><br>
-					<div>clase</div><input id="caja_clase" type="text" name="caja_clase" readonly="" ><br><br>
-					<div>Mascara</div><input id="caja_mascara" type="text" name="caja_mascara" readonly=""><br><br>
-					<button id="btn_limpiar" type="reset" value="limpiar">Limpiar</button><br><br>
-				</form>
+					<form>
+						<label class="lb_title">CLASES DE IP</label><br><br><br>
+						<div>IP</div><input id="caja_ip" type="text" name="caja_ip"  onkeyup= "definirClase()" placeholder="192.168.10.1"><br><br>
+						<div>clase</div><input id="caja_clase" type="text" name="caja_clase" readonly="" ><br><br>
+						<div>Mascara</div><input id="caja_mascara" type="text" name="caja_mascara" readonly=""><br><br>
+						<button id="btn_limpiar" type="reset" value="limpiar">Limpiar</button><br><br>
+					</form>
 				</div>
 
 
@@ -190,6 +165,52 @@
 		<div id="social1"><a href="https://www.facebook.com/EducationalApplications456/"><img src="img/like1.png" alt=""/></a></div>
 	</div-->
 	</main>
+	<a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
+		<style type="text/css">
+			#index input{
+			  position: fixed;
+			  border: none;
+			  height: 50px;
+			  width: 50px;
+			  right: 30px;
+			  bottom: 30px;
+			  border-radius: 25px;
+			  box-shadow: 2px 2px 8px #333;
+			  background-color: rgba(255,53,0,1);
+			  color: white;
+			  margin-left: 500px;
+			  font-size: 25px;
+			}
+			#index input:hover{
+				width: 54px;
+				height: 54px;
+				right:28px;
+			  	bottom: 27px;
+			  	border-radius: 27px;
+			}
+		</style>
+
+		<header>
+			<label>
+				<a href="../index.html"><img src="../img/inicio.png" width="60px"></a>
+			</label>
+			<h1>SUBNETEO ONLINE</h1>
+		</header>
+
+		<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+		<div id="div_menu" class="contenedor">
+		<input type="checkbox" id="menu-bar">
+		<label  id="label_menu" class="icon-menu" for="menu-bar">
+			<img src="../img/inicio.png">
+		</label>
+		<nav class="menu">
+			<a href="index.html">Inicio</a>
+			<a href="">Mascotas</a>
+			<a href="">Blog</a>
+			<a href="">Contacto</a>
+		</nav>
+		</div>
+
 	<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.
 
 Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
