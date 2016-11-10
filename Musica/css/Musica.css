@@ -7,12 +7,13 @@ body{
 }
 #header1{
   width: 100%;
-  height: 60px;
-  background-color: rgba(41,143,160,1);
+  height:   100px;
+  background-color: rgba(12,12,110,0.6);
   color: white;
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
 }
+
 #main1{
   width: 90%;
   height: 100%;
@@ -31,23 +32,32 @@ body{
   background-color: red;
 }
 
+#div_musicas .div_generos{
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+
 .div_genero{
   width: 200px;
   height: 200px;
   float: left;
   border-radius: 5px;
-  margin: 10px;
+  margin: 25px;
   box-shadow: 0px 0px 5px #333;
 }
 
 .div_genero:hover{
+  width: 210px;
+  height: 210px;
   border: 5px solid #333;
+  margin: 15px;
 }
 .div_genero div img{
-  width: 90%;
-  height: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
+  width: 190px;
+  height: 90px;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 
@@ -60,13 +70,13 @@ body{
   width: 100%;
   height: 50%;
   float: bottom;
-  background-color: rgba(30,128,128,1);
+  background-color: rgba(12,12,96,0.7);
   color:white;
   font-family: forte;
   font-size: 25px;
 }
 .div_genero2:hover{
-  background-color: rgba(83,128,128,1);
+  background-color: rgba(12,12,96,0.8);
 }
 
 #div_reggaeton{
@@ -104,4 +114,21 @@ body{
 
 br{
   height: 50vh;
+}
+
+
+input{
+  width: 80px;
+  height: 40px;
+  background-color: none;
+  border-radius: 5px;
+  border: solid 2px orange;
+  color: orange;
+  font-size: 25px;
+}
+input:hover{
+  background-color: orange;
+  border-radius: 5px;
+  border: solid 2px orange;
+  color:white;
 }

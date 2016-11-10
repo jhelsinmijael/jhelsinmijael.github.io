@@ -1,4 +1,4 @@
-@import "../menu_cuadrados/menu_cuadrados.css";
+@import "../../menu_cuadrados/menu_cuadrados.css";
 *{
 			margin: 0px;
 			padding: 0px;
@@ -78,6 +78,8 @@
 		}
 		header img{
 			width: 60px;
+			color: white;
+			filter: invert(100%);
 		}
 		header label{
 			float: left;

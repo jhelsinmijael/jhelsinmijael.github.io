@@ -19,6 +19,7 @@ header{
 }
 header img{
 	width: 60px;
+	filter: invert(100%);
 }
 header label{
 	float: left;
