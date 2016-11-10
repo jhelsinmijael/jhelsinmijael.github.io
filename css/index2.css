@@ -156,20 +156,28 @@ padding: 17px 10px 10px 5px;
   height: auto;
   position: fixed;
 }
-#adbyadxxx{
+#adbyadxxx{ 
   
-  
-  top: 130px;
-  right: 10px;
 }
 #adbyadxxx2{ 
-  top: 400px;
-  right: 10px;
 }
 
 /*NAVEGDOR WEB PC*/
 @media (min-width: 1000px){
-  #div_all{
-  	margin-left: 10px;
-  }
+	#div_all{
+	  	margin-left: 10px;
+	}
+  	.adxxx{
+	 	width: auto;
+	    height: auto;
+	    position: fixed;
+	}
+	#adbyadxxx{
+	    top: 130px;
+	    right: 10px;
+	}
+	#adbyadxxx2{ 
+	    top: 400px;
+	    right: 10px;
+	}
 }
