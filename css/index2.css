@@ -149,9 +149,6 @@ padding: 17px 10px 10px 5px;
 }
 
 
-
-
-
 /*::::::::::::::::::::ADS::::::::::::::::*/
 
 .adxxx{
@@ -162,23 +159,18 @@ padding: 17px 10px 10px 5px;
 #adbyadxxx{
   
   
-  top: 350px;
+  top: 130px;
   right: 10px;
 }
 #adbyadxxx2{ 
-  top: 350px;
-  left: 10px;
+  top: 550px;
+  right: 10px;
 }
 
 }
-@media (min-width: 1100px){
-  #all{
-    width: 660px;
-    margin-left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-    box-shadow: 0px 0px 10px #333;
-    height: 600px;
+@media (min-width: 1000px){
+  #div_all{
+  	margin-left: 150px;
+  	background-color: red;
   }
 }
