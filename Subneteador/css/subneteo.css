@@ -386,7 +386,7 @@ input{
 @media (min-width: 1024px){
 	#section1{
 
-		width: 60%;
+		width: 700px;
 		padding: 10px 10px;
 	}
 	#section1 .up .contenedor{
@@ -436,7 +436,7 @@ input{
 	position: fixed;
 	top: 200px;
 }
-#adbyadxxx{
+#adbyadxxx1{
 	left: 10px;
 }
 #adbyadxxx2{
