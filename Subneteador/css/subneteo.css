@@ -429,3 +429,16 @@ input{
 	}
 
 }
+
+/*:::::::::::::::::::ADS ADXXX::::::::::::::::::::*/
+
+.adxxx{
+	position: fixed;
+	top: 200px;
+}
+#adbyadxxx{
+	left: 10px;
+}
+#adbyadxxx2{
+	right: 10px;
+}
