@@ -4,7 +4,7 @@
 			padding: 0px;
 	}
 		body{
-			background: white;
+			background: rgba(128,128,128,0.1);
 		}
 		#boton{
 
@@ -68,20 +68,23 @@
 		}*/
 		/*cabecera*/
 		header{
+			background-color: white;
+		}
+		#cabecera{
 			width: 100vw;
 			height: 60px;
 			background: rgba(16,197,166,1);
 			color:white;
 			font-size: 30px;
-			box-shadow: 0px 3px 6px gray;
+			box-shadow: 0px 0px 3px gray;
 
 		}
-		header img{
+		#cabecera img{
 			width: 0px;
 			color: white;
 			filter: invert(100%);
 		}
-		header label{
+		#cabecera label{
 			float: left;
 		}
 
@@ -101,7 +104,7 @@
 		section{
 			padding-top: 100px;
 			width: 100%;
-			box-shadow: 0px 0px 7px black;
+			box-shadow: 0px 0px 2px gray;
 			padding: 10px;
 			background: white;
 			margin-top: 150px;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="css/plantilla.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/plantillaconads.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <header id="header1">
@@ -19,22 +19,68 @@
         <br>
         SECTION2
       </section>
-      <section id="add" style="width:auto;heigth:auto;background-color:red;float:right;">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- google -->
-        ---
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-9873877241418599"
-             data-ad-slot="1545063264"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </section>
     </main>
+
     <footer id="footer1">
 
     </footer>
+
+    <!--::::::::::::::::::::ADS::::::::::::::::::::::::-->
+
+    <div id="div_ad1" class="div_ad">
+    .
+      
+    </div>
+
+    <div id="div_ad2" class="div_ad">
+      .
+    </div>
+
+    <!--::::::::::::::::::::FIN DE ADS::::::::::::::::::::::::-->
+    
+    <!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+    <div id="div_menu" class="contenedor">
+      <input type="checkbox" id="menu-bar">
+      <label  id="label_menu" class="icon-menu" for="menu-bar">
+        <img src="../img/inicio.png">
+      </label>
+      <nav class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="">Canal</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+    </div>
+    <!--fin de menu-->
+
+    <!--::::::::::::::::::::::BUTTON FLOTANTE::::::::::::::::-->
+    <a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
+    <style type="text/css">
+      #index input{
+        position: fixed;
+        border: none;
+        height: 50px;
+        width: 50px;
+        right: 30px;
+        bottom: 30px;
+        border-radius: 25px;
+        box-shadow: 2px 2px 8px #333;
+        background-color: rgba(255,53,0,0.9);
+        color: white;
+        margin-left: 500px;
+        font-size: 25px;
+        cursor: pointer;
+      }
+      #index input:hover{
+        width: 54px;
+        height: 54px;
+        right:28px;
+          bottom: 27px;
+          border-radius: 27px;
+      }
+    </style>
+    <!--::::::::::::::::::::::FIN DE BUTTON FLOTANTE::::::::::::::::-->
+
   </body>
 </html>
+

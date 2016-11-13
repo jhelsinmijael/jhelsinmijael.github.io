@@ -6,10 +6,16 @@
     <link rel="stylesheet" href="css/musica.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <header id="header1"><br>
+    <header id="header1">
+    <div id="div_espacio"></div>
       Musica para todo el Dia
     </header>
     <main id="main1">
+
+      <input id="input1" class="input" type="submit" name="" value="button">
+      <input id="input2" class="input" type="submit" name="" value="button">
+      <input id="input3" class="input" type="submit" name="" value="button">
+      <input id="input4 " class="input" type="submit" name="" value="button">
 
       <section id="section1" class="m_section">
 
@@ -42,18 +48,86 @@
               <div class="div_genero2"><br>Rap</div>
             </div>
           </div>  
+
+          <div class="div_generos">
+            <div id="div_electro" class="div_genero">
+              <div class="div_genero1"><img src="img/electro.png"></div>
+              <div class="div_genero2"><br>Electronica</div>
+            </div>
+          </div>
+
+          <div class="div_generos">
+            <div id="div_reggaeton" class="div_genero">
+              <div class="div_genero1"><img src="img/reggaeton.png"></div>
+              <div class="div_genero2"><br>Reggaeton</div>
+            </div>
+          </div>
+          
+          <div class="div_generos">
+            <div id="div_rock" class="div_genero">
+              <div class="div_genero1"><img src="img/rock.jpg"></div>
+              <div class="div_genero2"><br>Rock</div>
+            </div>
+          </div>
+
+          <div class="div_generos">
+            <div id="div_rap" class="div_genero">
+              <div class="div_genero1"><img src="img/rap.png"></div>
+              <div class="div_genero2"><br>Rap</div>
+            </div>
+          </div>  
             
         </div>
+
       </section>
 
-      <input id="input1" class="input" type="submit" name="" value="button">
-      <input id="input2" class="input" type="submit" name="" value="button">
-      <input id="input3" class="input" type="submit" name="" value="button">
-      <input id="input4 " class="input" type="submit" name="" value="button">
+      
 
     </main>
     <footer id="footer1">
 
     </footer>
+
+    <!--::::::::::::::::::::::BUTTON FLOTANTE::::::::::::::::-->
+    <a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
+    <style type="text/css">
+      #index input{
+        position: fixed;
+        border: none;
+        height: 50px;
+        width: 50px;
+        right: 30px;
+        bottom: 30px;
+        border-radius: 25px;
+        box-shadow: 2px 2px 8px #333;
+        background-color: rgba(255,53,0,0.9);
+        color: white;
+        margin-left: 500px;
+        font-size: 25px;
+      }
+      #index input:hover{
+        width: 54px;
+        height: 54px;
+        right:28px;
+          bottom: 27px;
+          border-radius: 27px;
+      }
+    </style>
+    <!--::::::::::::::::::::::FIN DE BUTTON FLOTANTE::::::::::::::::-->
+
+    <!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+    <div id="div_menu" class="contenedor">
+      <input type="checkbox" id="menu-bar">
+      <label  id="label_menu" class="icon-menu" for="menu-bar">
+        <img src="../img/inicio.png">
+      </label>
+      <nav class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="">Canal</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+    </div>
+    <!--fin de menu-->
   </body>
 </html>

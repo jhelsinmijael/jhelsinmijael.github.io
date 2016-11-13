@@ -275,7 +275,7 @@ br{
   @media(min-width: 1000px){
 
     #main1{
-      width: 80vw;
+      width: 600px;
       height: 100%;
       margin-left: 10vw;
     }
