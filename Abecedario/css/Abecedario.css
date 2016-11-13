@@ -7,7 +7,7 @@ body{
 }
 #header1{
   width: 100vw;
-  height: 100px;
+  height: 80px;
   background-color: rgba(0,132,128,1);
   color: white;
   text-align: center;
@@ -275,19 +275,19 @@ br{
   @media(min-width: 1000px){
 
     #main1{
-      width: 600px;
+      width: 700px;
       height: 100%;
-      margin-left: 10vw;
+      margin-left: 0;
     }
 
     #Abecedario audio{
       width: 50%;
-      margin-left: 25%;
+      margin-left: 0;
     }
 
     #Abecedario img{
       width: 50%;
-      margin-left: 25%;
+      margin-left: 0;
     }
 
   }
