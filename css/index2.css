@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c8564fbb2aa7a5cefdc69bea8fb9860ee3a1a053
 *{
   margin: 0;
   padding: 0;
@@ -64,6 +68,7 @@ padding: 17px 10px 10px 5px;
   text-align: center;
   font-size: 40px;
   font-family: forte;
+  font-family: 'Lobster', cursive;
   border-radius: 5px;
   margin-left: 1%;
   box-shadow: 0px 0px 10px #333;
@@ -184,6 +189,7 @@ padding: 17px 10px 10px 5px;
 @media (min-width: 1000px){
 	#div_all{
 	  	margin-left: 10px;
+		margin-top:10px;
 	}
   	.adxxx{
 	 	width: auto;
