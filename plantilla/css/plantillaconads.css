@@ -1,0 +1,142 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: rgba(22,71,93,0.1);
+}
+#header1{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+#main1{
+  width: 700px;
+  height: 100%;
+  
+}
+#section1{
+  width: 100%;
+  height: 250px;
+  margin: 10px 0px 10px 0px;
+}
+
+.section1{
+  background-color: rgba(82,128,128,0.6);
+}
+
+#section2{
+  width: 100%;
+  height: 250px;
+  
+}
+
+.section2{
+  background-color: rgba(39,110,80,0.6);
+}
+
+.m_section{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+br{
+  height: 50vh;
+}
+
+/*::::::::::::::::::::::::::MENU::::::::::::::::::::::::::*/
+#div_menu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+}
+#menu-bar{
+  display: none;
+}
+
+#label_menu{
+  position: absolute;
+  top: 0px;
+  float: left;
+  font-size: 28px;
+  margin: 0px 0;
+  cursor: pointer;/*mano*/
+}
+#label_menu img{
+  margin-top: 10px;
+  top: 10px;
+  left: 0px;
+  width: 60px;
+  height: 60px;
+}
+
+.menu{
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background:  rgba(51,51,51,0.9);
+  transition: all 0.5s;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  font-size: 20px;
+}
+
+.menu a{
+  display: block;
+  color: #fff;
+  height: 40px;
+  text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.menu a:hover{
+  background: rgba(255,255,255,0.3);
+}
+
+#menu-bar:checked ~ .menu{
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  transform: translateX(0%);
+}
+
+/*::::::::::::::::::FIN DE MENU:::::::::::::::::::::*/
+
+
+/*::::::::::::::::::ADS:::::::::::::::::::::*/
+
+.div_ad{
+  position: fixed;
+  width: 300px;
+  height: 500px;
+  background-color: rgba(0,60,128,0.5);
+  top: 90px;
+}
+#div_ad1{
+  
+  left: 10px;
+}
+
+#div_ad2{
+  
+  right: 10px;
+}
+/*::::::::::::::::::FIN DE ADS:::::::::::::::::::::*/
+
+
+/*::::::::::::::::::WHITE ELEMENTS:::::::::::::::::::::*/
+
+.white{
+  background-color: white;
+}
+
+/*::::::::::::::::::FIN WHITE ELEMENTS:::::::::::::::::::::*/
