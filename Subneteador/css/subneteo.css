@@ -13,6 +13,10 @@ body{
 	/*background: rgba(37,128,91,0.2);*/
 	background-color: grey;
 }
+body:hover #index input{
+	transition-duration: 0.8s;
+	right: 30px;
+}
 /*cabecera*/
 header{
 	position: fixed;
