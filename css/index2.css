@@ -86,18 +86,16 @@ padding: 17px 10px 10px 5px;
   height: auto;
 }
 
-#section1{
-  float: left;
-}
+
 
 #div_all{
   float: bottom;
   width: 1000px;
   height: 100%;
-  margin: 2%;
+
   box-shadow: 0px 0px 10px #333;
   height: 1000px;
-  margin-left: 0px;
+
   border:solid 5px #333;
   border-radius: 5px;
 }
@@ -223,7 +221,7 @@ padding: 17px 10px 10px 5px;
 /*NAVEGDOR WEB PC*/
 @media (min-width: 1000px){
 	#div_all{
-	  	margin-left: 10px;
+	  	
 		margin-top:10px;
 	}
   	.adxxx{
