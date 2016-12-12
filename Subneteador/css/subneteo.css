@@ -10,7 +10,8 @@
 }
 
 body{
-	background: rgba(37,128,91,0.2);
+	/*background: rgba(37,128,91,0.2);*/
+	background-color: grey;
 }
 /*cabecera*/
 header{
@@ -227,10 +228,13 @@ header label{
 
 #btn_limpiar{
 	border: none;
-	border-radius: 5px;
+	border: 1px solid rgba(37,128,91,1);
 	padding: 11px 25px;
-	background: rgba(37,128,91,1);
-	color: white;
+	border-radius: 2px;
+	background: none;
+	color: rgba(37,128,91,1);
+	cursor: pointer;
+	font-weight: bold;
 }
 
 /*SECTION 2 FORMULA*/

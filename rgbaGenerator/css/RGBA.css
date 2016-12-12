@@ -4,7 +4,8 @@
 			padding: 0px;
 	}
 		body{
-			background: rgba(128,128,128,0.1);
+			/*background: rgba(128,128,128,0.1);*/
+			background-color: grey;
 		}
 		#boton{
 
