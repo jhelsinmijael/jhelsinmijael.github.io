@@ -5,7 +5,7 @@
 	}
 		body{
 			/*background: rgba(128,128,128,0.1);*/
-			background-color: grey;
+			background-color: rgba(70,70,70,1);
 		}
 		#boton{
 
@@ -70,6 +70,7 @@
 		/*cabecera*/
 		header{
 			background-color: white;
+			box-shadow: 0px 2px 2px #333;
 		}
 		#cabecera{
 			width: 100vw;
@@ -109,6 +110,7 @@
 			padding: 10px;
 			background: white;
 			margin-top: 150px;
+			box-shadow: 3px 3px 3px #333;
 		}
 		p{
 			margin: 25px;

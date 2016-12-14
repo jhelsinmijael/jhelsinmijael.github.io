@@ -11,7 +11,7 @@
 
 body{
   /*background-image: url("../img/textura1.jpg");*/
-  background-color: grey;
+  background-color: rgba(70,70,70,1);
   height: 100%;
   width: 100%;
 }

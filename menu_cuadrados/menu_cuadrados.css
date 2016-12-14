@@ -17,7 +17,7 @@
   /*opera*/
   -o-transform:translateX(-50%);
   margin-top: 60px;
-  box-shadow: 3px 3px 3px gray;
+  box-shadow: 3px 3px 3px #333;
   display:flex;
 }
 #div_all .div_second{
