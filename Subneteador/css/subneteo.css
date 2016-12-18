@@ -365,6 +365,7 @@ input{
 	transition: all 0.5s;
 	-webkit-transform: translateX(-100%);
 	-moz-transform: translateX(-100%);
+	box-shadow: 1px 1px 3px black;
 	font-size: 20px;
 }
 

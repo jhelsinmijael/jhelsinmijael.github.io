@@ -3,16 +3,18 @@
   padding: 0px;
 }
 body{
-  background-color: rgba(22,71,93,0.1);
+  background-color: rgba(70,70,70,1);
 }
 #header1{
+  position: fixed;
+  top: 0px;
   width: 100%;
-  height: 40px;
-  background-color: rgba(0,71,238,0.8);
+  height: 60px;
+  background-image: url("../../img/header.png");
   color: white;
   text-align: center;
   font-size: 25px;
-  box-shadow: 0px 0px 4px gray;
+  box-shadow: 0px 2px 2px #333;
 }
 
 #div_espacio{
@@ -24,7 +26,7 @@ body{
   width: 700px;
   height: 100%;
   margin-left: 50%;
-  margin-top: 50px;
+  margin-top: 60px;
   -webkit-transform: translateX(-50%);
   border-left:1px solid rgba(128,128,128,0.4); 
   border-right:1px solid rgba(128,128,128,0.4);
@@ -33,99 +35,7 @@ body{
 #section1{
   width: 700px;
   height: 1000px;
-  box-shadow: 0px 0px 5 px rgba(22,71,93,0.2);
-}
-
-#div_musicas{
-  width: 100%;
-  height: auto;
-  background-color: red;
-}
-
-#div_musicas .div_generos{
-  width: 200px;
-  height: 200px;
-  float: left;
-  margin-left: 25px;
-  background-color: white
-}
-
-.div_genero{
-  width: 150px;
-  height: 150px;
-  float: left;
-  border-radius: 5px;
-  margin: 25px;
-  box-shadow: 0px 0px 5px #333;
-}
-
-.div_genero:hover{
-  width: 156px;
-  height: 156px;
-  border: 5px solid #333;
-  margin: 15px;
-}
-.div_genero div img{
-  width: 150px;
-  height: 90px;
-  margin-left: 5px;
-  margin-top: 5px;
-}
-
-
-.div_genero1{
-  width: 100%;
-  height: 50%;
-  float: top;
-}
-.div_genero2{
-  width: 100%;
-  height: 50%;
-  float: bottom;
-  background-color: rgba(0,115,255,0.8);
-  color:white;
-  font-family: forte;
-  font-size: 25px;
-}
-.div_genero2:hover{
-  background-color: rgba(12,12,96,0.8);
-}
-
-#div_reggaeton{
-  background-color: white;
-}
-
-#div_electro{
-  background-color: white;
-}
-
-#div_rock{
-  background-color: white;
-}
-
-#div_rap{
-  background-color: white;
-}
-
-
-#section2{
-  width: 100%;
-  height: 250px;
-  background-color: rgba(39,110,80,1);
-}
-
-.m_section{
-  color: white;
-  text-align: center;
-  font-size: 30px;
-
-}
-.m_section:hover{
-  
-}
-
-br{
-  height: 10px;
+  box-shadow: 2px 2px 2px #333;
 }
 
 
@@ -149,6 +59,63 @@ input:hover{
 
 .white{
   background-color: white;
+}
+
+#section_left{
+  position: fixed;
+  top: 60px;
+  width: 320px;
+  height: 100%;
+}
+#section_rigth{
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  width: 320px;
+  height: 100%;
+  border-radius: 3px;
+}
+
+#section_left:hover div{
+  transition-duration: 0.3s;
+  transform: translateX(100px);
+}
+
+#section_rigth:hover div{
+  transition-duration: 0.3s;
+  transform: translateX(-100px);
+}
+
+.div_next_sig{
+  transition-duration: 0.3s;
+  height: 40px;
+  position: absolute;
+  top: 40%;
+  width: 100px;
+  background: #333;
+  color: #333;
+  padding: 10px;
+  box-shadow: 2px 2px 3px rgba(30,30,30,1);
+
+}
+
+#section_rigth div{
+  right: -110px;
+}
+#section_left div{
+  left: -110px;
+}
+
+.div_next_sig a button{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgba(0,163,146,1);
+  border: none;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 2px 2px 3px rgba(30,30,30,1);
+  font-size: 25px;
 }
 
 /*::::::::::::::::::::::::::MENU::::::::::::::::::::::::::*/
@@ -212,3 +179,7 @@ input:hover{
 }
 
 /*::::::::::::::::::FIN DE MENU:::::::::::::::::::::*/
+
+@media(min-width: 780px){
+  
+}
