@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: rgba(193,193,193,1);
+  height: 100%;
+  width: 100%;
+}
+
+#header1{
+  width: 100vw;
+  height: 50px;
+  background-color: rgba(223,0,36,1);
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: forte;
+  font-family: 'Lobster', cursive;
+
+}
+
+nav{
+  width: 60px;
+  height: all;
+  background-color: black;
+  float: left;
+}
+
+nav div{
+  width: 100%;
+  height: 100%;
+}
+
+nav div div{
+  height: 58px;
+  width: 58px;
+  border: solid 1px #333;
+}
+
+nav div div:hover{
+  border-right: 5px solid rgba(9,128,128,1);
+}
+
+nav div div a{
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+}
+
+nav div div img{
+  margin: 5px;
+}
+
+nav div div:hover{
+  background: #333;
+}
+
+#section1{
+  float: left;
+  width: 70%;
+  height: 600px;
+}
+
+
+
+#div_all{
+  margin: 40px;
+  float: left;
+  width: 90vw;
+  height: auto;
+  background: rgba(150,150,150,1);
+  padding:  20px 0px;
+
+  
+}
+#div_all .div_fl{
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#div_all div div{
+  width: 300px;
+  height: 200px;
+  background-color: rgba(110,110,110,1);
+  float: left;
+  margin: 25px;
+  margin-right: 25px;
+}
+
+#div_all div div img{
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 5px #333;
+  margin-top: 20px;
+}
+#div_all div div img:hover{
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 5px #333;
+  margin-top: 15px;
+  border: 5px solid #333;
+}
+
+@media(min-width: 650px){
+  #section1{
+  float: left;
+  width: 95%;
+  height: 600px;
+}
+}
+
+@media(min-width: 350px){
+  #section1{
+  float: left;
+  width: 80%;
+  height: 600px;
+}
+}
+
+.infoshow{
+  color: white;
+  position: absolute;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  background: rgba(50,50,50,0.7);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#div_all div div div{
+  width: 0px;
+  height: 0px;
+  background: #333;
+  position: absolute;
+  margin: 0px;
+  
+}
+
+#div_all div div .border{
+  margin-top: 100px;
+}
+
+#div_all div div:hover .border{
+  transition-duration: 0.2s;
+  width: 5px;
+  height: 200px;
+  margin: 0px;
+}
+
+#div_all div div .border2{
+  margin-left: 150px;
+}
+
+#div_all div div:hover .border2{
+  transition-duration: 0.2s;
+  width: 300px;
+  height: 5px;
+  margin: 0px;
+}
+
+#div_all div div .border3{
+  margin-top: 100px;
+  margin-left: 295px;
+}
+
+#div_all div div:hover .border3{
+  transition-duration: 0.2s;
+  width: 5px;
+  height: 200px;
+  margin-top: 0px;
+}
+
+#div_all div div .border4{
+  margin-left: 150px;
+  margin-top: 195px;
+}
+
+#div_all div div:hover .border4{
+  transition-duration: 0.2s;
+  width: 300px;
+  height: 5px;
+  margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
