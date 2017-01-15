@@ -7,7 +7,7 @@
 
 body{
   /*background: rgba(193,193,193,1);*/
-  background-image: url("../img/degradado3.jpg");
+  background-image: url("../img/degradado5.jpg");
   height: 100%;
   width: 100%;
 }
@@ -160,6 +160,7 @@ nav div div:hover{
 @media(min-width: 500px){
 	#div_right{
 		position: absolute;
+		right: 20px;
 	}
 }
 
