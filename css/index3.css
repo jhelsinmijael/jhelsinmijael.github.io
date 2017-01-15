@@ -83,8 +83,9 @@ nav div div:hover{
 	margin:5% 5%;
 	background: rgba(147,169,213,1);
 	border-radius: 10px;
-	font-size: 18px;
-	color: darkblue;
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
 }
 
 
