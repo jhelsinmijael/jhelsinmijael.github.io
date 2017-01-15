@@ -65,12 +65,47 @@ nav div div:hover{
   height: 600px;
 }
 
+#div_right{
+	position: absolute;
+	margin: 0px;
+	width: 250px;
+	height: 570px;
+	background: gray;
+	float: left;
+	margin: 20px 0px;
+	top: 50px;
+	right: 20px;
+}
+
+#div_right div{
+	width: 90%;
+	height: 45%;
+	margin:5% 5%;
+	background: rgba(147,169,213,1);
+	border-radius: 10px;
+}
+
+
+#div_right div .div_top{
+	margin: 0px;
+	background: rgba(6,105,178,1);
+	width: 100%;
+	height: 40px;
+	color: white;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-size: 25px;
+	font-weight: bold;
+}
 
 
 #div_all{
-  margin: 40px;
+	float: left;
+  margin: 20px;
   float: left;
-  width: 90vw;
+  width: 350px;
   height: auto;
   background: rgba(150,150,150,1);
   padding:  20px 0px;
@@ -82,6 +117,7 @@ nav div div:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 28px 0px;
 }
 
 
@@ -90,8 +126,8 @@ nav div div:hover{
   height: 200px;
   background-color: rgba(110,110,110,1);
   float: left;
-  margin: 25px;
-  margin-right: 25px;
+  margin: 5px;
+  margin-right: 5px;
 }
 
 #div_all div div img{
@@ -102,26 +138,50 @@ nav div div:hover{
   margin-top: 20px;
 }
 #div_all div div img:hover{
-  width: 160px;
-  height: 160px;
   border-radius: 100px;
   box-shadow: 0px 0px 5px #333;
   margin-top: 15px;
   border: 5px solid #333;
 }
 
-@media(min-width: 650px){
-  #section1{
-  float: left;
-  width: 95%;
-  height: 600px;
-}
-}
+
 
 @media(min-width: 350px){
   #section1{
   float: left;
   width: 80%;
+  height: 600px;
+}
+}
+
+@media(min-width: 650px){
+  #section1{
+	  float: left;
+	  width: 90%;
+	  height: 600px;
+	}
+	#div_all{
+		width: 60vw;
+	}
+}
+@media(min-width: 1100px){
+  #section1{
+  float: left;
+  width: 90%;
+  height: 600px;
+}
+#div_all{
+	width: 72Vw;
+}
+#div_all div div{
+	margin-left: 0px;
+}
+}
+
+@media(min-width: 1300px){
+  #section1{
+  float: left;
+  width: 95%;
   height: 600px;
 }
 }
@@ -180,7 +240,7 @@ nav div div:hover{
 }
 
 #div_all div div .border4{
-  margin-left: 150px;
+  margin-left: 145px;
   margin-top: 195px;
 }
 
