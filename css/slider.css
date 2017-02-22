@@ -1,0 +1,83 @@
+#slider{
+	padding: 0px;
+	margin: 0px;
+	margin-top: 20px;
+	width: 100%;
+	float: left;
+	border-radius: 3px;
+	box-shadow: 0px 0px 1px rgba(50, 50, 50, 0.3);
+}
+
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+
+	animation: cambio 20s infinite alternate;
+	margin: 0px;
+
+	overflow: hidden;
+
+	/*codigo para que el keyframe se ejecute de ida y vuela-><-*/
+	/*animation-direction: alternate;*arriba*/
+}
+
+.slider li{
+	list-style: none;
+	width: 100%;
+	overflow: hidden;
+
+}
+
+.p1,.p2{
+	position: absolute;
+	margin: 0px;
+	background: #333;
+	border: 1px solid white;
+	color: white;
+	font-size: 200%;
+	font-weight: bold;
+	padding: 0px 8%;
+	opacity: 1;
+	margin-left: 10%;
+	box-shadow: 2px 2px 5px #333;
+}
+.slider:hover p{
+	transition-duration: 0.3s;
+	opacity: 0.8;
+}
+.p1{
+	margin-top: 50px;
+}
+.p2{
+	margin-top: 150px;
+}
+
+.slider img{
+	width: 100%;
+}
+
+@keyframes cambio{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	/*tiempo de transicion de una imagen a otra*/
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+

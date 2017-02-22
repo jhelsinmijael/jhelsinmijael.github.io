@@ -12,6 +12,7 @@
 body{
 	/*background: rgba(37,128,91,0.2);*/
 	background-color: rgba(70,70,70,1);
+	min-width: 700px;
 }
 body:hover #index input{
 	transition-duration: 0.8s;
@@ -29,6 +30,7 @@ header{
 	box-shadow: 0px 2px 2px #333;
 	font-size: 20px;
 	font-family: 'Ruslan Display', cursive;
+
 
 }
 header img{
@@ -95,13 +97,15 @@ header label{
 	margin-top: 50px;
 	width: 100%;
 	padding: 10px 10px;
-	box-shadow: 0px 0px 5px #333;
+	box-shadow: 1px 1px 5px black;
 	text-align: center;
 	margin-left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	background: white;
+	border-radius: 3px;
+	border-top: 3px solid rgba(17,147,182,1);
 }
 
 
@@ -119,7 +123,7 @@ header label{
 
 #section1 .up div{
 	border-radius: 5px;
-	border: 1px solid rgba(37,128,91,1);
+	
 
 }
 #section1 .up div div{
@@ -239,6 +243,10 @@ header label{
 	color: rgba(37,128,91,1);
 	cursor: pointer;
 	font-weight: bold;
+}
+#btn_limpiar:hover{
+	background-color: rgba(37,128,91,1);
+	color: white;
 }
 
 /*SECTION 2 FORMULA*/
@@ -434,24 +442,11 @@ input{
 
 	#section1 .up div{
 		background-color: white;
-		box-shadow: 0px 0px 5px #333;
+		box-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
 	}
 
 	input{
 		cursor: pointer;
 	}
 
-}
-
-/*:::::::::::::::::::ADS ADXXX::::::::::::::::::::*/
-
-.adxxx{
-	position: fixed;
-	top: 200px;
-}
-#adbyadxxx1{
-	left: 10px;
-}
-#adbyadxxx2{
-	right: 10px;
 }

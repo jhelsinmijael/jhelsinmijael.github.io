@@ -81,6 +81,32 @@
 		</div>
 	</div>
 
+	<center>
+
+		<div style="background-color:white;border-radius:3px;justify-content: center;width: 700px;margin-top: 20px;padding: 10px;box-shadow: 1px 1px 5px black;border-top: 3px solid orange">
+			<h3>¿Que es?</h3>
+			<p>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</p>
+		</div>
+
+		<div style="width: 700px;margin-top: 20px;padding: 0px;height: 50px;">
+			<div style="box-shadow: 1px 1px 5px black;background: white;border-radius: 3px; width: 30%; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);">
+				<h4>Clase A</h4>
+				<p><strong>from:</strong>0.0.0.0 </p>
+				<p><strong>to:</strong> 127.255.255.255</p>
+			</div>
+			<div style="box-shadow: 1px 1px 5px black;background: white;border-radius: 3px; width: 30%; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);margin:0px 5%;">
+				<h4>Clase B</h4>
+				<p><strong>from:</strong>128.255.255.255</p>
+				<p><strong>to:</strong>192.255.255.255</p>
+			</div>
+			<div style="box-shadow: 1px 1px 5px black;background: white;border-radius: 3px; width: 30%; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);">
+				<h4>Clase C</h4>
+				<p><strong>from:</strong>193.255.255.255</p>
+				<p><strong>to:</strong>223.255.255.255</p>
+			</div>
+		</div>
+
+	</center>
 	<!--fin de menu cuadrado-->
 	<main>
 		<!--<section id="section2">
@@ -100,7 +126,7 @@
 		</section-->
 
 		<section id="section1">
-		
+
 			<div class="up">
 				<div class="contenedor">
 					<form>
@@ -127,93 +153,93 @@
 						<option>64</option>
 						<option>128</option>
 
-					<select><br><br>
-					<div>Numero de host </div>
-					<input id="caja_numero_host" type="text" name="" onkeyup= "definirSubredes_host() " readonly=""><br><br>
-					<div>Mascara de subred</div>
-					<input id="mask" type="text" name="" readonly=""><br><br>
-					<div>Octetos</div>
-					<input id="bit" type="text" name="" readonly="">
-				</div>
+						<select><br><br>
+							<div>Numero de host </div>
+							<input id="caja_numero_host" type="text" name="" onkeyup= "definirSubredes_host() " readonly=""><br><br>
+							<div>Mascara de subred</div>
+							<input id="mask" type="text" name="" readonly=""><br><br>
+							<div>Octetos</div>
+							<input id="bit" type="text" name="" readonly="">
+						</div>
 
-			</div>
+					</div>
 
-			<div class="down">
-			<center>
-				<table id="tabla1">
-					<thead>
-						<td>numero</td>
-						<td>direccion</td>
-						<td>1ra ip</td>
-						<td>ultima ip</td>
-						<td>broadcast</td>
-					</thead>
-				</table>
-				</center>
-			</div>
-		</section>
+					<div class="down">
+						<center>
+							<table id="tabla1">
+								<thead>
+									<td>numero</td>
+									<td>direccion</td>
+									<td>1ra ip</td>
+									<td>ultima ip</td>
+									<td>broadcast</td>
+								</thead>
+							</table>
+						</center>
+					</div>
+				</section>
 
 
 		<!--div id="caja">
 		<div id="social1"><a href="https://www.facebook.com/EducationalApplications456/"><img src="img/like1.png" alt=""/></a></div>
 	</div-->
-	</main>
-	<a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
-		<style type="text/css">
-			#index input{
-				transition-duration: 0.9s;
-			  position: fixed;
-			  border: none;
-			  height: 50px;
-			  width: 50px;
-			  right: -100px;
-			  bottom: 50px;
-			  border-radius: 25px;
-			  box-shadow: 2px 2px 8px #333;
-			  background-color: rgba(255,53,0,1);
-			  color: white;
-			  margin-left: 500px;
-			  font-size: 25px;
-			}
-			#index input:hover{
-				width: 50px;
-				height: 50px;
-				right:30px;
-			  	bottom: 50px;
-			  	border-radius: 27px;
-			  	background-color: rgba(255,53,0,0.8);
-			}
-		</style>
+</main>
+<a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
+<style type="text/css">
+	#index input{
+		transition-duration: 0.9s;
+		position: fixed;
+		border: none;
+		height: 50px;
+		width: 50px;
+		right: -100px;
+		bottom: 50px;
+		border-radius: 25px;
+		box-shadow: 2px 2px 8px #333;
+		background-color: rgba(255,53,0,1);
+		color: white;
+		margin-left: 500px;
+		font-size: 25px;
+	}
+	#index input:hover{
+		width: 50px;
+		height: 50px;
+		right:30px;
+		bottom: 50px;
+		border-radius: 27px;
+		background-color: rgba(255,53,0,0.8);
+	}
+</style>
 
-		<header>
-			<label>
-				<a href="../index.html"><img src="../img/inicio.png" width="60px"></a>
-			</label>
-			<h1>SUBNETEO ONLINE</h1>
-		</header>
+<header>
+	<label>
+		<a href="../index.html"><img src="../img/inicio.png" width="60px"></a>
+	</label>
+	<h1>SUBNETEO ONLINE</h1>
+</header>
 
-		<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
-		<div id="div_menu" class="contenedor">
-			<input type="checkbox" id="menu-bar">
-			<label  id="label_menu" class="icon-menu" for="menu-bar">
-				<img src="../img/inicio.png">
-			</label>
-			<nav class="menu">
-				<a href="../index.html">Inicio</a>
-				<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
-				<a href="">Blog</a>
-				<a href="">Contacto</a>
-			</nav>
-		</div>
-		<!--fin de menu-->
+<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+<div id="div_menu" class="contenedor">
+	<input type="checkbox" id="menu-bar">
+	<label  id="label_menu" class="icon-menu" for="menu-bar">
+		<img src="../img/inicio.png">
+	</label>
+	<nav class="menu">
+		<a href="../index.html">Inicio</a>
+		<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
+		<a href="">Blog</a>
+		<a href="">Contacto</a>
+	</nav>
+</div>
+<!--fin de menu-->
 
 
 
-	<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.
+<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.
 
-		Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
-	</footer>
-	<script>desactivar()</script>
+	Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+</footer>
+<script>desactivar()</script>
 </body>
 </html>
 
