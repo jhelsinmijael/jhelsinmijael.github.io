@@ -6,122 +6,142 @@
 	<meta name="keywords" content="generador de codigo rgba, rgba generator, RGBA, CODIGO DE COLORES,">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/logic.js" type="text/javascript"></script>
 
 	<link href="css/RGBA.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
-	<body>
-		
+<body style="background: rgba(16,197,166,0.1);" id="body">
 
-		<!--::::::::::::::::::MENU CUADRADOS:::::::::::::::::::::::-->
+	<!-- header -->
+	<div id="cabecera" class="container-fluid bg-primary navbar-fixed-top">
 
-		<div id="div_all">
+		<header id=""><div class="col-xs-2"></div><h1 class="text-center col-xs-10 col-sm-10 col-md-12">Generador rgba</h1></header>
+	</div>
+	<!-- /header -->
 
-			<div class="div_second">
-			    <div id="div_third_a" class="div_third">
-			      <img src="img/call-answer.png" alt=""/>
-			    </div>
-			 </div>
+	<div class="container-fluid bg-danger">
 
-			<div class="div_second">
-			    <div id="div_third_b" class="div_third">
-			      <img src="img/cinema-clapper-.png" alt=""/>
-			    </div>
+		<header id=""><div class="col-xs-2"></div><h1 class="text-center col-xs-10 col-sm-10 col-md-12">:)</h1></header>
+	</div>
+
+	<div class="container">	
+
+		<div class="row-block col-xs-12">
+			<div class="col-md-2"></div>
+			<div id="content1" style="border-top: 3px solid rgba(70,149,165,1);border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8">
+				<p class="text-info">Quieres conocer el  <strong>codigo rgba</strong> de un color que te gustó y no sabes como, pues llegaste al lugar correcto.Podras crear tus propios colores y obtener su  <strong>codigo rgba</strong> para usarlo en tus paginas web u otros ambitos en los que sea posible. </p>
 			</div>
+			<div class="col-md-2"></div>
+		</div>	
 
-			<div class="div_second">
-			    <div id="div_third_c" class="div_third">
-			      <img src="img/message-envelope.png" alt=""/>
-			    </div>
-			</div>
+		<div class="row-block col-xs-12">
+			<div class="col-md-2"></div>
+			<div  id="content2" style="border-top: 3px solid rgba(70,149,165,1);border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8 ">
+				<div>
+					<h3 class="text-center text-primary">Obten tu Codigo rgba aqui!</h3>
+					<div style="width: 100px" class="center-block">
+						<button id="boton" class="btn">BOTON</button>
+					</div>
 
-			<div class="div_second">
-			    <div id="div_third_d" class="div_third">
-			      <img src="img/obscure-glasses.png" alt=""/>
-			    </div>
-			</div>
+					<div>
+						<div>
+							<button id="rojo" class="btn text-white"  onclick="pintar('255','51','66')">rojo</button>
+							<input id="select_rojo" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+						</div>
 
-			<div class="div_second">
-			    <div id="div_third_e" class="div_third">
-			      <img src="img/puzzle-part.png" alt=""/>
-			    </div>
-			</div>
+						<div>
+							<button id="verde" class="btn text-white"  onclick="pintar('64','184','66')">verde</button>
+							<input id="select_verde" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+						</div>
 
-			<div class="div_second">
-			    <div id="div_third_a" class="div_third">
-			      <img src="img/call-answer.png" alt=""/>
-			    </div>
-			</div>
+						<div>
+							<button id="azul" class="btn text-white"  onclick="pintar('64','85','146')">azul</button>
+							<input id="select_azul" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
+						</div>
 
-			<div class="div_second">
-			    <div id="div_third_b" class="div_third">
-			      <img src="img/cinema-clapper-.png" alt=""/>
-			    </div>
-			</div>
+						<div>
+							<p>opacidad</p>
+							<input id="select_opacidad" TYPE="RANGE" MIN="0" MAX="10" STEP="1" value="10"  onmousemove ="pintar2('red')">
+						</div>
+					</div>
 
-			<div class="div_second">
-			    <div id="div_third_c" class="div_third">
-			      <img src="img/message-envelope.png" alt=""/>
-			    </div>
-			</div>
+					<div style="width: 230px;" class="center-block">
+						<div style="background: rgba(36,185,200,1); width: 230px;height:38px;margin:0;border-radius:5px;padding: 2px;">
 
-			<div class="div_second">
-			    <div id="div_third_d" class="div_third">
-			      <img src="img/obscure-glasses.png" alt=""/>
-			    </div>
-			</div>
+							<!-- <label>RGBA</label><input id="codigo" type="text" name="" style="width:142px;margin-right:0px;height:40px"> -->
+							<div class="form-group">
+								<div class="input-group">
+									<label class="sr-only" for="correo">Correo:</label>
+									<div style="background-color: rgba(36,185,200,1);border:none;color: white;" class="input-group-addon">RGBA</div>
+									<input id="codigo" class="form-control" id="correo" type="text" placeholder="Correo">
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
 
-			<div class="div_second">
-			    <div id="div_third_e" class="div_third">
-			      <img src="img/puzzle-part.png" alt=""/>
-			    </div>
+						<div class="col-md-12">
+							<div style="width: 100px;" class="center-block">
+								<button class="btn btn-primary" id="copiar" onclick="copiar()">
+									COPIAR
+								</button>
+
+								<input id="codigo2" type="text" name="" value="" />
+							</div>
+
+						</div>
+					</div>
+
+
+
+
+
+				</div>
 			</div>
-			
+			<div class="col-md-2"></div>
 		</div>
 
-		<!--FIN DE MENU CUADRADO-->
+		<!--div class="row-block col-xs-12">
+			<div class="col-md-2"></div>
+			<div  id="content3" style="border-top: 3px solid rgba(70,149,165,1);border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8">
+				//your content here
+				<p>.</p>
+				<p>.</p>
+				<p>.</p>
+			</div>
+			<div class="col-md-2"></div>
+		</div-->
+		
+	</div>
 
 
-		<center>
+
+	<br>
+
+	<!-- footer -->
+	<div style="padding: 10px" class="bg-333" class="container-fluid">
+		<footer class="text-info">
+
+			Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+			<div>Icons made by
+				<a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+				<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
+				<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</div>
+		</footer>
+	</div>
+	<!-- /footer -->
+
+
+		<!--  <center>
 
 		<main id="main1">
 
 			<section id="section1">
 
-				<button id="boton">BOTON</button>
-
-				<div>
-					<button id="rojo" onclick="pintar('red')">rojo</button>
-					<INPUT id="select_rojo" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
-				</div>
-
-				<div>
-					<button id="verde" onclick="pintar('green')">verde</button>
-					<INPUT id="select_verde" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
-				</div>
-
-				<div>
-					<button id="azul" onclick="pintar('blue')">azul</button>
-					<INPUT id="select_azul" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
-				</div>
-
-				<div>
-					<p>opacidad</p>
-					<INPUT id="select_opacidad" TYPE="RANGE" MIN="0" MAX="10" STEP="1" value="10"  onmousemove ="pintar2('red')">
-				</div>
-
-				<div style="background: rgba(36,185,200,1); width: 200px;margin:0;border-radius:5px;padding:2px;">
-					<label>RGBA</label>
-					<input id="codigo" type="text" name="" style="width:142px;margin-right:0px;height:40px">
-				</div>
-
-				<div>
-					<button class="copy" id="copiar" onclick="copiar()">
-			        	COPIAR
-			    	</button>
-				</div>
+				
 
 			</section>
 		</main>
@@ -133,31 +153,26 @@
 	    </script>
 		</center>
 		
-
-		<a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
-		<style type="text/css">
-			#index input{
-			  position: fixed;
-			  border: none;
-			  height: 50px;
-			  width: 50px;
-			  right: 30px;
-			  bottom: 30px;
-			  border-radius: 25px;
-			  box-shadow: 2px 2px 8px #333;
-			  background-color: rgba(255,53,0,1);
-			  color: white;
-			  margin-left: 500px;
-			  font-size: 25px;
-			}
-			#index input:hover{
-				width: 54px;
-				height: 54px;
-				right:28px;
-			  	bottom: 27px;
-			  	border-radius: 27px;
-			}
-		</style>
+	-->
+	<a id="index" href="../index.html"><input class="btn"  id="btn_circle"  type="button" name="" value="+" onclick="detener()" onmouseover ="cambiarColor();" onmouseout="regresarColor();"></a>
+	<style type="text/css">
+		#index input{
+			position: fixed;
+			border: none;
+			height: 50px;
+			width: 50px;
+			right: 30px;
+			bottom: 30px;
+			border-radius: 25px;
+			background-color: rgba(255,53,0,1);
+			color: white;
+			margin-left: 500px;
+			font-size: 25px;
+		}
+		#index input:hover{
+			
+		}
+		</style><!--
 		<center>
 		<header id="c">
 			<div id="cabecera">
@@ -171,10 +186,11 @@
 		        </audio>
 				GENERADOR RGBA
 			</div>
-		</header></center>
+		</header></center>-->
+		
 
-	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
-		<div id="div_menu" class="contenedor">
+		<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+		<div id="div_menu" class="contenedor navbar-fixed-top">
 			<input type="checkbox" id="menu-bar">
 			<label  id="label_menu" class="icon-menu" for="menu-bar">
 				<img src="../img/inicio.png">
