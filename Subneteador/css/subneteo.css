@@ -11,7 +11,7 @@
 
 body{
 	/*background: rgba(37,128,91,0.2);*/
-	background-color: rgba(70,70,70,1);
+	background-color: rgba(94,167,186,0.1);
 	min-width: 700px;
 }
 body:hover #index input{
@@ -27,7 +27,6 @@ header{
 	background-image: url("../../img/header.png");
 	color: white;
 	text-align: center;
-	box-shadow: 0px 2px 2px #333;
 	font-size: 20px;
 	font-family: 'Ruslan Display', cursive;
 
@@ -97,7 +96,7 @@ header label{
 	margin-top: 50px;
 	width: 100%;
 	padding: 10px 10px;
-	box-shadow: 1px 1px 5px black;
+	box-shadow: 1px 1px 2px gray;
 	text-align: center;
 	margin-left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -115,8 +114,6 @@ header label{
 	margin: 5px;
 	float: top;
 	margin-bottom: 10px;
-	border: solid 2px rgba(37,128,91,1);
-	background-color: rgba(37,128,91,1)
 	border-radius: 5px;
 	padding-bottom: 30px;
 }
@@ -142,7 +139,6 @@ header label{
 	padding: 20px;
 	margin: 20px;
 	float: bottom;
-	border: solid 2px rgba(37,128,91,1);
 	border-radius: 5px;
 }
 
@@ -219,9 +215,7 @@ header label{
 #section1  #bit:hover {
 	transition-duration: 0.5s;
 	width: 230px;
-	color: white;
-	background: rgba(0,175,177,1);
-	box-shadow: 0px 2px 4px #333;
+	box-shadow: 0px 1px 2px gray;
 }
 #caja_numero_subred{
 	width: 200px;
@@ -434,12 +428,6 @@ input{
 		margin-right: 70px;
 	}
 
-	#section1 .up{
-		background-color: rgba(37,128,91,0.2);
-		
-
-	}
-
 	#section1 .up div{
 		background-color: white;
 		box-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
@@ -450,3 +438,33 @@ input{
 	}
 
 }
+
+#section1 .up  input{
+	background: none;
+	border-radius: 0px;
+	border: none;
+	border-bottom: 1px solid rgba(200, 200, 200, 1);
+
+}
+
+#section1 .up  input:hover{
+	border-bottom: 1px solid rgba(0, 177, 177, 1.0);
+}
+
+#section1 .up  input:focus{
+	border-bottom: 2px solid rgba(0, 177, 177, 1.0);
+	outline:0px;
+	
+}
+#section1 .up select{
+	border: none;
+	background: white;
+	border-bottom: 1px solid rgba(200, 200, 200, 1);
+
+}
+#section1 .up select:focus{
+	border-bottom: 2px solid rgba(0, 177, 177, 1.0);
+	outline: 0px;
+}
+
+
