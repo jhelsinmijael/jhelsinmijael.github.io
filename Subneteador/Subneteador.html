@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+rgba(150, 150, 150, 0.3)DOCTYPE html>
 <html>
 <head>
 	<title>Subneteo online</title>
@@ -8,40 +8,106 @@
 	<script type="text/javascript" src="js1/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js1/logica.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/subneteo.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<meta name="description" content="Aplicacion online para crear subredes">
 	<meta name="keywords" content="generador de codigo rgba, rgba generator, RGBA, CODIGO DE COLORES,Subneteo,subneteador online, subredes, sacar subredes online,Subneteo de redes ip, ip, suneteador de redes ip online,subredes ip,generar subredes ip,como subnetear,aprende a subnetear, creando subredes cisco, cisco, calculadora ip cisco,generar subredes online">
 </head>
-<body>
+<body style="background-color: rgba(94,167,186,0.1);">
 
 	<div style="height: 60px;">:)</div>
 
-	<center>
-
-		<div style="background-color:white;border-radius:3px;justify-content: center;width: 700px;margin-top: 20px;padding: 10px;box-shadow: 1px 1px 2px gray;border-top: 3px solid orange">
-			<h3>¿Que es?</h3>
-			<p>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</p>
-		</div>
-
-		<div style="width: 700px;margin-top: 20px;padding: 0px;height: 50px;">
-			<div style="box-shadow: 1px 1px 2px gray;background: white;border-radius: 3px; width: 30%; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);">
-				<h4>Clase A</h4>
-				<p><strong>from:</strong>0.0.0.0 </p>
-				<p><strong>to:</strong> 127.255.255.255</p>
-			</div>
-			<div style="box-shadow: 1px 1px 2px gray;background: white;border-radius: 3px; width: 30%; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);margin:0px 5%;">
-				<h4>Clase B</h4>
-				<p><strong>from:</strong>128.255.255.255</p>
-				<p><strong>to:</strong>192.255.255.255</p>
-			</div>
-			<div style="box-shadow: 1px 1px 2px gray;background: white;border-radius: 3px; width: 30%; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);">
-				<h4>Clase C</h4>
-				<p><strong>from:</strong>193.255.255.255</p>
-				<p><strong>to:</strong>223.255.255.255</p>
+	<div class="container">
+		<div class="row">
+			<div  style="background-color:white;border-radius:3px;justify-content: center;margin-top: 20px;padding: 10px;box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);border-top: 3px solid orange;" class="col-xs-12 col-md-8 col-sm-offset-1  col-md-offset-2 text-primary">
+				<h3>¿Que es?</h3>
+				<p>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</p>
 			</div>
 		</div>
+		<br>
+		<div class="row">
+			<div class="col-xs-12  col-md-8 col-sm-offset-1 col-md-offset-2 text-primary">
+				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: white;border-radius: 3px;  float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);" class="col-xs-12 col-sm-4 col-md-4">
+					<h4>Clase A</h4>
+					<p><strong>from:</strong>0.0.0.0 </p>
+					<p><strong>to:</strong> 127.255.255.255</p>
+				</div>
+				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: white;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);" class="col-xs-12 col-sm-4 col-md-4">
+					<h4>Clase B</h4>
+					<p><strong>from:</strong>128.255.255.255</p>
+					<p><strong>to:</strong>192.255.255.255</p>
+				</div>
+				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: white;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);" class="col-xs-12 col-sm-4 col-md-4">
+					<h4>Clase C</h4>
+					<p><strong>from:</strong>193.255.255.255</p>
+					<p><strong>to:</strong>223.255.255.255</p>
+				</div>
+			</div>			
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-xs-12  col-md-8 col-sm-offset-1 col-md-offset-2">
+				<h2 style="color: rgba(50,92,138,1);" id="mensaje">
+					
+				</h2>
+			</div>
+			<div style="background: white;border-radius: 3px;border-top: 3px solid rgba(17,147,182,1);box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);" class="col-xs-12  col-md-8 col-sm-offset-1 col-md-offset-2 bg-primary">
+				<div class="col-xs-12">
+					<div class="col-xs-12 col-md-6 ">
+						<form class="form-horizontal">
+							<h3 style="color: #333;text-align: left;padding: 0px 0px 0px 10px;">Define la ip</h3><br><br><br>
+							<!-- <div>IP</div> -->
 
-	</center>
-	<!--fin de menu cuadrado-->
+							<input class="caja-col-1 form-control" id="caja_ip" type="text" name="caja_ip"  onkeyup= "definirClase()" placeholder="192.168.10.1">
+							<br><br>
+							<!-- <div>clase</div> -->
+
+							<input class="caja-col-1 form-control" id="caja_clase" type="text" name="caja_clase" readonly="" placeholder="Clase de Ip"><br><br>
+							<!-- <div>Mascara</div> -->
+
+							<input class="caja-col-1 form-control" id="caja_mascara" type="text" name="caja_mascara" readonly="" placeholder="Mascara">
+							<br><br>
+							<button id="btn_limpiar" type="reset" value="limpiar">Limpiar</button><br><br>
+						</form>
+					</div>
+					<div class="col-xs-12 col-md-6 ">
+						<h3 style="color: #333;text-align: left;padding: 0px 0px 0px 10px;">Define tus redes</h3><br><br><br>
+						<!--input id="caja_numero_subred" type="number" min="1" max="128" step="2" name="" onkeyup="definirSubred()" placeholder="1"-->
+						<select class="select_num form-control" id="caja_numero_subred" onchange="definirSubred()">
+							<option>2</option>
+							<option>4</option>
+							<option>8</option>
+							<option>16</option>
+							<option>32</option>
+							<option>64</option>
+							<option>128</option>
+						</select>
+						<br><br>
+
+						<input class="form-control" id="caja_numero_host" type="text" name="" onkeyup= "definirSubredes_host() " readonly="" placeholder="Numero de host"><br><br>
+
+						<input class="form-control" id="mask" type="text" name="" readonly="" placeholder="Mascara de subred"><br><br>
+
+						<input class="form-control" id="bit" type="text" name="" readonly="" placeholder="octetos">br*2
+					</div>
+				</div>
+				<br><br>
+				<div class="col-xs-12">
+					<div class="table-responsive">
+						<table id="tabla1" class="table table-bordered">
+							<thead>
+								<td>numero</td>
+								<td>direccion</td>
+								<td>1ra ip</td>
+								<td>ultima ip</td>
+								<td>broadcast</td>
+							</thead>
+						</table>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<main>
 		<!--<section id="section2">
 			<div id="formula">
@@ -58,74 +124,6 @@
 				<label></label>
 			</div>
 		</section-->
-
-		<section id="section1">
-
-			<div class="up">
-			<h2 style="color: rgba(50,92,138,1);" id="mensaje"></h2>
-				<div class="contenedor">
-					<form>
-						<h3 style="color: #333;text-align: left;padding: 0px 0px 0px 10px;">Define la ip</h3><br><br><br>
-						<!-- <div>IP</div> -->
-						
-						<input class="caja-col-1" id="caja_ip" type="text" name="caja_ip"  onkeyup= "definirClase()" placeholder="192.168.10.1">
-						<br><br>
-						<!-- <div>clase</div> -->
-						
-						<input class="caja-col-1" id="caja_clase" type="text" name="caja_clase" readonly="" placeholder="Clase de Ip"><br><br>
-						<!-- <div>Mascara</div> -->
-						
-						<input class="caja-col-1" id="caja_mascara" type="text" name="caja_mascara" readonly="" placeholder="Mascara">
-						<br><br>
-						<button id="btn_limpiar" type="reset" value="limpiar">Limpiar</button><br><br>
-					</form>
-				</div>
-
-
-
-				<div class="contenedor2">
-					<h3 style="color: #333;text-align: left;padding: 0px 0px 0px 10px;">Define tus redes</h3><br><br><br>
-					<!--input id="caja_numero_subred" type="number" min="1" max="128" step="2" name="" onkeyup="definirSubred()" placeholder="1"-->
-					<select class="select_num" id="caja_numero_subred" onchange="definirSubred()">
-						<option>2</option>
-						<option>4</option>
-						<option>8</option>
-						<option>16</option>
-						<option>32</option>
-						<option>64</option>
-						<option>128</option>
-
-						<select><br><br>
-							
-							<input id="caja_numero_host" type="text" name="" onkeyup= "definirSubredes_host() " readonly="" placeholder="Numero de host"><br><br>
-							
-							<input id="mask" type="text" name="" readonly="" placeholder="Mascara de subred"><br><br>
-							
-							<input id="bit" type="text" name="" readonly="" placeholder="octetos">
-						</div>
-
-					</div>
-
-					<br>
-					<br>
-					<br>
-
-					<hr>
-
-					<div class="down">
-						<center>
-							<table id="tabla1">
-								<thead>
-									<td>numero</td>
-									<td>direccion</td>
-									<td>1ra ip</td>
-									<td>ultima ip</td>
-									<td>broadcast</td>
-								</thead>
-							</table>
-						</center>
-					</div>
-				</section>
 
 
 		<!--div id="caja">
@@ -159,11 +157,11 @@
 	}
 </style>
 
-<header>
-	<label>
-		<a href="../index.html"><img src="../img/inicio.png" width="60px"></a>
-	</label>
-	<h1>SUBNETEO ONLINE</h1>
+<header class="navbar-fixed-top bg-primary">
+	<div class="container">
+		<h1>SUBNETEO ONLINE</h1>
+	</div>
+	
 </header>
 
 <!--::::::::::::::::::::MENU::::::::::::::::::::::::-->

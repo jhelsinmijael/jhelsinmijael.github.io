@@ -1,9 +1,5 @@
-@import "../../menu_cuadrados/menu_cuadrados.css";
-
 @import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
 
-#div_all{
-  position: relative;}
 *{
 	margin: 0px;
 	padding: 0px;
@@ -12,13 +8,12 @@
 body{
 	/*background: rgba(37,128,91,0.2);*/
 	background-color: rgba(94,167,186,0.1);
-	min-width: 700px;
 }
 body:hover #index input{
 	transition-duration: 0.8s;
 	right: 30px;
 }
-/*cabecera*/
+/*cabecera
 header{
 	position: fixed;
 	top: 0px;
@@ -39,47 +34,7 @@ header img{
 header label{
 	float: left;
 }
-/*SOCIALES*/
 
-#caja{
-	transition-duration: 0.5s;
-	position: fixed;
-	width: 50px;
-	height: auto;
-	transform: translateX(-40px);
-	-webkit-transform: translateX(-40px);
-	-moz-transform: translateX(-40px);
-	top: 80px;
-}
-#caja div{
-	transition-duration: 0.5s;
-	width: 100%;
-	height: 50px;
-	border: 2px solid blue;
-	background: white;
-
-}
-#caja:hover{
-	transition-duration: 0.5s;
-	transform: translateX(0px);
-	-webkit-transform: translateX(-2px);
-	-moz-webkit-transform: translateX(-2px);
-}
-#caja div:hover{
-	transition-duration: 0.5s;
-	width: 60px;
-	box-shadow: 2px 2px 4px #333;
-	border-radius: 3px;
-}
-#caja div img{
-	margin: 5px 0px 0px 12%;
-	width: 30px;
-}
-#caja div a{
-	width: 100%;
-	height: 100%;
-	padding: 17px 10px 10px 5px;
-}
 
 /*CABECERA*/
 
@@ -91,142 +46,6 @@ header label{
 
 /*MAIN*/
 
-
-#section1{
-	margin-top: 50px;
-	width: 100%;
-	padding: 10px 10px;
-	box-shadow: 1px 1px 2px gray;
-	text-align: center;
-	margin-left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	background: white;
-	border-radius: 3px;
-	border-top: 3px solid rgba(17,147,182,1);
-}
-
-
-
-#section1 .up{
-	height: 900px;
-	margin: 5px;
-	float: top;
-	margin-bottom: 10px;
-	border-radius: 5px;
-	padding-bottom: 30px;
-}
-
-#section1 .up div{
-	border-radius: 5px;
-	
-
-}
-#section1 .up div div{
-	border-radius: 0px;
-	border: 2px solid rgba(37,128,91,1);
-	background: rgba(0,128,173,0.3);
-	box-shadow: 0px 3px 5px gray;
-	transform: translateY(2px);
-	-moz-transform: translateY(2px);
-	-webkit-transform: translateY(2px);
-	width: 200px;
-}
-
-
-#section1 .down{
-	padding: 20px;
-	margin: 20px;
-	float: bottom;
-	border-radius: 5px;
-}
-
-#section1 .up .contenedor{
-	margin: 50px 50%;
-	transform: translateX(-50%);
-	/*-webkit-transform: translateX(-50%);*/
-	color:white;
-	float: left;
-
-	padding: 0pc 15px 5px 15px;
-}
-#section1 .up .contenedor div{
-	color:black;
-}
-
-
-#section1 .contenedor input{
-	height: 33px;
-	font-weight: bold;
-	border-radius: 5px;
-	border: solid 2px rgba(37,128,91,1);
-	background: rgba(0,175,177,0.1);
-	padding-left: 25px;
-	padding-right: 5px;
-
-}
-#section1 .up .contenedor .lb_title{
-	background: rgba(37,128,91,1);
-	padding: 9px 5px 11px 5px;
-	font-weight: bold;
-	border-radius: 5px;
-	margin-right: -6px;
-}
-#section1.lb_title{
-	background: red;
-
-}
-#section1 .up .contenedor2{
-	margin: 50px 50%;
-	padding: 0pc 15px 15px 15px;
-	transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
-	float: left;
-	height: 350px;
-}
-
-#section1 .contenedor2 input{
-	height: 33px;
-	font-weight: bold;
-	border-radius: 5px;
-	border: solid 2px rgba(37,128,91,1);
-	background: rgba(0,175,177,0.1);
-	padding-left: 25px;
-	padding-right: 5px;
-}
-#section1 .contenedor2 label{
-	color: white;
-	width: 300px;
-	background: rgba(37,128,91,1);
-	padding: 9px 5px 11px 5px;
-	font-weight: bold;
-	border-radius: 5px;
-	margin-right: -10px;
-}
-#bit{
-	position: absolute;
-	opacity: 1;
-	transform: translateX(-100px);
-	-moz-transform: translateX(-100px);
-	-webkit-transform: translateX(-100px);
-}
-#section1  #bit:hover {
-	transition-duration: 0.5s;
-	width: 230px;
-	box-shadow: 0px 1px 2px gray;
-}
-#caja_numero_subred{
-	width: 200px;
-	height: 33px;
-	font-weight: bold;
-	border-radius: 5px;
-	border: solid 2px rgba(37,128,91,1);
-	background: rgba(0,175,177,0.1);
-	padding-left: 25px;
-	padding-right: 5px;
-}
 
 #btn_limpiar{
 	border: none;
@@ -243,33 +62,8 @@ header label{
 	color: white;
 }
 
-/*SECTION 2 FORMULA*/
-
-#section2{
-	position: absolute;
-	background: skyblue;
-	transform: translateX(1100px);
-	-moz-transform: translateX(1100px);
-	-webkit-transform: translateX(1100px);
-}
-#section2 #formula{
-	width: 240px;
-	height: auto;
-	background: white;
-	border: 2px solid green;
-	transition-duration: 1s;
-	box-shadow: 2px 2px 4px #333;
-
-}
-#section2 #formula:hover{
-	height: 400px;
-}
-
-
-
 /*tabla*/
 table{
-	margin: 20px;
 	border-radius: 5px;
 	border: 2px solid rgba(0,143,164,1);
 }
@@ -285,36 +79,6 @@ td{
 tr{
 	background: rgba(0,143,164,0.1);
 }
-
-@media (min-width: 780px){
-	#section1{
-
-		width: 80%;
-		padding: 10px 10px;
-
-	}
-	#section1 .up{
-
-		margin: 10px 20px;
-		height: 390px;
-	}
-
-	#section1 .up .contenedor{
-		float: left;
-		margin: 30px 0px 10px 40px;
-		margin-left: 40px;
-		transform: translateX(0);
-	}
-	#section1 .up .contenedor2{
-		float: top;
-		margin: 30px 40px 10px 0px;
-		float: right;
-		margin-right: 40px;
-		transform: translateX(0);
-	}
-
-}
-
 
 /*::::::FOOTER:::::::::::::::*/
 
@@ -391,80 +155,5 @@ input{
 }
 
 /*::::::::::::::::::FIN DE MENU:::::::::::::::::::::*/
-
-@media (min-width: 400px){
-	header{
-		font-size: initial;
-	}
-}
-
-@media (min-width: 1024px){
-	#section1{
-
-		width: 700px;
-		padding: 10px 10px;
-	}
-	#section1 .up .contenedor{
-		margin: 30px 0px 10px 40px;
-		margin-left: 40px;
-	}
-	#section1 .up .contenedor2{
-		margin: 30px 40px 10px 0px;
-		margin-right: 40px;
-	}
-
-}
-@media (min-width: 1124px){
-
-	header{
-	}
-
-	#section1 .up .contenedor{
-		margin: 30px 0px 10px 40px;
-		margin-left: 70px;
-	}
-	#section1 .up .contenedor2{
-		margin: 30px 40px 10px 0px;
-		margin-right: 70px;
-	}
-
-	#section1 .up div{
-		background-color: white;
-		box-shadow: 1px 1px 1px rgba(100, 100, 100, 0.3);
-	}
-
-	input{
-		cursor: pointer;
-	}
-
-}
-
-#section1 .up  input{
-	background: none;
-	border-radius: 0px;
-	border: none;
-	border-bottom: 1px solid rgba(200, 200, 200, 1);
-
-}
-
-#section1 .up  input:hover{
-	border-bottom: 1px solid rgba(0, 177, 177, 1.0);
-}
-
-#section1 .up  input:focus{
-	border-bottom: 2px solid rgba(0, 177, 177, 1.0);
-	outline:0px;
-	
-}
-#section1 .up select{
-	border: none;
-	background: white;
-	border-bottom: 1px solid rgba(200, 200, 200, 1);
-
-}
-#section1 .up select:focus{
-	border-bottom: 2px solid rgba(0, 177, 177, 1.0);
-	outline: 0px;
-}
 
 
