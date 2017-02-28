@@ -11,7 +11,7 @@
 	<script src="js/logic.js" type="text/javascript"></script>
 
 	<link href="css/RGBA.css" rel="stylesheet" type="text/css"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="BootStrap-3.3.6/bootstrap-3.3.6-dist/css/bootstrap.min.css">
 
 </head>
 <body style="background: rgba(16,197,166,0.1);" id="body">
@@ -93,28 +93,39 @@
 							</div>
 
 						</div>
+						<script>
+							$("#copiar").click(function() {
+								if($("#codigo2").val()!=""){
+									$("#mensaje").html('<div class="alert alert-success">'+
+									'<button class="close" data-dismiss="alert">'+
+										'<span>&times;</span>'+
+									'</button>copiado'+
+								'</div>');
+								}else{
+									$("#mensaje").html('<div class="alert alert-danger">'+
+									'<button class="close" data-dismiss="alert">'+
+										'<span>&times;</span>'+
+									'</button>no copiado'+
+								'</div>');
+								}
+								
+							});
+						</script> 
+						
+						<div id="mensaje" class="col-xs-12">
+							
+						</div>
+
 					</div>
 
-
-
-
-
 				</div>
+
+
 			</div>
 			<div class="col-md-2"></div>
 		</div>
 
-		<!--div class="row-block col-xs-12">
-			<div class="col-md-2"></div>
-			<div  id="content3" style="border-top: 3px solid rgba(70,149,165,1);border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8">
-				//your content here
-				<p>.</p>
-				<p>.</p>
-				<p>.</p>
-			</div>
-			<div class="col-md-2"></div>
-		</div-->
-		
+
 	</div>
 
 
@@ -204,6 +215,9 @@
 			</nav>
 		</div>
 		<!--fin de menu-->
+
+		<script src="BootStrap-3.3.6/bootstrap-3.3.6-dist/js/jquery-1.12.4.min.js"></script>
+		<script src="BootStrap-3.3.6/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	</body>
 
 	</html>
