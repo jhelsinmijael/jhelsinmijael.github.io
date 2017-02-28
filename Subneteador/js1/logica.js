@@ -112,6 +112,10 @@ function definirSubred(){
 
 		$("#mensaje").text(num_subred+' subredes creades con exito! desplazate hacia habajo');
 
+		$("#mensaje").addClass('alert');
+
+		$("#mensaje").addClass('alert-success');
+
 		var bits = 0;
 
 		var mask=0;
@@ -157,6 +161,10 @@ function definirSubred(){
 		var num_subred = document.getElementById("caja_numero_subred").value;
 
 		$("#mensaje").text(num_subred+' subredes creades con exito! desplazate hacia habajo');
+
+		$("#mensaje").addClass('alert');
+
+		$("#mensaje").addClass('alert-success');
 
 		var bits = 0;
 
@@ -213,6 +221,10 @@ function definirSubred(){
 		var num_subred = document.getElementById("caja_numero_subred").value;
 
 		$("#mensaje").text(num_subred+' subredes creades con exito! desplazate hacia habajo');
+
+		$("#mensaje").addClass('alert');
+
+		$("#mensaje").addClass('alert-success');
 
 		var bits = 0;
 
