@@ -6,6 +6,7 @@ $(document).ready(function() {
 	var content2 = $("#content2");
 	//var content3 = $("#content3");
 	var btn_circle = $("#btn_circle");
+	var header = $("#header");
 });
 
 function pintar(r,g,b){
@@ -44,6 +45,13 @@ function pintar2(color){
 		document.getElementById("codigo").value="rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0."+opacidad+")";
 		cabecera.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0."+opacidad+")";
 		body.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0.1)";
+		if(opacidad==3 || opacidad==2 || opacidad==1 || opacidad==0){
+
+			header.style.color = "#333";
+
+		}else{
+			header.style.color = "#fff";
+		}
 	}
 
 }
