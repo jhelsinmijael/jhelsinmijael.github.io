@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gastronomia Perú</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="../../bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Raleway', sans-serif;
+		}
+		body{
+			background-color: rgba(240, 240, 240, 1.0)
+		}
+		header{
+			background-color: rgba(15,33,45,1);
+			color: rgba(230, 230, 230, 1.0);
+			padding: 20px 0px;
+		}
+
+		.box-little{
+			box-shadow: 1px 1px 3px rgba(230, 230, 230, 1.0);
+			background-color: white;
+			padding: 5px;
+		}
+		.box-litle div{
+			width: 100%;
+		}
+		.box-little:hover{
+			transition-duration: 0.2s;
+			box-shadow: 1px 1px 9px rgba(150, 150, 150, 1.0);
+		}
+		.box-header{
+			padding: 5px 0px;
+			border-bottom: 1px solid rgba(240, 240, 240, 1.0);
+			font-weight: bolder;
+			color: #333;
+		}
+		.box-header p{
+			margin: 0px;
+		}
+		.box-body{
+			padding: 5px 0px;
+		}
+		.box-body img{
+			width: 100%;
+			min-height: 150px;
+			padding: 3px 0px;
+		}
+		.box-footer{
+			padding: 5px 0px;
+			font-weight: bolder;
+			color: grey;
+			text-align: center;
+		}
+		.text-first{
+
+		}
+		.text-big{
+			font-size: 20px;
+		}
+
+		a:focus{
+			outline:0px;
+		}
+
+		/*::::::::::::::::modal::::::::::::::::*/
+		.modal-body img{
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container-fluid">
+			<h1>Gastronomia <label style="color: rgba(255,59,46,1);">P</label><span style="color: white;">er</span><span style="color: rgba(255,59,46,1);">ú</span></h1>
+			
+			<p style="border-top: 1px solid grey;padding: 10px 0px;" class="help-block">Por que comer rico es cosa de peruanos</p>
+		</div>
+	</header>
+	<br>
+	<div class="container">
+		<section class="row">
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header"><p class="tittle hidden-md hidden-lg text-big">Adobo de chancho</p><p class=" hidden-xs hidden-sm">Adobo de chancho</p></div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/adobo-de-chancho.jpg" alt="">
+						</a>
+					</div>
+					<div class="box-footer"><a href="plato1-adobo-de-chacho.html">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header"><p class="tittle hidden-md hidden-lg text-big">Ajiaco de papas</p><p class=" hidden-xs hidden-sm">Ajiaco de papas</p></div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/ajiaco-de-papas.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header"><p class="tittle hidden-md hidden-lg text-big">Aji de gallina</p><p class=" hidden-xs hidden-sm">Aji de gallina</p></div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/aji-de-gallina.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header"><p class="tittle hidden-md hidden-lg text-big">Anticuchos</p><p class=" hidden-xs hidden-sm">Anticuchos</p></div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/anticuchos_0.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header"><p class="tittle hidden-md hidden-lg text-big">Arroz a la jardinera</p><p class=" hidden-xs hidden-sm">Arroz a la jardinera</p></div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/arroz-a-la-jardinera.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header"><p class="tittle hidden-md hidden-lg text-big">Arroz chaufa</p><p class=" hidden-xs hidden-sm">Arroz chaufa</p></div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/arroz-chaufa.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<!-- second file -->
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Adobo de chancho</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/adobo-de-chancho.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Ajiaco de papas</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/ajiaco-de-papas.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Aji de gallina</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/aji-de-gallina.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Anticuchos</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/anticuchos_0.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Arroz a la jardinera</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/arroz-a-la-jardinera.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Arroz chaufa</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/arroz-chaufa.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<!-- third file -->
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Adobo de chancho</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/adobo-de-chancho.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Ajiaco de papas</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/ajiaco-de-papas.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Aji de gallina</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/aji-de-gallina.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Anticuchos</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/anticuchos_0.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Arroz a la jardinera</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/arroz-a-la-jardinera.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+			<div class="col-md-2" style="padding:10px;">
+				<div class="box-little">
+					<div class="box-header">Arroz chaufa</div>
+					<div class="box-body">
+						<a class="modal-info" href="#image-modal" data-toggle="modal">
+							<img src="imgComidas/arroz-chaufa.jpg" alt="">
+						</a>
+						
+					</div>
+					<div class="box-footer"><a href="#">Ver completo  -></a></div>
+				</div>
+			</div>
+		</section>
+		<section></section>
+	</div>
+	<footer></footer>
+	<a id="index" href="../../index.html"><button type="button"><span class="glyphicon glyphicon-plus"></span></button></a>
+	<style type="text/css">
+		#index button{
+			position: fixed;
+			border: none;
+			height: 60px;
+			width: 60px;
+			right: 30px;
+			bottom: 30px;
+			border-radius: 50%;
+			background-color: rgba(15,33,45,1);
+			color: white;
+			margin-left: 500px;
+			font-size: 16px;
+		}
+		#index button:hover{
+			background-color: rgba(25,43,55,1);
+		}
+	</style>
+	<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- ::::::::::::::::::::::::::::::::MODAL:::::::::::::::::::::::::::::: -->
+	<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<div id="image-modal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<!-- modal header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title">
+						Encabezado
+					</h4>
+				</div>
+				<!-- /modal header -->
+				<!-- modal body -->
+				<div class="modal-body">
+					<img id="img-modal" src="imgComidas/adobo-de-chancho.jpg" alt="">
+				</div>
+				<!-- /modal body -->
+				<!-- modal footer -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Cerrar</button>
+				</div>
+				<!-- /modal footer -->
+			</div>
+		</div>
+	</div>
+
+	<script src="../../bootstrap-3.3.6-dist/js/jquery-1.12.4.min.js"></script>
+	<script src="../../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+	<script src="js/images-modal.js"></script>
+</body>
+</html>

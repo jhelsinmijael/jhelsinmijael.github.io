@@ -32,7 +32,7 @@ function pintar2(color){
 	if(opacidad==10){
 		boton.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
 		cabecera.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
-		body.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0.1)";
+		body.style.background = "rgba("+cantidad_rojo/2+","+cantidad_verde/2+","+cantidad_azul/2+",0.1)";
 		
 		btn_circle.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
 
@@ -47,7 +47,7 @@ function pintar2(color){
 		body.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",0.1)";
 		if(opacidad==3 || opacidad==2 || opacidad==1 || opacidad==0){
 
-			header.style.color = "#333";
+			header.style.color = "#006699";
 
 		}else{
 			header.style.color = "#fff";

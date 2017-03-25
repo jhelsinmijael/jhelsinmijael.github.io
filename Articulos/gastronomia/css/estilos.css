@@ -1,0 +1,107 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	background-color: rgba(240, 240, 240, 1.0)
+}
+header{
+	background-color: rgba(15,33,45,1);
+	color: rgba(230, 230, 230, 1.0);
+	padding: 20px 0px;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::BOX::::::::::::::::::::::::*/
+/*:::::::::::::::::::::::::::::::::::::::::::::::::*/
+.box{
+	box-shadow: 1px 1px 3px rgba(230, 230, 230, 1.0);
+	background-color: white;
+	padding: 10px;
+}
+.box-little{
+	box-shadow: 1px 1px 3px rgba(220, 220, 220, 1.0);
+	background-color: white;
+	padding: 5px;
+	content: " ";
+}
+.box-litle div{
+	width: 100%;
+}
+.box div{
+	width: 100%;
+}
+.box-little:hover{
+	transition-duration: 0.2s;
+	box-shadow: 1px 1px 9px rgba(150, 150, 150, 1.0);
+	background-color: rgba(245, 245, 245, 1.0)
+}
+.box-header{
+	padding: 5px 0px;
+	border-bottom: 1px solid rgba(240, 240, 240, 1.0);
+	font-weight: bolder;
+	color: #333;
+	content: " ";
+
+}
+.box-header h2 {
+	margin: 0px;
+}
+
+.box-body{
+	padding: 5px 0px;
+}
+.box-body img{
+	width: 100%;
+	min-height: 150px;
+	padding: 3px 0px;
+}
+.box-footer{
+	padding: 5px 0px;
+	font-weight: bolder;
+	color: grey;
+	text-align: center;
+}
+.text-first{
+
+}
+.text-big{
+	font-size: 20px;
+}
+.title-food{
+	font-family: 'Signika', sans-serif;
+	font-size: 45px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(240, 240, 240, 1.0)
+}
+.description-food{
+	font-size: 20px;
+}
+
+.left-box{
+	padding-left: 0px;
+	padding-right: 5px;
+}
+.right-box{
+	padding-left: 5px;
+	padding-right: 0px;
+}
+.row{
+	margin-bottom: 10px;
+}
+
+/*::::::::::::::::::::::::::::::::::::*/
+.item{
+	padding: 5px;
+	height: 35px;
+}
+.item div:nth-child(2) button{
+	color: white;
+}
+.item:hover div:nth-child(2) button{
+	color: rgba(65,131,188,1);
+}
+
+/*::::::::::::box header::::::::::*/

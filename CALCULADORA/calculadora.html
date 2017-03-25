@@ -5,253 +5,139 @@
 	<title>calculadora</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/calculadora.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<style>
+		body{
+			font-family: 'Raleway', sans-serif;
+			padding-top: 90px;
+		}
+		button:focus{
+			outline: 0px;
+		}
+		input:focus{
+			outline: 0px;
+		}
+		table{
+			background-color: white;
+		}
+
+	</style>
+
 	<script type="text/javascript" src="js/logica.js"></script>
 </head>
 <body>
-
-	<a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
-		<style type="text/css">
-			#index input{
-			  position: fixed;
-			  border: none;
-			  height: 50px;
-			  width: 50px;
-			  right: 30px;
-			  bottom: 30px;
-			  border-radius: 25px;
-			  box-shadow: 2px 2px 8px #333;
-			  background-color: rgba(255,53,0,1);
-			  color: white;
-			  margin-left: 500px;
-			  font-size: 25px;
-			}
-			#index input:hover{
-				width: 54px;
-				height: 54px;
-				right:28px;
-			  	bottom: 27px;
-			  	border-radius: 27px;
-			}
-		</style>
-
-	<!--::::::INCLUDE menu_cuadrados::::
-
-
-	<div id="div_all">
-
-		<div class="div_second">
-			<div id="div_third_a" class="div_third">
-				<img src="img/call-answer.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_b" class="div_third">
-				<img src="img/cinema-clapper-.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_c" class="div_third">
-				<img src="img/message-envelope.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_d" class="div_third">
-				<img src="img/obscure-glasses.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_e" class="div_third">
-				<img src="img/puzzle-part.png" alt=""/>
-			</div>
-		</div>
-		<div class="div_second">
-			<div id="div_third_a" class="div_third">
-				<img src="img/call-answer.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_b" class="div_third">
-				<img src="img/cinema-clapper-.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_c" class="div_third">
-				<img src="img/message-envelope.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_d" class="div_third">
-				<img src="img/obscure-glasses.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_e" class="div_third">
-				<img src="img/puzzle-part.png" alt=""/>
-			</div>
-		</div>
-		<div class="div_second">
-			<div id="div_third_a" class="div_third">
-				<img src="img/call-answer.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_b" class="div_third">
-				<img src="img/cinema-clapper-.png" alt=""/>
-			</div>
-		</div>
-
-		<div class="div_second">
-			<div id="div_third_c" class="div_third">
-				<img src="img/message-envelope.png" alt=""/>
-			</div>
-		</div>
-	</div>
-
-	<!---->
 	
-<main id="main1">
-	<section id="section1">
-		<div id="div1">
-			<div class="ln" id="linea1">
-				<input id="lcd" type="text" readonly="" />
-				<input id="mini-lcd" type="text" name="" readonly="" />
+	<!-- con bootstrap -->
+	<header class="navbar-fixed-top" style="box-shadow: 1px 1px 4px rgba(150,150,150,0.5);border-bottom: 3px solid #006699;background: white;">
+		<div class="container">
+			<h1 style="color: #006699">Calculadora</h1>
+		</div>
+	</header>
+	<section style="color: white;" class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<br>
+					<table class="table table-bordered" >
+						<tr>
+							<td colspan="4">
+								<input id="lcd" type="text" class="form-control" type="button">
+								<input id="mini-lcd" type="text" name="" readonly="" class="form-control" />
+							</td>
+							
+						</tr>
+						<tr>
+							<td><button class="btn form-control" type="button" onclick="raizCuadrada()">&#8730;</button></td>
+							<td><button class="btn form-control" type="button" onclick="potencia()">x<sup>2</sup></button></td>
+							<td><button class="btn form-control" type="button" onclick="clearLCD()">C</button></td>
+							<td><button class="btn form-control" type="button" onclick="borrar()">&#8592</button></td>
+						</tr>
+						<tr>
+							<td><button class="btn form-control" style="margin:0px;" type="button" onclick="teclear(7)">7</button></td>
+							<td><button class="btn form-control" type="button" onclick="teclear(8)">8</button></td>
+							<td><button class="btn form-control" type="button" onclick="teclear(9)">9</button></td>
+							<td><button class="btn form-control" type="button" onclick="dividir()">/</button></td>
+							
+						</tr>
+						<tr>
+							<td><button class="btn form-control" type="button" onclick="teclear(4)">4</button></td>
+							<td><button class="btn form-control" type="button" onclick="teclear(5)">5</button></td>
+							<td><button class="btn form-control" type="button" onclick="teclear(6)">6</button></td>
+							<td><button class="btn form-control" type="button" onclick="multiplicar()">x</button></td>
+							
+						</tr>
+						<tr>
+							<td><button class="btn form-control" type="button" onclick="teclear(1)">1</button></td>
+							<td><button class="btn form-control" type="button" onclick="teclear(2)">2</button></td>
+							<td><button class="btn form-control" type="button" onclick="teclear(3)">3</button></td>
+							<td><button class="btn form-control" type="button" onclick="restar()">-</button></td>
+							
+						</tr>
+						<tr>
+							<td><button class="btn form-control" type="button" onclick="teclear('.')">.</button></td>
+							<td><button class="btn form-control" type="button" onclick="teclear(0)">0</button></td>
+							<td><button class="btn form-control" type="button" onclick="igual()">=</button></td>
+							<td><button class="btn form-control" type="button" onclick="sumar()">+</button></td>
+							
+						</tr>
+					</table>
+					<script type="text/javascript">
+						document.getElementById("lcd").value = 0;
+					</script>
+					<br>
+				</div>
 			</div>
-			<div class="ln" id="linea2">
-				<button class="btn" value="7" onclick="teclear(7)">7</button>
-				<button class="btn" value="8" onclick="teclear(8)">8</button>
-				<button class="btn" value="9" onclick="teclear(9)">9</button>
-				<button class="btn2" value="/" onclick="dividir()">/</button>
-				<button class="btn2" value="&#8592" onclick="borrar()">&#8592</button>
-			</div>
-			<div class="ln" id="linea3">
-				<button class="btn" value="4" onclick="teclear(4)">4</button>
-				<button class="btn" value="5" onclick="teclear(5)">5</button>
-				<button class="btn" value="6" onclick="teclear(6)">6</button>
-				<button class="btn2" value="x" onclick="multiplicar()">x</button>
-				<button class="btn2" value="C" onclick="clearLCD()">C</button>
-			</div>
-			<div class="ln" id="linea4">
-				<button class="btn" value="1" onclick="teclear(1)">1</button>
-				<button class="btn" value="2" onclick="teclear(2)">2</button>
-				<button class="btn" value="3" onclick="teclear(3)">3</button>
-				<button class="btn2" value="-" onclick="restar()">-</button>
-				<button class="btn2" value="pot" onclick="potencia()">x<sup>2</sup></button>
-			</div>
-			<div class="ln" id="linea5">
-				<button class="btn" value="." onclick="teclear('.')">.</button>
-				<button class="btn" value="0" onclick="teclear(0)">0</button>
-				<button class="btn2" value="=" onclick="igual()">=</button>
-				<button class="btn2" value="+" onclick="sumar()">+</button>
-				<button class="btn2" value="" onclick="raizCuadrada()">&#8730</button>
-			</div>
-			<script type="text/javascript">
-				document.getElementById("lcd").value = 0;
-			</script>
+			
 		</div>
 	</section>
-	<div id="caja">
-		<div id="social1"><a href="https://www.facebook.com/EducationalApplications456/" target="_blank"><img src="img/like1.png" alt=""/></a></div>
-	</div>
-</main>
+	<!-- /con bootstrap -->
+	<a id="index" href="../index.html"><button type="button"><span class="glyphicon glyphicon-plus"></span></button></a>
+	<style type="text/css">
+		#index button{
+			position: fixed;
+			border: none;
+			height: 60px;
+			width: 60px;
+			right: 30px;
+			bottom: 30px;
+			border-radius: 50%;
+			background-color: white;
+			color: #006699;
+			margin-left: 500px;
+			font-size: 16px;
+			border: 2px solid #006699;
+		}
+		#index button:hover{
+			background-color: rgba(220, 220, 220,1)
+		}
+	</style>
 
-<header id="header1">
-		<label>
-			<a href="../index.html"><img src="../img/inicio.png" width="60px"></a>
-		</label>
-		<h1>CALCULADORA</h1>
-	</header>
 
-<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
-	<div>Icons made by
-		<a href="http://www.freepik.com" title="Freepik">Freepik</a> from
-		<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
-		<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-	</div>
-</footer>
-
-<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
-		<div id="div_menu" class="contenedor">
-			<input type="checkbox" id="menu-bar">
-			<label  id="label_menu" class="icon-menu" for="menu-bar">
-				<img src="../img/inicio.png">
-			</label>
-			<nav class="menu">
-				<a href="../index.html">Inicio</a>
-				<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
-				<a href="">Blog</a>
-				<a href="">Contacto</a>
-			</nav>
+	<footer style="background: rgba(2,10,20,1);padding: 10px;color: white">
+		<div class="container text-white">
+			Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+			<div>Icons made by
+				<a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+				<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
+				<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</div>
 		</div>
-		<!--fin de menu-->
+	</footer>
 
-	<!--::::::::::EXOCLICK ADS:::::::::::::-->
-	<div id="div_ad1" class="div_ad">
-		<script type="text/javascript">
-		var ad_idzone = "2312027",
-			 ad_width = "250",
-			 ad_height = "250";
-		</script>
-		<script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-		<noscript><a href="http://main.exdynsrv.com/img-click.php?idzone=2312027" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2312027&output=img&type=250x250" width="250" height="250"></a></noscript>
+	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+	<div id="div_menu" class="contenedor navbar-fixed-top" >
+		<input type="checkbox" id="menu-bar">
+		<label  id="label_menu" class="icon-menu" for="menu-bar">
+			<img src="../img/inicio.png">
+		</label>
+		<nav class="menu">
+			<a href="../index.html">Inicio</a>
+			<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
+			<a href="">Blog</a>
+			<a href="">Contacto</a>
+		</nav>
 	</div>
-
-	<div id="div_ad2" class="div_ad">
-		<script type="text/javascript">
-			var ad_idzone = "2312031",
-			 ad_width = "250",
-			 ad_height = "250";
-		</script>
-		<script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-		<noscript><a href="http://main.exdynsrv.com/img-click.php?idzone=2312031" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2312031&output=img&type=250x250" width="250" height="250"></a></noscript>
-	</div>
-
-	<div id="div_ad3" class="div_ad">
-		<script type="text/javascript">
-			var ad_idzone = "2312033",
-			 ad_width = "250",
-			 ad_height = "250";
-		</script>
-		<script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-		<noscript><a href="http://main.exdynsrv.com/img-click.php?idzone=2312033" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2312033&output=img&type=250x250" width="250" height="250"></a></noscript>
-	</div>
-
-	<div id="div_ad4" class="div_ad">
-		<script type="text/javascript">
-			var ad_idzone = "2312035",
-			 ad_width = "250",
-			 ad_height = "250";
-		</script>
-		<script type="text/javascript" src="https://ads.exdynsrv.com/ads.js"></script>
-		<noscript><a href="http://main.exdynsrv.com/img-click.php?idzone=2312035" target="_blank"><img src="https://syndication.exdynsrv.com/ads-iframe-display.php?idzone=2312035&output=img&type=250x250" width="250" height="250"></a></noscript>
-	</div>
-
-	<script type="text/javascript" src="http://syndication.exdynsrv.com/splash.php?idzone=2312463"></script>
-	<!--::::::::::FIN DE EXOCLICK ADS:::::::::::::-->
-
-	<!--::::::::::ADXXX ADS:::::::::::::>
-
-	<div id="adbyadxxx" class="adxxx">
-		 <div id="SC_TBlock_213406" class="SC_TBlock">...</div> 
-	</div>
-
-	<div id="adbyadxxx2" class="adxxx">
-		 <div id="SC_TBlock_213407" class="SC_TBlock">...</div> 
-	</div>
-
-	<script type="text/javascript">var SC_CId = "213406",SC_Domain="n.adxxx.org";SC_Start_213406=(new Date).getTime();</script>
- 	<script type="text/javascript" src="//st.adxxx.org/js/adv_out.js"></script> 
- 
- 	<script type="text/javascript">var SC_CId = "213407",SC_Domain="n.adxxx.org";SC_Start_213407=(new Date).getTime();</script>
- 	<script type="text/javascript" src="//st.adxxx.org/js/adv_out.js"></script> 
-	<!::::::::::FIN DE EXOCLICK ADS:::::::::::::-->
+	<!--fin de menu-->
 </body>
 </html>

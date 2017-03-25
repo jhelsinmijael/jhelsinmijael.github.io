@@ -1,5 +1,5 @@
-rgba(150, 150, 150, 0.3)DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Subneteo online</title>
 
@@ -8,36 +8,51 @@ rgba(150, 150, 150, 0.3)DOCTYPE html>
 	<script type="text/javascript" src="js1/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js1/logica.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/subneteo.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<meta name="description" content="Aplicacion online para crear subredes">
 	<meta name="keywords" content="generador de codigo rgba, rgba generator, RGBA, CODIGO DE COLORES,Subneteo,subneteador online, subredes, sacar subredes online,Subneteo de redes ip, ip, suneteador de redes ip online,subredes ip,generar subredes ip,como subnetear,aprende a subnetear, creando subredes cisco, cisco, calculadora ip cisco,generar subredes online">
+	<style>
+		body{
+			font-family: 'Raleway', sans-serif;
+		}
+	</style>
 </head>
-<body style="background-color: rgba(94,167,186,0.1);">
+<body style="background-color: #eee;">
+
+	<header style="background: white;border-bottom: 3px solid #006699" class="navbar-fixed-top">
+		<div class="container">
+		<h1 style="color: #006699;">Subneteo Online</h1>
+		</div>
+
+	</header>
 
 	<div style="height: 60px;">:)</div>
 
+	<br>
+
 	<div class="container-fluid">
 		<div class="row">
-			<div  style="background-color:white;border-radius:3px;justify-content: center;margin-top: 20px;padding: 10px;box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);border-top: 3px solid orange;" class="col-xs-12 col-md-8   col-md-offset-2 text-primary">
-				<h3>¿Que es?</h3>
-				<p>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</p>
+			<div  style="background-color:#d9edf7;border-radius:3px;justify-content: center;margin-top: 20px;padding: 10px;box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12 col-md-8   col-md-offset-2 bg-info">
+				<h3 class="bg-info">¿Que es?</h3>
+				<p style="color: #006699;"><strong>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</strong></p>
 			</div>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col-xs-12  col-md-8  col-md-offset-2 text-primary">
-				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: white;border-radius: 3px;  float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);" class="col-xs-12 col-md-4">
-					<h4>Clase A</h4>
+				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: #d9edf7;border-radius: 3px;  float: left;padding: 10px 0px;border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12 col-md-4 ">
+					<h4 style="color: initial;">Clase A</h4>
 					<p><strong>from:</strong>0.0.0.0 </p>
 					<p><strong>to:</strong> 127.255.255.255</p>
 				</div>
-				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: white;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);" class="col-xs-12  col-md-4">
-					<h4>Clase B</h4>
+				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: #d9edf7;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12  col-md-4">
+					<h4 style="color: initial;">Clase B</h4>
 					<p><strong>from:</strong>128.255.255.255</p>
 					<p><strong>to:</strong>192.255.255.255</p>
 				</div>
-				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: white;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(32,175,128,1);" class="col-xs-12  col-md-4">
-					<h4>Clase C</h4>
+				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: #d9edf7;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12  col-md-4">
+					<h4 style="color: initial;">Clase C</h4>
 					<p><strong>from:</strong>193.255.255.255</p>
 					<p><strong>to:</strong>223.255.255.255</p>
 				</div>
@@ -108,62 +123,57 @@ rgba(150, 150, 150, 0.3)DOCTYPE html>
 		</div>
 	</div>
 
-<a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
-<style type="text/css">
-	#index input{
-		transition-duration: 0.9s;
-		position: fixed;
-		border: none;
-		height: 50px;
-		width: 50px;
-		right: -100px;
-		bottom: 50px;
-		border-radius: 25px;
-		box-shadow: 2px 2px 8px #333;
-		background-color: rgba(255,53,0,1);
-		color: white;
-		margin-left: 500px;
-		font-size: 25px;
-	}
-	#index input:hover{
-		width: 50px;
-		height: 50px;
-		right:30px;
-		bottom: 50px;
-		border-radius: 27px;
-		background-color: rgba(255,53,0,0.8);
-	}
-</style>
+	<br>
 
-<header class="navbar-fixed-top bg-primary">
-	<div class="container">
-		<h1>SUBNETEO ONLINE</h1>
+	<a id="index" href="../index.html"><button type="button"><span class="glyphicon glyphicon-plus"></span></button></a>
+	<style type="text/css">
+		#index button{
+			position: fixed;
+			border: none;
+			height: 60px;
+			width: 60px;
+			right: 30px;
+			bottom: 30px;
+			border-radius: 50%;
+			background-color: white;
+			color: #006699;
+			margin-left: 500px;
+			font-size: 16px;
+			border: 2px solid #006699;
+		}
+		#index button:hover{
+			background-color: rgba(220, 220, 220,1)
+		}
+	</style>
+
+	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+	<div id="div_menu" class="contenedor navbar-fixed-top">
+		<input type="checkbox" id="menu-bar">
+		<label  id="label_menu" class="icon-menu" for="menu-bar">
+			<img src="../img/inicio.png">
+		</label>
+		<nav class="menu">
+			<a href="../index.html">Inicio</a>
+			<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
+			<a href="">Blog</a>
+			<a href="">Contacto</a>
+		</nav>
 	</div>
-	
-</header>
-
-<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
-<div id="div_menu" class="contenedor">
-	<input type="checkbox" id="menu-bar">
-	<label  id="label_menu" class="icon-menu" for="menu-bar">
-		<img src="../img/inicio.png">
-	</label>
-	<nav class="menu">
-		<a href="../index.html">Inicio</a>
-		<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
-		<a href="">Blog</a>
-		<a href="">Contacto</a>
-	</nav>
-</div>
-<!--fin de menu-->
+	<!--fin de menu-->
 
 
 
-<footer id="footer1"> Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.
-
-	Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
-</footer>
-<script>desactivar()</script>
+	<footer style="background: rgba(2,10,20,1);padding: 10px;color: white">
+		<div class="container text-white">
+			Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+			<div>Icons made by
+				<a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+				<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
+				<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</div>
+		</div>
+	</footer>
+	<script>desactivar()</script>
 </body>
 </html>
 

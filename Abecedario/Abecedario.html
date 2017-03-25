@@ -1,248 +1,254 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-    <link rel="stylesheet" href="css/Abecedario.css" media="screen" title="no title" charset="utf-8">
-    <script src="js/Abecedario.js" type="text/javascript"></script>
-  </head>
-  <body>
-    
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="css/Abecedario.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="js/Abecedario.js" type="text/javascript"></script>
+  <style>
+    body{
+      font-family: 'Raleway', sans-serif;
+      padding-top: 90px;
+    }
+  </style>
+</head>
+<body>
 
-    <a id="index" href="../index.html"><input  type="submit" name="" value="+" onclick="detener()"></a>
+  <header class="navbar-fixed-top" style="border-bottom: 3px solid #006699;background-color: white;">
+    <div class="container">
+      <h1 style="color: #006699;">Abecedario ll</h1>
+    </div>
+  </header>
 
-    <style type="text/css">
-      #index input{
-        position: fixed;
-        border: none;
-        height: 50px;
-        width: 50px;
-        right: 30px;
-        bottom: 30px;
-        border-radius: 25px;
-        box-shadow: 2px 2px 8px #333;
-        background-color: rgba(255,53,0,1);
-        color: white;
-        margin-left: 500px;
-        font-size: 25px;
-      }
-      #index input:hover{
-        width: 54px;
-        height: 54px;
-        right:28px;
-          bottom: 27px;
-          border-radius: 27px;
-      }
-    </style>
-    <center>
+
+  <a id="index" href="../index.html"><button type="button"><span class="glyphicon glyphicon-plus"></span></button></a>
+  <style type="text/css">
+    #index button{
+      position: fixed;
+      border: none;
+      height: 60px;
+      width: 60px;
+      right: 30px;
+      bottom: 30px;
+      border-radius: 50%;
+      background-color: white;
+      color: #006699;
+      margin-left: 500px;
+      font-size: 16px;
+      border: 2px solid #006699;
+    }
+    #index button:hover{
+      background-color: rgba(220, 220, 220,1)
+    }
+  </style>
+  <center>
     <main id="main1">  
 
       <div id="Abecedario">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="music/parlante.jpg"></div>
-          <div id="div_letra2" class="div_circle">
-          </div>
-          <div id="div_letra3" class="div_mitad div_mitad2">
-            <audio id="myAudio" controls="volume">
+        <div id="div_letra1" class="div_mitad div_mitad1"><img src="music/parlante.jpg"></div>
+        <div id="div_letra2" class="div_circle">
+        </div>
+        <div id="div_letra3" class="div_mitad div_mitad2">
+          <audio id="myAudio" controls="volume">
             <source src="music/Abecedario.mp3" type="audio/mpeg">
-            Your browser does not support the <code>audio</code> tag.
+              Your browser does not support the <code>audio</code> tag.
+            </div>
           </div>
-        </div>
 
-      <section id="section1" class="m_section">
+          <section id="section1" class="m_section">
 
-        <audio id="myAudio"  hidden="hidden"  loop="true">
-            <source src="music/Different Heaven & EH!DE - My Heart.mp3" type="audio/mpeg">
-            Your browser does not support the <code>audio</code> tag.
+            <audio id="myAudio"  hidden="hidden"  loop="true">
+              <source src="music/Different Heaven & EH!DE - My Heart.mp3" type="audio/mpeg">
+                Your browser does not support the <code>audio</code> tag.
 
-  </audio>
-        <div id="letra_a" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/avion.png"></div>
-          <div id="div_letra2" class="div_circle"><input id="letra_a" type="submit" name="" value="a" onclick="decirVocal()"></div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Avión</div>
-        </div>
+              </audio>
+              <div id="letra_a" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/avion.png"></div>
+                <div id="div_letra2" class="div_circle"><input id="letra_a" type="submit" name="" value="a" onclick="decirVocal()"></div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Avión</div>
+              </div>
 
-        <div id="letra_b" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/buho.png"></div>
-          <div id="div_letra2" class="div_circle">b</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Búho</div>
-        </div>
+              <div id="letra_b" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/buho.png"></div>
+                <div id="div_letra2" class="div_circle">b</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Búho</div>
+              </div>
 
-        <div id="letra_c" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/casa.png"></div>
-          <div id="div_letra2" class="div_circle">c</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Casa</div>
-        </div>
+              <div id="letra_c" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/casa.png"></div>
+                <div id="div_letra2" class="div_circle">c</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Casa</div>
+              </div>
 
-        <div id="letra_d" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/donas.png"></div>
-          <div id="div_letra2" class="div_circle">d</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Donas</div>
-        </div>
+              <div id="letra_d" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/donas.png"></div>
+                <div id="div_letra2" class="div_circle">d</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Donas</div>
+              </div>
 
-        <div id="letra_e" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/elefante.png"></div>
-          <div id="div_letra2" class="div_circle">e</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Elefante</div>
-        </div>
+              <div id="letra_e" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/elefante.png"></div>
+                <div id="div_letra2" class="div_circle">e</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Elefante</div>
+              </div>
 
-        <div id="letra_f" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/foca.png"></div>
-          <div id="div_letra2" class="div_circle">f</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Foca</div>
-        </div>
+              <div id="letra_f" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/foca.png"></div>
+                <div id="div_letra2" class="div_circle">f</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Foca</div>
+              </div>
 
-        <div id="letra_g" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/gato.png"></div>
-          <div id="div_letra2" class="div_circle">g</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Gato</div>
-        </div>
+              <div id="letra_g" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/gato.png"></div>
+                <div id="div_letra2" class="div_circle">g</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Gato</div>
+              </div>
 
-        <div id="letra_h" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/higo.png"></div>
-          <div id="div_letra2" class="div_circle">h</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Higos</div>
-        </div>
+              <div id="letra_h" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/higo.png"></div>
+                <div id="div_letra2" class="div_circle">h</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Higos</div>
+              </div>
 
-        <div id="letra_i" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/iguana.png"></div>
-          <div id="div_letra2" class="div_circle">i</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Iguana</div>
-        </div>
+              <div id="letra_i" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/iguana.png"></div>
+                <div id="div_letra2" class="div_circle">i</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Iguana</div>
+              </div>
 
-        <div id="letra_j" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/jesus.png"></div>
-          <div id="div_letra2" class="div_circle">j</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Jesus</div>
-        </div>
+              <div id="letra_j" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/jesus.png"></div>
+                <div id="div_letra2" class="div_circle">j</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Jesus</div>
+              </div>
 
-        <div id="letra_k" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/kiwi.png"></div>
-          <div id="div_letra2" class="div_circle">k</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Kiwi</div>
-        </div>
+              <div id="letra_k" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/kiwi.png"></div>
+                <div id="div_letra2" class="div_circle">k</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Kiwi</div>
+              </div>
 
-        <div id="letra_l" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/hilo.png"></div>
-          <div id="div_letra2" class="div_circle">l</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Hilo</div>
-        </div>
+              <div id="letra_l" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/hilo.png"></div>
+                <div id="div_letra2" class="div_circle">l</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Hilo</div>
+              </div>
 
-        <div id="letra_m" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/manzana.png"></div>
-          <div id="div_letra2" class="div_circle">m</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Manzana</div>
-        </div>
+              <div id="letra_m" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/manzana.png"></div>
+                <div id="div_letra2" class="div_circle">m</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Manzana</div>
+              </div>
 
-        <div id="letra_n" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/naranja.png"></div>
-          <div id="div_letra2" class="div_circle">n</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Naranja</div>
-        </div>
+              <div id="letra_n" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/naranja.png"></div>
+                <div id="div_letra2" class="div_circle">n</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Naranja</div>
+              </div>
 
-        <div id="letra_ñ" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/ñandu.png"></div>
-          <div id="div_letra2" class="div_circle">ñ</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Ñandu</div>
-        </div>
+              <div id="letra_ñ" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/ñandu.png"></div>
+                <div id="div_letra2" class="div_circle">ñ</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Ñandu</div>
+              </div>
 
-        <div id="letra_o" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/oso.png"></div>
-          <div id="div_letra2" class="div_circle">o</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Oso</div>
-        </div>
+              <div id="letra_o" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/oso.png"></div>
+                <div id="div_letra2" class="div_circle">o</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Oso</div>
+              </div>
 
-        <div id="letra_p" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/perro.png"></div>
-          <div id="div_letra2" class="div_circle">p</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Perro</div>
-        </div>
+              <div id="letra_p" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/perro.png"></div>
+                <div id="div_letra2" class="div_circle">p</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Perro</div>
+              </div>
 
-        <div id="letra_q" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/queso.png"></div>
-          <div id="div_letra2" class="div_circle">q</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Queso</div>
-        </div>
+              <div id="letra_q" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/queso.png"></div>
+                <div id="div_letra2" class="div_circle">q</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Queso</div>
+              </div>
 
-        <div id="letra_r" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/rabano.png"></div>
-          <div id="div_letra2" class="div_circle">r</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Rábano</div>
-        </div>
+              <div id="letra_r" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/rabano.png"></div>
+                <div id="div_letra2" class="div_circle">r</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Rábano</div>
+              </div>
 
-        <div id="letra_s" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/sapo.png"></div>
-          <div id="div_letra2" class="div_circle">s</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Sapo</div>
-        </div>
+              <div id="letra_s" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/sapo.png"></div>
+                <div id="div_letra2" class="div_circle">s</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Sapo</div>
+              </div>
 
-        <div id="letra_t" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/tanque.png"></div>
-          <div id="div_letra2" class="div_circle">t</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Tanque</div>
-        </div>
+              <div id="letra_t" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/tanque.png"></div>
+                <div id="div_letra2" class="div_circle">t</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Tanque</div>
+              </div>
 
-        <div id="letra_u" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/uva.png"></div>
-          <div id="div_letra2" class="div_circle">u</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Uva</div>
-        </div>
+              <div id="letra_u" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/uva.png"></div>
+                <div id="div_letra2" class="div_circle">u</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Uva</div>
+              </div>
 
-        <div id="letra_v" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/vaca.png"></div>
-          <div id="div_letra2" class="div_circle">v</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Vaca</div>
-        </div>
+              <div id="letra_v" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/vaca.png"></div>
+                <div id="div_letra2" class="div_circle">v</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Vaca</div>
+              </div>
 
-        <div id="letra_w" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/waffle.png"></div>
-          <div id="div_letra2" class="div_circle">w</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Waffle</div>
-        </div>
+              <div id="letra_w" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/waffle.png"></div>
+                <div id="div_letra2" class="div_circle">w</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Waffle</div>
+              </div>
 
-        <div id="letra_x" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/xilofono.png"></div>
-          <div id="div_letra2" class="div_circle">x</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Xilófono</div>
-        </div>
+              <div id="letra_x" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/xilofono.png"></div>
+                <div id="div_letra2" class="div_circle">x</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Xilófono</div>
+              </div>
 
-        <div id="letra_y" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/yoyo.png"></div>
-          <div id="div_letra2" class="div_circle">y</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Yo-Yo</div>
-        </div>
+              <div id="letra_y" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/yoyo.png"></div>
+                <div id="div_letra2" class="div_circle">y</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Yo-Yo</div>
+              </div>
 
-        <div id="letra_z" class="letra">
-          <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/zanahoria.png"></div>
-          <div id="div_letra2" class="div_circle">z</div>
-          <div id="div_letra3" class="div_mitad div_mitad2">Zanahoria</div>
-        </div>
-
-        
-      </section>
+              <div id="letra_z" class="letra">
+                <div id="div_letra1" class="div_mitad div_mitad1"><img src="img/zanahoria.png"></div>
+                <div id="div_letra2" class="div_circle">z</div>
+                <div id="div_letra3" class="div_mitad div_mitad2">Zanahoria</div>
+              </div>
 
 
-    </main></center>
-    <footer id="footer1">
+            </section>
 
-    </footer>
-    <header id="header1">
-    
-      Abecedario
-    </header>
-    <!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
-    <div id="div_menu" class="contenedor">
-      <input type="checkbox" id="menu-bar">
-      <label  id="label_menu" class="icon-menu" for="menu-bar">
-        <img src="../img/inicio.png">
-      </label>
-      <nav class="menu">
-        <a href="../index.html">Inicio</a>
-        <a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
-        <a href="">Blog</a>
-        <a href="">Contacto</a>
-      </nav>
-    </div>
-    <!--fin de menu-->
-  </body>
-</html>
+
+          </main></center>
+          <footer id="footer1">
+
+          </footer>
+          
+          <!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+          <div id="div_menu" class="contenedor navbar-fixed-top">
+            <input type="checkbox" id="menu-bar">
+            <label  id="label_menu" class="icon-menu" for="menu-bar">
+              <img src="../img/inicio.png">
+            </label>
+            <nav class="menu">
+              <a href="../index.html">Inicio</a>
+              <a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
+              <a href="">Blog</a>
+              <a href="">Contacto</a>
+            </nav>
+          </div>
+          <!--fin de menu-->
+        </body>
+        </html>
