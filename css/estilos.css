@@ -45,3 +45,7 @@
 	height: 181px;
 	/*border: 5px solid #006699;*/
 }
+
+input:focus{
+	outline: 0px;
+}
