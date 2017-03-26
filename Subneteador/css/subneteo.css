@@ -7,7 +7,7 @@
 
 body{
 	/*background: rgba(37,128,91,0.2);*/
-	background-color: rgba(94,167,186,0.1);
+	background-color: rgba(0,180,115,0.1);
 }
 body:hover #index input{
 	transition-duration: 0.8s;
@@ -132,12 +132,12 @@ input{
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   font-size: 20px;
-  border-right: 1px solid #006699;
+  border-right: 1px solid rgba(0,180,115,1);
 }
 
 .menu a{
   display: block;
-  color: gray;
+  color: rgba(5,202,135,1);
   height: 70px;
   text-decoration: none;
   padding: 15px;
@@ -146,6 +146,8 @@ input{
 
 .menu a:hover{
   background: rgba(255,255,255,0.3);
+  color: rgba(0,180,115,1);
+  text-decoration: underline;
 }
 
 #menu-bar:checked ~ .menu{

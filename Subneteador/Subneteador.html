@@ -7,8 +7,9 @@
 
 	<script type="text/javascript" src="js1/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js1/logica.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/subneteo.css">
+	
 	<link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/subneteo.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<meta name="description" content="Aplicacion online para crear subredes">
 	<meta name="keywords" content="generador de codigo rgba, rgba generator, RGBA, CODIGO DE COLORES,Subneteo,subneteador online, subredes, sacar subredes online,Subneteo de redes ip, ip, suneteador de redes ip online,subredes ip,generar subredes ip,como subnetear,aprende a subnetear, creando subredes cisco, cisco, calculadora ip cisco,generar subredes online">
@@ -17,44 +18,62 @@
 			font-family: 'Raleway', sans-serif;
 		}
 	</style>
+	<link rel="stylesheet" type="text/css" href="css/cajas.css">
 </head>
 <body style="background-color: #eee;">
 
-	<header style="background: white;border-bottom: 3px solid #006699" class="navbar-fixed-top">
+	<header style="background: rgba(5,202,135,1);border-bottom: 3px solid rgba(5,202,135,1)" class="navbar-fixed-top">
 		<div class="container">
-		<h1 style="color: #006699;">Subneteo Online</h1>
+			<h1 style="color: white;">Subneteo Online</h1>
 		</div>
 
 	</header>
 
 	<div style="height: 60px;">:)</div>
 
-	<br>
+	<br><br>
 
 	<div class="container-fluid">
 		<div class="row">
-			<div  style="background-color:#d9edf7;border-radius:3px;justify-content: center;margin-top: 20px;padding: 10px;box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12 col-md-8   col-md-offset-2 bg-info">
-				<h3 class="bg-info">¿Que es?</h3>
-				<p style="color: #006699;"><strong>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</strong></p>
+			<div class="col-xs-12 col-md-8   col-md-offset-2 ">
+				
+				<div class="box">
+					<div class="box-header" style="background-color: rgba(5,202,135,1);color: white">¿Que es?</div>
+					<div class="box-body" style="border:1px solid rgba(5,202,135,1);">
+						<p style="color: #006699;"><strong>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</strong></p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col-xs-12  col-md-8  col-md-offset-2 text-primary">
-				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: #d9edf7;border-radius: 3px;  float: left;padding: 10px 0px;border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12 col-md-4 ">
-					<h4 style="color: initial;">Clase A</h4>
-					<p><strong>from:</strong>0.0.0.0 </p>
-					<p><strong>to:</strong> 127.255.255.255</p>
+				<div style="padding: 3px;padding-left: 0px;" class="col-xs-12 col-md-4 ">
+					<div class="box">
+						<div class="box-header" style="background-color: rgba(5,202,135,1);color: white">Clase A</div>
+						<div class="box-body" style="border:1px solid rgba(5,202,135,1);">
+							<p><strong>from:</strong>0.0.0.0 </p>
+							<p><strong>to:</strong> 127.255.255.255</p>
+						</div>
+					</div>
 				</div>
-				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: #d9edf7;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12  col-md-4">
-					<h4 style="color: initial;">Clase B</h4>
-					<p><strong>from:</strong>128.255.255.255</p>
-					<p><strong>to:</strong>192.255.255.255</p>
+				<div style="padding: 3px;" class="col-xs-12  col-md-4">					
+					<div class="box">
+						<div class="box-header" style="background-color: rgba(5,202,135,1);color: white">Clase B</div>
+						<div class="box-body" style="border:1px solid rgba(5,202,135,1);">
+							<p><strong>from:</strong>128.255.255.255</p>
+							<p><strong>to:</strong>192.255.255.255</p></strong></p>
+						</div>
+					</div>
 				</div>
-				<div style="box-shadow: 1px 1px 2px rgba(150, 150, 150, 0.3);background: #d9edf7;border-radius: 3px; float: left;padding: 10px 0px;border-top: 3px solid rgba(17,147,182,1);" class="col-xs-12  col-md-4">
-					<h4 style="color: initial;">Clase C</h4>
-					<p><strong>from:</strong>193.255.255.255</p>
-					<p><strong>to:</strong>223.255.255.255</p>
+				<div style="padding: 3px;padding-right: 0px;" class="col-xs-12  col-md-4">					
+					<div class="box">
+						<div class="box-header" style="background-color: rgba(5,202,135,1);color: white">Clase C</div>
+						<div class="box-body" style="border:1px solid rgba(5,202,135,1);">
+							<p><strong>from:</strong>193.255.255.255</p>
+							<p><strong>to:</strong>223.255.255.255</p></strong></p>
+						</div>
+					</div>
 				</div>
 			</div>			
 		</div>
