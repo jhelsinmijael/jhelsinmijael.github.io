@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Aplicaciones Educativas</title>
+	<title>Aplicaciones Educativas y más</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
 	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
 	<style>
-	body{
+		body{
 
-		font-family: 'Raleway', sans-serif;
-	}
+			font-family: 'Raleway', sans-serif;
+		}
+		header div div div form #input1:focus{
+			outline: 0px;
+		}
+		.text-header:hover{
+			color: white;
+		}
 	</style>
 </head>
 <body id="body" data-spy="scroll" data-target="navbar-1">
 	
 	<!-- CABECERA -->
-	<header style="background:white;color: gray;font-family: 'Raleway', sans-serif;">
-		<div class="container">
+	<header style="background:rgba(51,57,64,1);color: gray;font-family: 'Raleway', sans-serif;">
+		<div class="container" style="padding: 5px 0px;">
 			
-			<h1 class="text-white "><span><img src="img/logo-50-6.png" alt=""></span> Aplicaciones Educativas</h1>
+			<h1 class="text-white" style="color: white;"><span><img src="img/logo-50-6.png" alt=""></span> Aplicaciones Educativas y Más</h1>
 		</div>
 		<div style="background: black;" >
-			<nav id="menu" class="navbar navbar-default  " style="border-radius: 0px;border-bottom:3px solid skyblue;color: white;background: white" role="navigation">
+			<nav id="menu" class="navbar navbar-default navbar-inverse " style="border-radius: 0px;border:none;color: white;background: rgba(41,47,54,1);" role="navigation">
 				<div class="container-fluid">
 
 					<div class="navbar-header">
@@ -36,14 +42,14 @@
 						</button>
 						<!-- /icono menu -->
 						<!-- titulo -->
-						<a href="#" class="navbar-brand">Mijael Quispe</a>
+						<a href="#" class="navbar-brand text-header">Mijael Quispe</a>
 						<!-- /titulo -->
 					</div>
 
 					<div class="collapse navbar-collapse" id="navbar-1">
 						<ul class="nav navbar-nav" role="tablist">
-							<li><a href="#titulo1">Aplicaciones</a></li>
-							<li ><a href="#titulo2">Articulos</a></li>
+							<li><a href="#titulo1" class="text-header">Aplicaciones</a></li>
+							<li ><a href="#titulo2" class="text-header">Articulos</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
 									Dropdown <span class="caret"></span>
@@ -58,7 +64,7 @@
 
 						<form action="" class="navbar-form navbar-left" role="search">
 							<div class="form-group">
-								<input id="btnBuscar" type="text" class="form-control" placeholder="Buscar">
+								<input style="background-color: rgba(71,77,84,1);border: none;" id="btnBuscar" type="text" class="form-control" placeholder="Buscar" id="input1">
 							</div>
 						</form>
 
@@ -80,66 +86,68 @@
 	</div>
 	
 	<!-- SLIDER -->
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 ">
-				<div class="col-md-12 ">
-					<div id="carousel-1" class="carousel slide" data-ride="carousel">
-						<!-- indicadores -->
-						<ol class="carousel-indicators">
-							<li class="active" data-target="#carousel-1" data-slide-to="0"></li>
-							<li data-target="#carousel-1" data-slide-to="1"></li>
-							<li data-target="#carousel-1" data-slide-to="2"></li>
-						</ol>
+			
+			<div class="col-md-12 " style="padding: 0px;">
+				<div id="carousel-1" class="carousel slide" data-ride="carousel">
+					<!-- indicadores -->
+					<ol class="carousel-indicators">
+						<li class="active" data-target="#carousel-1" data-slide-to="0"></li>
+						<li data-target="#carousel-1" data-slide-to="1"></li>
+						<li data-target="#carousel-1" data-slide-to="2"></li>
+					</ol>
 
-						<!-- contenedor de los slide -->
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<a href="CALCULADORA/calculadora.html" >
-									<img class="img-responsive" src="img/slider.png" alt="">
-								</a>
+					<!-- contenedor de los slide -->
+					<div class="carousel-inner" role="listbox" style="padding: 0px;">
+						<div class="item active" style="width: 100vw;">
+							<a href="CALCULADORA/calculadora.html" >
+								<img class="img-responsive" src="img/slider.png" alt="">
+							</a>
 
-								<div class="carousel-caption">
-									<h3>Calculadora</h3>
-									<p>
-										Use it!
-									</p>
-								</div>
+							<div class="carousel-caption">
+								<!-- <h3>Calculadora</h3> -->
+								<p>
+
+								 <!-- Use it! -->
+
+								</p>
 							</div>
-							<div class="item">
-								<a href="Subneteador/Subneteador.html">
-									<img class="img-responsive" src="img/slider2.png" alt="">
-								</a>								
-								<div class="carousel-caption">
-									<h3>Subneteador ip</h3>
-									<p>
-										crea redes tu mismo
-									</p>
-								</div>
+						</div>
+						<div class="item">
+							<a href="Subneteador/Subneteador.html">
+								<img class="img-responsive" src="img/slider2.png" alt="">
+							</a>								
+							<div class="carousel-caption">
+								<!-- <h3>Subneteador ip</h3> -->
+								<p>
+									<!-- crea redes tu mismo -->
+								</p>
 							</div>
-							<div class="item">
-								<a href="rgbaGenerator/rgba.html">
-									<img class="img-responsive" src="img/slider3.png" alt="">
-								</a>								
-								<div class="carousel-caption">
-									<h3>RGBA</h3>
-									<p>
-										Descubre un mundo de colores
-									</p>
-								</div>
+						</div>
+						<div class="item">
+							<a href="rgbaGenerator/rgba.html">
+								<img class="img-responsive" src="img/slider3.png" alt="">
+							</a>								
+							<div class="carousel-caption">
+								<!-- <h3>RGBA</h3> -->
+								<p>
+									<!-- Descubre un mundo de colores -->
+								</p>
 							</div>
 						</div>
 					</div>
-
-					<!-- controles -->
-					<a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-					</a>
-					<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-					</a>
 				</div>
+
+				<!-- controles -->
+				<a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
 			</div>
+			
 		</div>
 	</div>
 	<!-- /SLIDER -->
