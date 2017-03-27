@@ -66,6 +66,7 @@ header label{
 table{
 	border-radius: 5px;
 	border: 2px solid rgba(0,143,164,1);
+	color: #333;
 }
 thead{
 	background: rgba(0,143,164,1);

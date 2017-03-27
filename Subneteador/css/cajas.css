@@ -7,6 +7,9 @@
 	width: 100%;
 	padding: 10px;
 }
+.box div img{
+	width: 20px;
+}
 .box-header{
 	font-weight: bolder;
 }
