@@ -21,6 +21,9 @@
 		#btnBuscar:focus{
 			outline: 0px;
 		}
+		.modal-body img{
+			width: 100%;
+		}
 	</style>
 </head>
 <body id="body" data-spy="scroll" data-target="navbar-1">
@@ -67,8 +70,37 @@
 
 						<form action="" class="navbar-form navbar-left" role="search">
 							<div class="form-group">
-
+								<style type="text/css">
+									input:hover{
+										background-color: white;
+									}
+									input:focus{
+										background-color: white;
+										outline: 0px;
+									}
+									#btnBuscar:hover{
+										background-color: white;
+									}
+									#btnBuscar:focus{
+										background-color: white;
+										outline: 0px;
+									}
+								</style>
 								<input   type="text" class="form-control" placeholder="Buscar" style="background-color: rgba(71,77,84,1);border: none;" id="btnBuscar">
+								<style type="text/css">
+									input:hover{
+										background-color: white;
+									}
+									input:focus{
+										background-color: white;
+									}
+									#btnBuscar:hover{
+										background-color: white;
+									}
+									#btnBuscar:focus{
+										background-color: white;
+									}
+								</style>
 							</div>
 						</form>
 
@@ -113,7 +145,7 @@
 								<!-- <h3>Calculadora</h3> -->
 								<p>
 
-								 <!-- Use it! -->
+									<!-- Use it! -->
 
 								</p>
 							</div>
@@ -307,11 +339,37 @@
 		</div>
 	</footer>
 	<!-- /FOOTER -->
+
+
+	<a id="a" href="#modal1" class="btn btn-primary btn-lg" data-toggle="modal">Boton #1</a>
+
+	<div id="modal1" class="modal fade">
+		<div class="modal-dialog" >
+			<div class="modal-content" >
+				<!-- modal header -->
+				<!-- /modal header -->
+				<!-- modal body -->
+				<div class="modal-body">
+				<img src="img/modal1.png" alt="">
+				</div>
+				<!-- /modal body -->
+				<!-- modal footer -->
+			
+				<!-- /modal footer -->
+			</div>
+		</div>
+	</div>
+
+	
 	
 	<!-- SCRIPTS -->
 	<script src="bootstrap-3.3.6-dist/js/jquery-1.12.4.min.js"></script>
 	<script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
-
+	
+	<script>
+		$("#a").click();
+		$("#a").remove();
+	</script>
 	<!-- <script src="js/fixedmenu.js"></script> -->
 
 	<script src="js/busqueda.js"></script>
