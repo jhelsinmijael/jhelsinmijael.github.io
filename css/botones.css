@@ -1,0 +1,42 @@
+.facebook-button{
+	padding: 10px;
+	border-radius: 3px;
+	background: white;
+	border: 1px solid rgba(39,89,139,1);
+	color: rgba(39,89,139,1);
+}
+
+.facebook-button:hover{
+	transition-duration: 0.3s;
+	background: rgba(39,89,139,1);
+	color: white;
+}
+
+.facebook-button:hover a{
+	color: white;
+	text-decoration: none;
+}
+
+.youtube-button{
+	float: right;
+	padding: 10px;
+	border-radius: 3px;
+	background: white;
+	border: 1px solid rgba(204,0,9,1);
+	color: rgba(204,0,9,1);
+}
+
+.youtube-button:hover{
+	transition-duration: 0.3s;
+	background: rgba(204,0,9,1);
+	color: white;
+}
+
+.youtube-button a{
+	color: rgba(204,0,9,1);
+	text-decoration: none;
+}
+.youtube-button:hover a{
+	color: white;
+	text-decoration: none;
+}

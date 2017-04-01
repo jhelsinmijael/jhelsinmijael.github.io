@@ -1,4 +1,7 @@
-@import "../../menu_cuadrados/menu_cuadrados.css";
+@import url("../../css/header.css");
+
+@import url("../../css/menu-apps.css");
+
 *{
 			margin: 0px;
 			padding: 0px;
@@ -6,11 +9,6 @@
 	a{
 		color: rgba(245,28,81,1);
 	}
-		body{
-			/*background: rgba(128,128,128,0.1);*/
-			background-color: rgba(245,28,81,0.1);
-			background: red;
-		}
 
 		.bg-black{
 			background-color: black;
@@ -33,6 +31,31 @@
 		border-radius: 5px;
 		color:white;
 		margin: 10px;
+
+		}
+		#boton1{
+
+		background:gray;
+		width: 100px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+		color:grey;
+		margin: 10px;
+		font-weight: bolder;
+
+		}
+		#boton2{
+
+		background:white;
+		width: 100px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+		color:grey;
+		margin: 10px;
+		font-weight: bolder;
+		border: 1px solid grey;
 
 		}
 		#rojo{
@@ -78,7 +101,7 @@
 		/*cabecera*/
 		
 		#cabecera{
-			background: rgba(245,28,81,1);
+			background: rgba(83,108,123,1);
 			color:white;
 
 		}
@@ -147,67 +170,4 @@
 		}
 
 
-
-/*::::::::::::::::::::::::::MENU::::::::::::::::::::::::::*/
-#div_menu{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 150px;
-}
-#menu-bar{
-  display: none;
-}
-
-#label_menu{
-  position: absolute;
-  top: 0px;
-  float: left;
-  font-size: 28px;
-  margin: 0px 0;
-  cursor: pointer;/*mano*/
-}
-#label_menu img{
-  top: 0px;
-  left: 0px;
-  width: 60px;
-  height: 60px;
-  filter: invert(80%);
-}
-
-.menu{
-  position: absolute;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background:  white;
-  transition: all 0.5s;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  font-size: 20px;
-  border-right: 1px solid rgba(245,28,81,1);
-}
-
-.menu a{
-  display: block;
-  color: rgba(245,28,81,1);
-  height: 70px;
-  text-decoration: none;
-  padding: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-}
-
-.menu a:hover{
-  color: rgba(245,28,81,1);
-  text-decoration: underline;
-}
-
-#menu-bar:checked ~ .menu{
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  transform: translateX(0%);
-}
-
-/*::::::::::::::::::FIN DE MENU:::::::::::::::::::::*/
 

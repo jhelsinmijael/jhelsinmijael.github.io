@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/botones.css">
 	<style>
 		body{
 
@@ -28,9 +29,11 @@
 </head>
 <body id="body" data-spy="scroll" data-target="navbar-1">
 	
-	<!-- CABECERA -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::CABECERA::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 	<header style="background:rgba(51,57,64,1);color: gray;font-family: 'Raleway', sans-serif;">
-		<div class="container" style="padding: 5px 0px;">
+		<div class="container" style="padding: 15px 0px;">
 			
 			<h1 class="text-white" style="color: white;"><span><img src="img/logo-50-6.png" alt=""></span> Aplicaciones Educativas y Más</h1>
 		</div>
@@ -68,8 +71,10 @@
 									}
 									input:focus{
 										background-color: white;
-										outline: 0px;
+										outline: 0px white;
 										color: white;
+										outline: none;
+										outline-color: red;
 									}
 									#btnBuscar:hover{
 										background-color: white;
@@ -113,9 +118,12 @@
 	<div id="resultados">
 		
 	</div>
-	
-	<!-- SLIDER -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::CUERPO::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 	<div class="container-fluid">
+
+		<!-- SLIDER -->
 		<div class="row">
 			
 			<div class="col-md-12 " style="padding: 0px;">
@@ -175,155 +183,182 @@
 				<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
 					<span class="glyphicon glyphicon-chevron-right"></span>
 				</a>
-			</div>
+			</div>			
+		</div>
+		<!-- /SLIDER -->
+
+		<br>
+		<br><br>
+
+		<!-- APLICACIONES -->
+		<div id="titulo1"  class="container-fluid">
 			
-		</div>
-	</div>
-	<!-- /SLIDER -->
+			<div id="space"></div>
+			<br>
 
-	<br>
-	
-	<!-- APLICACIONES -->
-	<div id="titulo1" style="background: rgba(32,92,90,0.1);" class="container">
-		<div id="titulo_aplicaciones" style="background: rgba(0,86,137,0.1);border-top:solid 3px #006699; text-align: center;padding: 5px 0px;font-size: 30px;border-top-right-radius: 5px;border-top-left-radius: 5px;font-family: 'Raleway', sans-serif;" class=" row ">
-			Aplicaciones
-		</div>
-		<div id="space"></div>
-		<br>
-		<div class="row">
-			<div class="col-md-4 center-block">
-				<div class="box-white center-block" >
-
-					<a href="rgbaGenerator/rgba.html">
-						<div class="contenido center-block"><img class="img-200 img-circle" src="img/circuloRGBA.png" alt=""></div>
-					</a>
-
-				</div>
-			</div>
-			<div class="col-md-4 center-block">
-				<div class="box-white center-block" >
-
-					<a href="CALCULADORA/calculadora.html">
-						<div class="contenido center-block"><img class="img-200 img-circle" src="img/calculadora.png" alt=""></div>
-					</a>
-
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="box-white" ">
-
-					<a href="Subneteador/Subneteador.html">
-						<div class="contenido center-block"><img class="img-200 img-circle" src="img/ip.jpg" alt=""></div>
-					</a>					
-
-				</div>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-4">
-				<div class="box-white">
-
-					<a href="Abecedario/Abecedario.html">
-						<div class="contenido center-block"><img class="img-200 img-circle" src="img/circulo_abecedario.png" alt=""></div>
-					</a>
-
-				</div>
-			</div>
-			<div class="col-md-4 center-block">
-				<div class="box-white center-block">
-
-					<div class="contenido center-block"><img class="img-200 img-circle" src="img/11.png" alt=""></div>
-
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="box-white">
-
-					<div class="contenido center-block"><img class="img-200 img-circle" src="img/12.png" alt=""></div>
-
-				</div>
-			</div>
-		</div>
-		<br>
-
-	</div>
-	<!-- /APLICACIONES -->
-
-	<br>
-	<!-- ARTICULOS GENERALES -->
-	<div id="titulo2" style="background: rgba(20,125,65,0.1);" class="container">
-
-		<div id="titulo_articulos" style="background: rgba(6,180,150,0.1);border-top:solid 3px rgba(6,180,150,1); text-align: center;padding: 5px 0px;font-size: 30px;border-top-right-radius: 5px;border-top-left-radius: 5px;" class=" row">  Articulos Generales</div>
-
-
-		<div id="space2"></div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<a href="Articulos/gastronomia/gastronomia-peru.html">Los 100 mejores platos de la gastronomia peruana</a>
-					</div>
-					<div class="panel-body">
-						<p>
-							Este es un listado de los mejores platos que tu puedes encontrar en el Perú
+			<div class="row">
+				<div class="col-md-3 align-content-center">
+					<div class="align-middle " style="height: 100%;padding: 30px 0px;color:color: rgba(85,95,122,1);">
+						<h1 style="height: 100%;color: rgba(85,95,122,1);">
+							Aplicaciones	
+						</h1>
+						<br>
+						<br>
+						<p style="color: color: rgba(85,95,122,1);;">
+							<p>Te invitamos a usar nuestras aplicaciones y a darle like a nuestra paginad de face.</p>
+							<p>Asi como tambien te pedimos nos des tus ideas para seguir creando aplicaciones simples 
+							pero utiles.</p>
+							<p>Escribenos a jhelsinmijael@gmail.com</p>
+							 
 						</p>
+
+						<br><br><br><br>
+						<button type="button" class="facebook-button"><a href="https://www.facebook.com/EducationalApplications456/">Facebook</a> <span class="glyphicon glyphicon-link"></span></button>
+						<button type="button" class="youtube-button"><a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg">youtube</a> <span class="glyphicon glyphicon-link"></span></button>
 					</div>
+					
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						cabecera
+				<div class="col-md-9">
+					<div class="col-md-3 center-block">
+						<div class="box-white center-block" >
+
+							<a href="rgbaGenerator/rgba.html">
+								<div class="contenido center-block"><img class="img-200 img-circle" src="img/circuloRGBA.png" alt=""></div>
+							</a>
+
+						</div>
 					</div>
-					<div class="panel-body">
-						Contenido del panel
+					<div class="col-md-3 center-block">
+						<div class="box-white center-block" >
+
+							<a href="CALCULADORA/calculadora.html">
+								<div class="contenido center-block"><img class="img-200 img-circle" src="img/calculadora.png" alt=""></div>
+							</a>
+
+						</div>
 					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						cabecera
+					<div class="col-md-3">
+						<div class="box-white" ">
+
+							<a href="Subneteador/Subneteador.html">
+								<div class="contenido center-block"><img class="img-200 img-circle" src="img/ip.jpg" alt=""></div>
+							</a>					
+
+						</div>
 					</div>
-					<div class="panel-body">
-						Contenido del panel
+
+					<div class="col-md-3">
+						<div class="box-white">
+
+							<a href="Abecedario/Abecedario.html">
+								<div class="contenido center-block"><img class="img-200 img-circle" src="img/circulo_abecedario.png" alt=""></div>
+							</a>
+
+						</div>
 					</div>
+					<div class="col-md-3 center-block">
+						<div class="box-white center-block">
+
+							<div class="contenido center-block"><img class="img-200 img-circle" src="img/11.png" alt=""></div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="box-white">
+							<div class="contenido center-block"><img class="img-200 img-circle" src="img/12.png" alt=""></div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="box-white">
+							<div class="contenido center-block"><img class="img-200 img-circle" src="img/icono-facebook.jpg" alt=""></div>
+						</div>
+					</div>					
+					<div class="col-md-3">
+						<div class="box-white">
+							<div class="contenido center-block"><img class="img-200 img-circle" src="img/12.png" alt=""></div>
+						</div>
+					</div>										
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						cabecera
+			<br>
+		</div>
+		<!-- /APLICACIONES -->
+		<br>
+		<br>
+		<br>
+		<!-- ARTICULOS GENERALES -->
+		<div id="titulo2" style="background: rgba(20,125,65,0.1);" class="container-fluid">
+
+			<div id="titulo_articulos" style="background: rgba(6,180,150,0.1);border-top:solid 3px rgba(6,180,150,1); text-align: center;padding: 5px 0px;font-size: 30px;border-top-right-radius: 5px;border-top-left-radius: 5px;" class=" row">  Articulos Generales</div>
+
+
+			<div id="space2"></div>
+			<br>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<a href="Articulos/gastronomia/gastronomia-peru.html">Los 100 mejores platos de la gastronomia peruana</a>
+						</div>
+						<div class="panel-body">
+							<p>
+								Este es un listado de los mejores platos que tu puedes encontrar en el Perú
+							</p>
+						</div>
 					</div>
-					<div class="panel-body">
-						Contenido del panel
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							cabecera
+						</div>
+						<div class="panel-body">
+							Contenido del panel
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							cabecera
+						</div>
+						<div class="panel-body">
+							Contenido del panel
+						</div>
 					</div>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						cabecera
+				<div class="col-md-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							cabecera
+						</div>
+						<div class="panel-body">
+							Contenido del panel
+						</div>
 					</div>
-					<div class="panel-body">
-						Contenido del panel
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							cabecera
+						</div>
+						<div class="panel-body">
+							Contenido del panel
+						</div>
 					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						cabecera
-					</div>
-					<div class="panel-body">
-						Contenido del panel
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							cabecera
+						</div>
+						<div class="panel-body">
+							Contenido del panel
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		
+		<!-- /ARTICULOS GENERALES -->
 	</div>
-	<!-- /ARTICULOS GENERALES -->
 	<br>
-	<!-- FOOTER -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::FOOTER::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 	<footer style="background:rgba(0,20,33,1);padding: 10px;">
 		<div class="container color-white">
-			Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+			Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estadistica e Informtica - Oficina de Comunicaciones
 			<div>Icons made by
 				<a href="http://www.freepik.com" title="Freepik">Freepik</a> from
 				<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
@@ -332,7 +367,11 @@
 		</div>
 	</footer>
 	<!-- /FOOTER -->
+	
 
+	<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- ::::::::::::::::::::::::::::::::::::::::MODAL:::::::::::::::::::::::::::::::::::::::::: -->
+	<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
 
 	<a id="a" href="#modal1" class="btn btn-primary btn-lg" data-toggle="modal">Boton #1</a>
 
@@ -340,14 +379,19 @@
 		<div class="modal-dialog" >
 			<div class="modal-content" >
 				<!-- modal header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+				</div>
 				<!-- /modal header -->
 				<!-- modal body -->
 				<div class="modal-body">
-				<img src="img/modal1.png" alt="">
+					<img src="img/modal1.png" alt="">
 				</div>
 				<!-- /modal body -->
 				<!-- modal footer -->
-			
+
 				<!-- /modal footer -->
 			</div>
 		</div>

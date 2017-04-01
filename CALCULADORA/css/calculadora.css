@@ -1,13 +1,12 @@
-@import "../../menu_cuadrados/menu_cuadrados.css";
+@import url("../../css/header.css");
+
+@import url("../../css/menu-apps.css");
+
 *{
 	margin: 0px;
 	padding: 0px;
 }
 
-body{
-	/*background: rgba(22,71,93,0.1);*/
-	
-}
 
 /*::::::::::::CUERPO:::::::::*/
 
@@ -133,83 +132,4 @@ body{
 	color: white;
 	text-align: center;
 	padding: 10px 0px;
-}
-
-/*::::::::::::::::::::::::::MENU::::::::::::::::::::::::::*/
-#div_menu{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 150px;
-}
-#menu-bar{
-  display: none;
-}
-
-#label_menu{
-  position: absolute;
-  top: 0px;
-  float: left;
-  font-size: 28px;
-  margin: 0px 0;
-  cursor: pointer;/*mano*/
-}
-#label_menu img{
-  top: 0px;
-  left: 0px;
-  width: 60px;
-  height: 60px;
-}
-
-.menu{
-  position: absolute;
-  top: 72px;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background:  white;
-  transition: all 0.5s;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  font-size: 20px;
-  border-right: 1px solid #006699;
-}
-
-.menu a{
-  display: block;
-  color: gray;
-  height: 70px;
-  text-decoration: none;
-  padding: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-}
-
-.menu a:hover{
-  background: rgba(255,255,255,0.3);
-}
-
-#menu-bar:checked ~ .menu{
-  -webkit-transform: translateX(0%);
-  -moz-transform: translateX(0%);
-  transform: translateX(0%);
-}
-
-/*::::::::::::::::::FIN DE MENU:::::::::::::::::::::*/
-/*:::::::::::::::::::ADS EXOCLIK::::::::::::::::::::*/
-
-.div_ad{
-	float: left;
-}
-
-/*:::::::::::::::::::ADS ADXXX::::::::::::::::::::*/
-
-.adxxx{
-	position: fixed;
-	top: 200px;
-}
-#adbyadxxx{
-	left: 10px;
-}
-#adbyadxxx2{
-	right: 10px;
 }
