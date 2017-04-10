@@ -96,7 +96,6 @@ br{
 .letra{
   width: 150px;
   height: 200px;
-  box-shadow: 3px 3px 3px rgba(150,150,150,0.5);
   float: left;
   margin: 10px;
   border-radius: 3px;
@@ -110,27 +109,11 @@ br{
   background-color: white;
 }
 
-.letra:before{
-  content: '';
-  position: absolute;
-  width: 170px;
-  height: 220px;
-  border:solid 2px white;
-  -webkit-transform:translate(-50%,-11px);
-  border-radius: 3px;
-  opacity: 0;
-}
 
-.letra:hover:before{
-  transition-duration: 0.3s;
-  opacity: 1;
-  content: '';
-  position: absolute;
-  width: 150px;
-  height: 196px;
-  -webkit-transform:translateX(-50%);
-  border-radius: 3px;
-  box-shadow: 0px 0px 4px #333 ;
+
+.letra:hover{
+  transition-duration: 0.5s;
+  box-shadow: 1px 3px 15px rgba(80,80,80,1);
 }
 
 .letra:hover .div_circle{

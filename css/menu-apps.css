@@ -22,6 +22,7 @@
   left: 0px;
   width: 60px;
   height: 60px;
+  filter: invert(100%);
 }
 
 .menu{
@@ -45,13 +46,37 @@
   text-decoration: none;
   padding: 15px;
   border-bottom: 1px solid rgba(255,255,255,0.5);
+  text-align: center;
+}
+.menu a span{
+  display: none;
 }
 
 .menu a:hover{
   background: rgba(255,255,255,0.3);
   color: white;
-  text-decoration: underline;
   background: rgba(84,108,128,1);
+  text-align: center;
+}
+.menu a:hover p{
+  display: none;
+}
+
+.menu a:nth-child(1):hover span{
+  display: inline;
+  color: rgba(128,218,128,1);
+}
+.menu a:nth-child(2):hover span{
+  display: inline;
+  color: rgba(128,218,128,1);
+}
+.menu a:nth-child(3):hover span{
+  display: inline;
+  color: rgba(128,218,128,1);
+}
+.menu a:nth-child(4):hover span{
+  display: inline;
+  color: rgba(128,218,128,1);
 }
 
 #menu-bar:checked ~ .menu{

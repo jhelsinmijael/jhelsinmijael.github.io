@@ -7,7 +7,7 @@
 }
 
 .facebook-button:hover{
-	transition-duration: 0.3s;
+	transition-duration: 0.7s;
 	background: rgba(39,89,139,1);
 	color: white;
 }
@@ -27,7 +27,7 @@
 }
 
 .youtube-button:hover{
-	transition-duration: 0.3s;
+	transition-duration: 0.7s;
 	background: rgba(204,0,9,1);
 	color: white;
 }

@@ -25,6 +25,8 @@
 
 	</style>
 
+
+
 	<script type="text/javascript" src="js/logica.js"></script>
 </head>
 <body>
@@ -38,13 +40,16 @@
 	<section style="color: white;min-height: 550px;">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
+				<div class="col-md-6 col-md-offset-3 ">
 					<br>
-					<table class="table table-bordered" >
+					<table class="table " style="border:1px solid rgba(204,0,0,1);box-shadow: 0px 0px 30px rgba(120,120,120,1)">
 						<tr>
-							<td colspan="4">
-								<input id="lcd" type="text" class="form-control" type="button">
-								<input id="mini-lcd" type="text" name="" readonly="" class="form-control" />
+							<td colspan="4" style="border-top:1px solid rgba(204,0,0,1);">
+
+								<input id="lcd" type="text" class="form-control" type="button" style="border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">
+								<input id="mini-lcd" type="text" name="" readonly="" class="form-control"  style="border-top-left-radius: 0px;border-top-right-radius: 0px;"/>
+								
+								
 							</td>
 							
 						</tr>
@@ -127,18 +132,30 @@
 	</footer>
 
 	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
-	<div id="div_menu" class="contenedor navbar-fixed-top" >
+	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+	<div id="div_menu" class="contenedor navbar-fixed-top">
 		<input type="checkbox" id="menu-bar">
 		<label  id="label_menu" class="icon-menu" for="menu-bar">
 			<img src="../img/inicio.png">
 		</label>
 		<nav class="menu">
-			<a href="../index.html">Inicio</a>
-			<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
-			<a href="">Blog</a>
-			<a href="">Contacto</a>
+
+			<a href="../index.html"><span class="glyphicon glyphicon-home"></span>
+				<p>Inicio</p>
+			</a>
+			<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1"><span class="glyphicon glyphicon-hd-video"></span>
+				<p>Canal</p>
+			</a>
+			<a href=""><span class="glyphicon glyphicon-book"></span>
+				<p>Blog</p>
+			</a>
+			<a href=""><span class="glyphicon glyphicon-phone"></span>
+				<p>Contacto</p>
+			</a>
+			
 		</nav>
 	</div>
+	<!--fin de menu-->
 	<!--fin de menu-->
 </body>
 </html>
