@@ -1,173 +1,159 @@
-@import url("../../css/header.css");
-
-@import url("../../css/menu-apps.css");
+@import url("../../css/all-styles.css");
 
 *{
-			margin: 0px;
-			padding: 0px;
-	}
-	a{
-		color: rgba(245,28,81,1);
-	}
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	color: rgba(245,28,81,1);
+}
 
-		.bg-black{
-			background-color: black;
-		}
+.bg-black{
+	background-color: black;
+}
 
-		.bg-333{
-			background: #333;
-		}
+.bg-333{
+	background: #333;
+}
 
-		.row-block{
-			margin-top: 10px;
+.row-block{
+	margin-top: 10px;
 
-		}
-		#boton{
+}
+#boton{
 
-		background:gray;
-		width: 100px;
-		height: 40px;
-		border: none;
-		border-radius: 5px;
-		color:white;
-		margin: 10px;
+	background:gray;
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	color:white;
+	margin: 10px;
 
-		}
-		#boton1{
+}
+#boton1{
 
-		background:gray;
-		width: 100px;
-		height: 40px;
-		border: none;
-		border-radius: 5px;
-		color:grey;
-		margin: 10px;
-		font-weight: bolder;
+	background:gray;
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	color:grey;
+	margin: 10px;
+	font-weight: bolder;
 
-		}
-		#boton2{
+}
+#boton2{
 
-		background:white;
-		width: 100px;
-		height: 40px;
-		border: none;
-		border-radius: 5px;
-		color:grey;
-		margin: 10px;
-		font-weight: bolder;
-		border: 1px solid grey;
+	background:white;
+	width: 100px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	color:grey;
+	margin: 10px;
+	font-weight: bolder;
+	border: 1px solid grey;
 
-		}
-		#rojo{
-			background: rgba(255,51,66,1);
-			border-radius: 5px;
-			width: 60px;			
-			margin: 10px;
-			color: white
-		}
-		#verde{
-			background: rgba(64,184,66,1);
-			border-radius: 5px;
-			width: 60px;			
-			margin: 10px;
-			color: white;
-		}
-		#azul{
-			background: rgba(64,85,146,1);
-			border-radius: 5px;
-			width: 60px;			
-			margin: 10px;
-			color: white;
-		}
-		#copiar{
-			margin: 0;
-			color:white;
-			border-radius:5px;
-			margin: 10px;
+}
+#rojo{
+	background: rgba(255,51,66,1);
+	border-radius: 5px;
+	width: 60px;			
+	margin: 10px;
+	color: white
+}
+#verde{
+	background: rgba(64,184,66,1);
+	border-radius: 5px;
+	width: 60px;			
+	margin: 10px;
+	color: white;
+}
+#azul{
+	background: rgba(64,85,146,1);
+	border-radius: 5px;
+	width: 60px;			
+	margin: 10px;
+	color: white;
+}
+#copiar{
+	margin: 0;
+	color:white;
+	border-radius:5px;
+	margin: 10px;
 
-		}
-		button{
-			color: white;
-			border:none;
-		}
-		label{
-			height: 30px;
-			margin-left:5px;
-			color:white;
-		}
-		/*div{
-			margin: 10px;
-		}*/
-		/*cabecera*/
-		
-		#cabecera{
-			background: rgba(83,108,123,1);
-			color:white;
+}
+button{
+	color: white;
+	border:none;
+}
+label{
+	height: 30px;
+	margin-left:5px;
+	color:white;
+}
 
-		}
-		#cabecera img{
-			width: 0px;
-			color: white;
-			filter: invert(100%);
-		}
-		#cabecera label{
-			float: left;
-		}
+
+#cabecera{
+	background: rgba(83,108,123,1);
+	color:white;
+
+}
+#cabecera img{
+	width: 0px;
+	color: white;
+	filter: invert(100%);
+}
+#cabecera label{
+	float: left;
+}
 
 
 
 
-		/*main*/
+/*main*/
 
-		main{
-			width: 70%;
-			float: right;
-			background: red;
+main{
+	width: 70%;
+	float: right;
+	background: red;
 
-			margin: 550px 35% 30px 10%;
-			padding-top: 100px;
-		}
-		section{
-			padding-top: 150px;
-			width: 100%;
-			box-shadow: 0px 0px 2px gray;
-			padding: 10px;
-			background: white;
-			margin-top: 180px;
-			box-shadow: 3px 3px 3px #333;
-		}
-		p{
-			margin: 25px;
-		}
-		/*input*/
-		#codigo2{
-			-webkit-transform: translateY(-10000px);
-			transform: translateY(-10000px);
-			-moz-transform: translateY(-10000px);
-		}
+	margin: 550px 35% 30px 10%;
+	padding-top: 100px;
+}
+section{
+	padding-top: 150px;
+	width: 100%;
+	box-shadow: 0px 0px 2px gray;
+	padding: 10px;
+	background: white;
+	margin-top: 180px;
+	box-shadow: 3px 3px 3px #333;
+}
 
-		.ad{
-		  width: auto;
-		  height: auto;
-		  position: fixed;
-		}
-		#adbyexoclick{
-		  
-		  
-		  top: 200px;
-		  left: 10px;
-		}
+/*input*/
+#codigo2{
+	-webkit-transform: translateY(-10000px);
+	transform: translateY(-10000px);
+	-moz-transform: translateY(-10000px);
+}
 
-		#div_all{
-			position: absolute;
-			top: 0px;
-		}
+.ad{
+	width: auto;
+	height: auto;
+	position: fixed;
+}
 
-		@media (min-width: 780px){
-			main section{
-				width: 60%;
-			}
-		}
 
+#div_all{
+	position: absolute;
+	top: 0px;
+}
+
+/*::::::::::::::::CAJAS::::::::::::::::::::*/
+.box-description-only{
+	padding: 15px;
+}
 
 

@@ -5,7 +5,6 @@ $(document).ready(function() {
 	var content1 = $("#content1");
 	var content2 = $("#content2");
 	//var content3 = $("#content3");
-	var btn_circle = $("#btn_circle");
 	var header = $("#header");
 
 });
@@ -40,7 +39,7 @@ function pintar2(color){
 		cabecera.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
 		body.style.background = "rgba("+(parseFloat(cantidad_rojo)/2)+","+(parseFloat(cantidad_verde)/2)+","+(parseFloat(cantidad_azul)/2)+",0.2)";
 		
-		btn_circle.style.background = "rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
+	
 
 	//content3.style.borderTop = "3px solid rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+","+opacidad+")";
 	document.getElementById("codigo").value="rgba("+cantidad_rojo+","+cantidad_verde+","+cantidad_azul+",1)";

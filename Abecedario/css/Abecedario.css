@@ -1,6 +1,4 @@
-@import url("../../css/header.css");
-
-@import url("../../css/menu-apps.css");
+@import url("../../css/all-styles.css");
 
 *{
   margin: 0px;

@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
 
-@import url("../../css/header.css");
-
-@import url("../../css/menu-apps.css");
+@import url("../../css/all-styles.css");
 
 *{
 	margin: 0px;
@@ -80,6 +78,23 @@ tr{
 
 input{
 	cursor: pointer;
+}
+
+/*::::::::::::::::::::CAJAS::::::::::::::::*/
+.box{
+
+}
+.box-header{
+	padding: 5px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+.box-header img{
+	width: 25px;
+}
+
+.box-body{
+	padding: 10px;
 }
 
 

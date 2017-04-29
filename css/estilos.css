@@ -87,4 +87,19 @@ h1{
 	margin: 0px;
 }
 
+.box-panel{
+	border: 5px;
+}
+.box-panel div{
+	width: 100%;
+	
+}
+.box-panel-header{
+	padding: 20px;
+}
+.box-panel-body{
+	background: white;
+	padding: 10px;
+}
+
 
