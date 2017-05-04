@@ -82,12 +82,15 @@ input{
 
 /*::::::::::::::::::::CAJAS::::::::::::::::*/
 .box{
-
+	border-radius: 3px;
+	background: white;
+	box-shadow: 0px 0px 1px #333;
 }
 .box-header{
 	padding: 5px;
 	border-top-right-radius: 3px;
 	border-top-left-radius: 3px;
+	color: white;
 }
 .box-header img{
 	width: 25px;
@@ -95,6 +98,8 @@ input{
 
 .box-body{
 	padding: 10px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 
 

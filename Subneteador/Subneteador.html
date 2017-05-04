@@ -29,8 +29,11 @@
 		</div>
 
 	</header>
-
-	<div style="height: 60px;">:)</div>
+	<header style="background-color: white;">
+		<div class="container">
+			<h1 >Subneteo Online</h1>
+		</div>
+	</header>
 
 	<br><br>
 
@@ -39,10 +42,10 @@
 			<div class="col-xs-12 col-md-8   col-md-offset-2 ">
 				
 				<div class="box">
-					<div class="box-header" style="background-color: rgba(121,135,149,1);color: white">
+					<div class="box-header" style="background-color: rgba(121,135,149,1);color: white,">
 						<img src="../img/quest.ico.png" alt=""> ¿Que es?
 					</div>
-					<div class="box-body" style="border:1px solid rgba(121,135,149,1);">
+					<div class="box-body">
 						<p style="color: #006699;"><strong>Tu puedes generar subredes a partir de una red ya sea clase A, B o C</strong></p>
 					</div>
 				</div>
@@ -54,7 +57,7 @@
 				<div style="padding: 3px;padding-left: 0px;" class="col-xs-12 col-md-4 ">
 					<div class="box">
 						<div class="box-header" style="background-color: rgba(121,135,149,1);color: white">Clase A</div>
-						<div class="box-body" style="border:1px solid rgba(121,135,149,1);">
+						<div class="box-body">
 							<p><strong>from:</strong>0.0.0.0 </p>
 							<p><strong>to:</strong> 127.255.255.255</p>
 						</div>
@@ -63,17 +66,17 @@
 				<div style="padding: 3px;" class="col-xs-12  col-md-4">					
 					<div class="box">
 						<div class="box-header" style="background-color: rgba(121,135,149,1);color: white">Clase B</div>
-						<div class="box-body" style="border:1px solid rgba(121,135,149,1);">
-							<p><strong>from:</strong>128.255.255.255</p>
-							<p><strong>to:</strong>192.255.255.255</p></strong></p>
+						<div class="box-body" >
+							<p><strong>from:</strong>128.0.0.0</p>
+							<p><strong>to:</strong>191.255.255.255</p></strong></p>
 						</div>
 					</div>
 				</div>
 				<div style="padding: 3px;padding-right: 0px;" class="col-xs-12  col-md-4">					
 					<div class="box">
 						<div class="box-header" style="background-color: rgba(121,135,149,1);color: white">Clase C</div>
-						<div class="box-body" style="border:1px solid rgba(121,135,149,1);">
-							<p><strong>from:</strong>193.255.255.255</p>
+						<div class="box-body" >
+							<p><strong>from:</strong>192.0.0.0</p>
 							<p><strong>to:</strong>223.255.255.255</p></strong></p>
 						</div>
 					</div>
@@ -160,26 +163,7 @@
 
 	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
 	<div id="div_menu" class="contenedor navbar-fixed-top">
-		<input type="checkbox" id="menu-bar">
-		<label  id="label_menu" class="icon-menu" for="menu-bar">
-			<img src="../img/inicio.png">
-		</label>
-		<nav class="menu">
 
-			<a href="../index.html"><span class="glyphicon glyphicon-home"></span>
-				<p>Inicio</p>
-			</a>
-			<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1"><span class="glyphicon glyphicon-hd-video"></span>
-				<p>Canal</p>
-			</a>
-			<a href=""><span class="glyphicon glyphicon-book"></span>
-				<p>Blog</p>
-			</a>
-			<a href=""><span class="glyphicon glyphicon-phone"></span>
-				<p>Contacto</p>
-			</a>
-			
-		</nav>
 	</div>
 	<!--fin de menu-->
 	<!-- BOTON FLOTANTE -->
@@ -189,7 +173,10 @@
 	<!-- /BOTON FLOTANTE -->
 
 
-	
+	<!-- ::::::::::::::::::::::::SCRIPTS:::::::::::::::::::::: -->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/menu-content.js"></script>
+	<script src="../js/menu.js"></script>	
 	<script>desactivar()</script>
 </body>
 </html>

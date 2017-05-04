@@ -2,6 +2,9 @@ header{
 	background: rgba(88,107,128,1);
 	color:  white;
 }
+header h1{
+	margin-left: 75px;
+}
 body{
 	background: rgba(44,53,64,0.1)
 }
