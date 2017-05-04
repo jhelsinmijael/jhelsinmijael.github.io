@@ -20,3 +20,14 @@ $("#div_menu").html(
 
 	'</nav>'
 	);
+
+var alturaHeader = $("header").height();
+$(".menu").css('top', alturaHeader);
+$(document).ready(function() {
+	$(".menu").css('top', alturaHeader);
+	$(window).resize(function() {
+		var alturaHeader = $("header").height();
+		$(".menu").css('top', alturaHeader);
+	});
+});
+
