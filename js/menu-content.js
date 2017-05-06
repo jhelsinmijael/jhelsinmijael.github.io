@@ -5,22 +5,25 @@ $("#div_menu").html(
 	'</label>'+
 	'<nav class="menu">'+
 
-	'<a href="../index.html"><span class="glyphicon glyphicon-home"></span>'+
-	'<p>Inicio</p>'+
-	'</a>'+
-	'<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1"><span class="glyphicon glyphicon-hd-video"></span>'+
-	'<p>Canal</p>'+
-	'</a>'+
-	'<a href=""><span class="glyphicon glyphicon-book"></span>'+
-	'<p>Blog</p>'+
-	'</a>'+
-	'<a href=""><span class="glyphicon glyphicon-phone"></span>'+
-	'<p>Contacto</p>'+
-	'</a>'+
+	'<ul>'+
+	'<li>'+
+	'<a href="../index.html"><span class="primero"><i class="glyphicon glyphicon-home"></i></span>Inicio</a>'+
+	'</li>'+
+	'<li>'+
+	'<a href="#"><span class="segundo"><i class="glyphicon glyphicon-hd-video"></i></span>Canal</a>'+
+	'</li>'+
+	'<li>'+
+	'<a href="#"><span class="tercero"><i class="glyphicon glyphicon-book"></i></span>Blog</a>'+
+	'</li>'+
+	'<li>'+
+	'<a href="#"><span class="cuarto"><i class="glyphicon glyphicon-phone"></i></span>Contacto</a>'+
+	'</li>'+
+	'</ul>'+
 
 	'</nav>'
 	);
 
+//adaptar la altura del menu segun el tamaño del header
 var alturaHeader = $("header").height();
 $(".menu").css('top', alturaHeader);
 $(document).ready(function() {

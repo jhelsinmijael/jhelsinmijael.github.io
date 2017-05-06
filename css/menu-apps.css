@@ -3,7 +3,7 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 150px;
+  width: 180px;
 }
 #menu-bar{
   display: none;
@@ -40,7 +40,63 @@
   border-right:1px solid rgba(84,108,128,1);
 }
 
-.menu a{
+* {
+      margin:0;
+      padding:0;
+    }
+    nav {
+      top:0px;
+      left:0;
+      height: 100vh;
+      font-size: 20px;
+      
+    }
+
+    ul{
+      background: white;
+      width: 180px;
+      height: 100vh;
+      list-style: none;
+      border-right:1px solid rgba(84,108,128,1);
+    }
+    ul li{
+      display: block;
+      height: 70px;
+    }
+    ul li a{
+      position: absolute;
+      color: rgba(84,108,128,1);
+      text-decoration: none;
+      padding:25px;
+      text-align:center;
+      display:block;
+      width: 180px;
+    }
+    ul li a:hover{
+      text-decoration: none;
+    }
+    ul>li>a span{
+      position: absolute;
+      background: rgba(84,108,128,1);
+      top: 0px;
+      left: -200px;
+      height: : 100%;
+      width: 180px;
+      padding: 25px;
+      opacity: 0;
+    }
+    ul li a:hover span{
+      transition-duration: 0.2s;
+      opacity: 1;
+      position: absolute;
+      left: 0px;
+      border-left: 3px solid rgba(128,218,128,1);
+    }
+    i{
+      color: rgba(128,218,128,1);
+    }
+
+/*.menu a{
   display: block;
   color: rgba(84,108,128,1);
   height: 70px;
@@ -48,17 +104,26 @@
   padding: 15px;
   border-bottom: 1px solid rgba(255,255,255,0.5);
   text-align: center;
-}
-.menu a span{
-  display: none;
-}
 
+}
 .menu a:hover{
   background: rgba(255,255,255,0.3);
   color: white;
   background: rgba(84,108,128,1);
   text-align: center;
+  border-left: 3px solid rgba(128,218,128,1);
 }
+.menu a:hover #item1{
+  background: red;
+}
+.menu a span{
+  display: none;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+}
+
+
+
 .menu a:hover p{
   display: none;
 }
@@ -78,7 +143,8 @@
 .menu a:nth-child(4):hover span{
   display: inline;
   color: rgba(128,218,128,1);
-}
+}*/
+
 
 #menu-bar:checked ~ .menu{
   -webkit-transform: translateX(0%);
