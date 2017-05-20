@@ -1,6 +1,7 @@
 header{
 	background: rgba(88,107,128,1);
 	color:  white;
+	z-index: 101;
 }
 header h1{
 	margin-left: 75px;

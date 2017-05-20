@@ -17,6 +17,7 @@
 			height: 150px;
 		}
 	</style>
+	<link rel="stylesheet" href="../css/all-styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -24,7 +25,7 @@
 </head>
 <body>
 
-	<header class="navbar-fixed-top" style="background-color: white;border-bottom: 3px solid #006699;height:70px;">
+	<header class="navbar-fixed-top" style="background-color: white;border-bottom: 3px solid #006699;height:70px;box-shadow: 0px 2px 9px gray;">
 		<div class="container">
 			<h1 style="color: #006699;">Cartas</h1>
 		</div>
@@ -40,7 +41,7 @@
 				</div>
 			</div>
 			<div class="row justify-content-center">
-				<div class="col-md-8 ">
+				<div class="col-md-12 ">
 					<div class="row">
 						<div style="min-width: 90px;" class="col-xs-4 col-md-2" >
 							<button style="min-width: 100px;max-width: 100px;margin-top: 20px;" class="form-control btn-carta center-block btn-default">clik aqui!</button>
@@ -97,14 +98,14 @@
 					<br>
 					
 					<div class="row ">
-						<div class="col-md-4 ">
-							<button type="button" class="btn  btn-outline-primary btn-block btn-lg">ayuda</button>
+						<div class="col-md-4 " style="padding: 2px;">
+							<button type="button" class="btn  btn-primary btn-block btn-lg">ayuda</button>
 						</div>
-						<div class="col-md-4">
-							<button type="button" class="btn btn-outline-warning btn-block btn-lg">Descifrar</button>
+						<div class="col-md-4" style="padding: 2px;">
+							<button type="button" class="btn btn-warning btn-block btn-lg">Descifrar</button>
 						</div>
-						<div class="col-md-4">
-							<button type="button" class="btn btn-outline-danger btn-block btn-lg">Rendirse</button>
+						<div class="col-md-4" style="padding: 2px;">
+							<button type="button" class="btn btn-danger btn-block btn-lg">Rendirse</button>
 						</div>
 					</div>
 					
@@ -129,16 +130,7 @@
 
 	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
 	<div id="div_menu" class="contenedor navbar-fixed-top" >
-		<input type="checkbox" id="menu-bar">
-		<label  id="label_menu" class="icon-menu" for="menu-bar">
-			<img src="../img/inicio.png">
-		</label>
-		<nav class="menu">
-			<a href="../index.html">Inicio</a>
-			<a href="https://www.youtube.com/channel/UCe112PzmEonMRh0AjIBAGcg?sub_confirmation=1">Canal</a>
-			<a href="">Blog</a>
-			<a href="">Contacto</a>
-		</nav>
+		
 	</div>
 	<!--fin de menu-->
 
@@ -146,6 +138,8 @@
 	<script src="../bootstrap-3.3.6-dist/js/jquery-1.12.4.min.js"></script>
 	<script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	<script src="js/poker.js"></script>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/menu-content.js"></script>
 	<!-- /Scripts -->
 
 	<!-- flot button -->

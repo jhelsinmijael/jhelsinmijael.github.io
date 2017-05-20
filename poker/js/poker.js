@@ -1,63 +1,43 @@
 $(document).ready(function() {
 	var not = [];
-	var num = [];
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	num.push(Math.round(Math.random()*12));
-	for (var i = 0; i < num.length; i++) {
-		var count = 0;
-		for (var j = 0; j < num.length; j++) {
+	var num1 = [];
+	var num2 = [];
+	num1.push(Math.round(Math.random()*6));
+	num1.push(Math.round(Math.random()*6));
+	num1.push(Math.round(Math.random()*6));
+	num1.push(Math.round(Math.random()*6));
+	num1.push(Math.round(Math.random()*6));
+	num1.push(Math.round(Math.random()*6));
 
-			if(num[i] == num[j]){
-
-								
-				
-
-			}
-			if((parseFloat(i)+parseFloat(1))==num[j]){
-
-				count++;
-
-			}
-		}
-		if(count==0){
-			not.push(i+1);
-			alert("no hay:"+(i+1));
-		}
-	}
+	num2.push(Math.round(Math.random()*6));
+	num2.push(Math.round(Math.random()*6));
+	num2.push(Math.round(Math.random()*6));
+	num2.push(Math.round(Math.random()*6));
+	num2.push(Math.round(Math.random()*6));
+	num2.push(Math.round(Math.random()*6));
 
 	var count=0;
 
-	for (var i = 0; i < num.length; i++) {
-		
-		for (var j = 0; j < num.length; j++) {
+	$("button").click(function() {
+		if(count>1){
+			count=0;
+			$("button").html('click here!!');
+		}else{
+			var index = $(this).index("button");
 
-			if(num[i] == num[j]){
-
-				alert("repetidos: "+num[i]);
-
-				num[i] = not[1];
-
-				count++;
-
-				break;				
-				
-
+			if(index<6){
+				alert("hello:"+num1[index]);
+				$("button:eq("+index+")").html(num1[index]);
+			}else if(index>=6){
+				alert("hello:"+num2[index-6]);
+				$("button:eq("+index+")").html(num2[index-6]);
 			}
 
-		}
+			$("button:eq("+index+")").addClass('btn-primary');
+			$("button:eq("+index+")").css('font-size', '25px');
 
-	}
-	$("button:eq(1)").click(function() {
-		alert("hello:"+num);
+			count++;
+		}
+		
 	});
 });

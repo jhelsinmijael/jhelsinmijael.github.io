@@ -1,9 +1,17 @@
 /*::::::::::::::::::::::::::MENU::::::::::::::::::::::::::*/
+.allow-menu{
+  z-index: 4000;
+  position: fixed;
+  top:10px;
+  left: 0px;
+  color: white;
+}
 #div_menu{
   position: fixed;
   top: 0px;
   left: 0px;
   width: 180px;
+  z-index: 101;
 }
 #menu-bar{
   display: none;
@@ -28,14 +36,20 @@
 }
 
 .menu{
+  opacity: 0;
   position: absolute;
   left: 0;
   width: 100%;
   height: 100vh;
   background:  white;
-  transition: all 0.5s;
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: 1000;
+  translat
+  -webkit-transform: translate(-10%);
+  -moz-transform: translate(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+
   font-size: 20px;
   border-right:1px solid rgba(84,108,128,1);
 }
@@ -79,7 +93,7 @@
       position: absolute;
       background: rgba(84,108,128,1);
       top: 0px;
-      left: -200px;
+      left: -100px;
       height: : 100%;
       width: 180px;
       padding: 25px;
@@ -147,9 +161,13 @@
 
 
 #menu-bar:checked ~ .menu{
+  transition-duration: 0.3s;
+  opacity: 1;
   -webkit-transform: translateX(0%);
   -moz-transform: translateX(0%);
   transform: translateX(0%);
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
 }
 
 /*::::::::::::::::::FIN DE MENU:::::::::::::::::::::*/
