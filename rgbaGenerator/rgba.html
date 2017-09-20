@@ -1,175 +1,178 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>RGBA generator</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
-	<meta name="description" content="como crear subredes y realizar el subneteo online">
-	<meta name="keywords" content="generador de codigo rgba, rgba generator, RGBA, CODIGO DE COLORES,">
-	<link rel="stylesheet" href="BootStrap-3.3.6/bootstrap-3.3.6-dist/css/bootstrap.min.css">
-	<link href="css/RGBA.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>RGBA generator</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <meta name="description" content="como crear subredes y realizar el subneteo online">
+    <meta name="keywords" content="generador de codigo rgba, rgba generator, RGBA, CODIGO DE COLORES,">
+    <link rel="stylesheet" href="BootStrap-3.3.6/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <link href="css/RGBA.css" rel="stylesheet" type="text/css" />
 
 </head>
+
 <body id="body">
 
-	<!-- header -->
-	<header id="cabecera" class="navbar-fixed-top" ">
-		<div class="container">
-			<h1 id="header">Generador rgba</h1>
-		</div>
-	</header>
-	<!-- /header -->
-	<header style="background-color: white;">
-		<div class="container">
-			<h1 >Generador rgba</h1>
-		</div>
-	</header>
+    <!-- header -->
+    <header id="cabecera" class="navbar-fixed-top">
+        <div class="container">
+            <h1 id="header">Generador rgba</h1>
+        </div>
+    </header>
+    <!-- /header -->
+    <header style="background-color: white;">
+        <div class="container">
+            <h2>Generador rgba</h2>
+        </div>
+    </header>
 
-	<div class="container">	
+    <div class="container">
 
-		<div class="row-block col-xs-12">
-			<div class="col-md-2"></div>
-			<div id="content1" style="border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8 box-description-only">
-				<p class="text-info">Quieres conocer el  <strong>codigo rgba</strong> de un color que te gustó y no sabes como, pues llegaste al lugar correcto.Podras crear tus propios colores y obtener su  <strong>codigo rgba</strong> para usarlo en tus paginas web u otros ambitos en los que sea posible. </p>
-			</div>
-			<div class="col-md-2"></div>
-		</div>	
+        <div class="row-block col-xs-12">
+            <div class="col-md-2"></div>
+            <div id="content1" style="border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8 box-description-only">
+                <p class="text-info">Quieres conocer el <strong>codigo rgba</strong> de un color que te gustó y no sabes como, pues llegaste al lugar correcto.Podras crear tus propios colores y obtener su <strong>codigo rgba</strong> para usarlo en tus paginas web u otros
+                    ambitos en los que sea posible. </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
 
-		<div class="row-block col-xs-12">
-			<div class="col-md-2"></div>
-			<div  id="content2" style="border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8">
-				<div>
-					<h3 class="text-center text-primary">Obten tu Codigo rgba aqui!</h3>
-					<div style="width: 100px" class="center-block">
-						<button id="boton" class="btn">BOTON</button>
-						<button id="boton2" class="btn">BOTON</button>
-					</div>
+        <div class="row-block col-xs-12">
+            <div class="col-md-2"></div>
+            <div id="content2" style="border-radius: 3px;box-shadow: 1px 1px 1px rgba(150,150,150,0.2);background: white;" class="content col-xs-12 col-md-8">
+                <div>
+                    <h3 class="text-center text-primary">Obten tu Codigo rgba aqui!</h3>
+                    <div style="width: 100px" class="center-block">
+                        <button id="boton" class="btn">BOTON</button>
+                        <button id="boton2" class="btn">BOTON</button>
+                    </div>
 
-					<div>
-						<div>
-							<button id="rojo" class="btn text-white"  onclick="pintar('255','51','66')">rojo</button>
-							<input id="select_rojo" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
-						</div>
+                    <div>
+                        <div>
+                            <button id="rojo" class="btn text-white" onclick="pintar('255','51','66')">rojo</button>
+                            <input id="select_rojo" TYPE="RANGE" MIN="0" MAX="255" STEP="1" onmousemove="pintar2('red')">
+                        </div>
 
-						<div>
-							<button id="verde" class="btn text-white"  onclick="pintar('64','184','66')">verde</button>
-							<input id="select_verde" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
-						</div>
+                        <div>
+                            <button id="verde" class="btn text-white" onclick="pintar('64','184','66')">verde</button>
+                            <input id="select_verde" TYPE="RANGE" MIN="0" MAX="255" STEP="1" onmousemove="pintar2('red')">
+                        </div>
 
-						<div>
-							<button id="azul" class="btn text-white"  onclick="pintar('64','85','146')">azul</button>
-							<input id="select_azul" TYPE="RANGE" MIN="0" MAX="255" STEP="1"  onmousemove ="pintar2('red')">
-						</div>
+                        <div>
+                            <button id="azul" class="btn text-white" onclick="pintar('64','85','146')">azul</button>
+                            <input id="select_azul" TYPE="RANGE" MIN="0" MAX="255" STEP="1" onmousemove="pintar2('red')">
+                        </div>
 
-						<div>
-							<p>opacidad</p>
-							<input id="select_opacidad" TYPE="RANGE" MIN="0" MAX="10" STEP="1" value="10"  onmousemove ="pintar2('red')">
-						</div>
-					</div>
+                        <div>
+                            <p>opacidad</p>
+                            <input id="select_opacidad" TYPE="RANGE" MIN="0" MAX="10" STEP="1" value="10" onmousemove="pintar2('red')">
+                        </div>
+                    </div>
 
-					<div style="width: 230px;" class="center-block">
-						<div style="background: rgba(36,185,200,1); width: 230px;height:38px;margin:0;border-radius:5px;padding: 2px;">
+                    <div style="width: 230px;" class="center-block">
+                        <div style="background: rgba(36,185,200,1); width: 230px;height:38px;margin:0;border-radius:5px;padding: 2px;">
 
-							<!-- <label>RGBA</label><input id="codigo" type="text" name="" style="width:142px;margin-right:0px;height:40px"> -->
-							<div class="form-group">
-								<div class="input-group">
-									<label class="sr-only" for="correo">Correo:</label>
-									<div style="background-color: rgba(36,185,200,1);border:none;color: white;" class="input-group-addon">RGBA</div>
-									<input id="codigo" class="form-control" id="correo" type="text" placeholder="codigo">
-								</div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
+                            <!-- <label>RGBA</label><input id="codigo" type="text" name="" style="width:142px;margin-right:0px;height:40px"> -->
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <label class="sr-only" for="correo">Correo:</label>
+                                    <div style="background-color: rgba(36,185,200,1);border:none;color: white;" class="input-group-addon">RGBA</div>
+                                    <input id="codigo" class="form-control" id="correo" type="text" placeholder="codigo">
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
 
-						<div class="col-md-12">
-							<div style="width: 100px;" class="center-block">
-								<button class="btn btn-primary" id="copiar" onclick="copiar()">
+                        <div class="col-md-12">
+                            <div style="width: 100px;" class="center-block">
+                                <button class="btn btn-primary" id="copiar" onclick="copiar()">
 									COPIAR
 								</button>
 
-								<input id="codigo2" type="text" name="" value="" />
-							</div>
+                                <input id="codigo2" type="text" name="" value="" />
+                            </div>
 
-						</div>						
-						<div id="mensaje" class="col-xs-12">
-							
-						</div>
+                        </div>
+                        <div id="mensaje" class="col-xs-12">
 
-					</div>
+                        </div>
 
-				</div>
+                    </div>
+
+                </div>
 
 
-			</div>
-			<div class="col-md-2"></div>
-		</div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
 
-	</div>
+    </div>
 
-	<br>
+    <br>
 
-	<!-- footer -->
-	<div style="padding: 10px" class="bg-333" class="container-fluid">
-		<footer class="text-info">
-			Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
-			<div>Icons made by
-				<a href="http://www.freepik.com" title="Freepik">Freepik</a> from
-				<a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
-				<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-			</div>
-		</footer>
-	</div>
-	<!-- /footer -->
+    <!-- footer -->
+    <div style="padding: 10px" class="bg-333" class="container-fluid">
+        <footer class="text-info">
+            Copyright &copy MIJAEL QUISPE GARCIA Todos los Derechos Reservados.Oficina de Estad&iacutestica e Inform&aacutetica - Oficina de Comunicaciones
+            <div>Icons made by
+                <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+                <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
+                <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+        </footer>
+    </div>
+    <!-- /footer -->
 
-	<!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
-	<div id="div_menu" class="contenedor navbar-fixed-top">
+    <!--::::::::::::::::::::MENU::::::::::::::::::::::::-->
+    <div id="div_menu" class="contenedor navbar-fixed-top">
 
-	</div>
+    </div>
 
-	<div class="allow-menu">
-		&nbsp;&nbsp;<label for="check" style="width: 70px;height: 70px;" id="icon-menu">
+    <div class="allow-menu">
+        &nbsp;&nbsp;<label for="check" style="width: 70px;height: 70px;" id="icon-menu">
 			<span class="glyphicon glyphicon-align-justify" style="font-size: 45px"></span>
 		</label>
-		<input type="checkbox" id="check" hidden="">
-	</div>
-	<!--fin de menu-->
+        <input type="checkbox" id="check" hidden="">
+    </div>
+    <!--fin de menu-->
 
-	<!-- BOTON FLOTANTE -->
-	<a id="index" href="../index.html">
-		<button type="button"><span class="glyphicon glyphicon-plus"></span></button>
-	</a>
-	<!-- /BOTON FLOTANTE -->
-	
-	<!-- SCRIPTS -->
-	<script src="BootStrap-3.3.6/bootstrap-3.3.6-dist/js/jquery-1.12.4.min.js"></script>
-	<script src="BootStrap-3.3.6/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+    <!-- BOTON FLOTANTE -->
+    <a id="index" href="../index.html">
+        <button type="button"><span class="glyphicon glyphicon-plus"></span></button>
+    </a>
+    <!-- /BOTON FLOTANTE -->
 
-	<!-- ::::::::::::::::::::::::SCRIPTS:::::::::::::::::::::: -->
-	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/menu-content.js"></script>
-	<script src="../js/menu.js"></script>	
-	<script src="js/logic.js" type="text/javascript"></script>
+    <!-- SCRIPTS -->
+    <script src="BootStrap-3.3.6/bootstrap-3.3.6-dist/js/jquery-1.12.4.min.js"></script>
+    <script src="BootStrap-3.3.6/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 
-	<script>
-		$("#copiar").click(function() {
-			if($("#codigo2").val()!=""){
-				$("#mensaje").html('<div class="alert alert-success">'+
-					'<button class="close" data-dismiss="alert">'+
-					'<span>&times;</span>'+
-					'</button>copiado'+
-					'</div>');
-			}else{
-				$("#mensaje").html('<div class="alert alert-danger">'+
-					'<button class="close" data-dismiss="alert">'+
-					'<span>&times;</span>'+
-					'</button>no copiado'+
-					'</div>');
-			}
+    <!-- ::::::::::::::::::::::::SCRIPTS:::::::::::::::::::::: -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/menu-content.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="js/logic.js" type="text/javascript"></script>
 
-		});
-	</script> 
+    <script>
+        $("#copiar").click(function() {
+            if ($("#codigo2").val() != "") {
+                $("#mensaje").html('<div class="alert alert-success">' +
+                    '<button class="close" data-dismiss="alert">' +
+                    '<span>&times;</span>' +
+                    '</button>copiado' +
+                    '</div>');
+            } else {
+                $("#mensaje").html('<div class="alert alert-danger">' +
+                    '<button class="close" data-dismiss="alert">' +
+                    '<span>&times;</span>' +
+                    '</button>no copiado' +
+                    '</div>');
+            }
 
-	
+        });
+    </script>
+
+
 
 </body>
 
